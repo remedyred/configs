@@ -108,7 +108,7 @@ export = {
 			"never"
 		],
 		"prefer-arrow-callback": "error",
-		"prefer-const": "off",
+		"prefer-const": "warn",
 		"prefer-object-spread": "error",
 		"prefer-template": "error",
 		"quote-props": [
