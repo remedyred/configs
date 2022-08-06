@@ -1,0 +1,6 @@
+export = {
+	extends: [
+		"./config",
+		"./rules"
+	]
+}

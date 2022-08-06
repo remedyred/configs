@@ -1,15 +1,9 @@
-export default {
-	"extends": [
-		"../base"
-	],
-	"plugins": [
-		"beautiful-sort"
-	],
-	"rules": {
+export = {
+	rules: {
 		"beautiful-sort/import": [
 			"error",
 			{
-				"order": [
+				order: [
 					"obj",
 					"defaultObj",
 					"namespace",

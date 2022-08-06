@@ -1,25 +1,22 @@
-export default {
-	"extends": [
-		"../base"
-	],
-	"rules": {
+export = {
+	rules: {
 		"array-bracket-newline": [
 			"error",
 			{
-				"minItems": 4
+				minItems: 4
 			}
 		],
 		"array-bracket-spacing": [
 			"error",
 			"never",
 			{
-				"arraysInArrays": true
+				arraysInArrays: true
 			}
 		],
 		"array-element-newline": [
 			"error",
 			{
-				"minItems": 4
+				minItems: 4
 			}
 		],
 		"arrow-parens": [
@@ -32,7 +29,7 @@ export default {
 			"last"
 		],
 		"computed-property-spacing": "error",
-		"curly": [
+		curly: [
 			"error",
 			"all"
 		],
@@ -41,7 +38,7 @@ export default {
 			"property"
 		],
 		"eol-last": "error",
-		"eqeqeq": "error",
+		eqeqeq: "error",
 		"function-call-argument-newline": [
 			"error",
 			"consistent"
@@ -49,18 +46,26 @@ export default {
 		"function-paren-newline": [
 			"error",
 			{
-				"minItems": 6
+				minItems: 6
 			}
 		],
 		"generator-star-spacing": "error",
 		"implicit-arrow-linebreak": "error",
+		indent: [
+			"error",
+			"tab",
+			{
+				MemberExpression: 1,
+				SwitchCase: 1
+			}
+		],
 		"key-spacing": "error",
 		"linebreak-style": "error",
 		"lines-around-comment": [
 			"error",
 			{
-				"beforeBlockComment": true,
-				"allowBlockStart": true
+				allowBlockStart: true,
+				beforeBlockComment: true
 			}
 		],
 		"no-else-return": "error",
@@ -69,7 +74,7 @@ export default {
 		"no-multiple-empty-lines": [
 			"error",
 			{
-				"max": 1
+				max: 1
 			}
 		],
 		"no-trailing-spaces": "error",
@@ -87,14 +92,14 @@ export default {
 		"object-curly-newline": [
 			"error",
 			{
-				"multiline": true
+				multiline: true
 			}
 		],
 		"object-shorthand": [
 			"error",
 			"always",
 			{
-				"avoidExplicitReturnArrows": true
+				avoidExplicitReturnArrows: true
 			}
 		],
 		"operator-linebreak": "error",
@@ -103,6 +108,7 @@ export default {
 			"never"
 		],
 		"prefer-arrow-callback": "error",
+		"prefer-const": "off",
 		"prefer-object-spread": "error",
 		"prefer-template": "error",
 		"quote-props": [
@@ -121,14 +127,6 @@ export default {
 		"switch-colon-spacing": "error",
 		"template-curly-spacing": "error",
 		"template-tag-spacing": "error",
-		"yield-star-spacing": "error",
-		"indent": [
-			"error",
-			"tab",
-			{
-				"SwitchCase": 1,
-				"MemberExpression": 1
-			}
-		]
+		"yield-star-spacing": "error"
 	}
 }

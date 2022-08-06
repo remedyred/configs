@@ -1,0 +1,5 @@
+export = {
+	extends: [
+		"eslint:recommended"
+	]
+}

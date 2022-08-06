@@ -43,7 +43,7 @@
 	},
 	"tsup": {
 		"entry": [
-			"src/index.ts"
+			"src/**/*.ts"
 		],
 		"clean": true,
 		"format": [

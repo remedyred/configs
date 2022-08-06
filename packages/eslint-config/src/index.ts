@@ -1,11 +1,9 @@
-import recommended from "./recommended"
-import all from './all'
-import base from './base'
-
-export default {
-	configs: {
-		all,
-		base,
-		recommended
-	},
-};
+export = {
+	extends: [
+		"./typescript",
+		"./plugins/json-files",
+		"./plugins/beautiful-sort",
+		"./plugins/sort-class-members"
+	],
+	rules: {}
+}
