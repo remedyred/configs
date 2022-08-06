@@ -1,6 +1,6 @@
 {
 	"name": "@snickbit/eslint-config",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Snickbit eslint config",
 	"license": "MIT",
 	"exports": {
