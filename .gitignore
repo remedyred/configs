@@ -1,0 +1,15 @@
+# hidden folders & junk files
+.*/
+.*
+*.iml
+
+# build files
+dist/
+
+# Dependencies
+node_modules/
+
+# Keep
+!.git*
+!.eslintignore
+!.eslintrc.json
