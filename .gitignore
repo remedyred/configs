@@ -1,15 +1,23 @@
+### Generic template
 # hidden folders & junk files
 .*/
 .*
 *.iml
 
-# build files
-dist/
+# Log files
+logs/
+*.log
 
 # Dependencies
 node_modules/
 
+# Compiled files
+dist/
+
 # Keep
-!.git*
-!.eslintignore
-!.eslintrc.json
+!.*ignore
+!.*rc*
+!.husky/
+
+# Forced
+.npmrc
