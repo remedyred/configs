@@ -3,12 +3,12 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"prepare": "husky install",
 		"fix": "eslint **/*.json --cache --color --fix",
 		"lint": "eslint **/*.json --cache --color",
-		"validate": "renovate-config-validator default.json && renovate-config-validator renovate.json",
+		"prepare": "husky install",
 		"prerelease": "turbo run fix",
-		"release": "pnpm run prerelease && lerna publish"
+		"release": "pnpm run prerelease && lerna publish",
+		"validate": "renovate-config-validator default.json && renovate-config-validator renovate.json"
 	},
 	"devDependencies": {
 		"@lerna-lite/cli": "1.9.1",
