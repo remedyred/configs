@@ -1,6 +1,18 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
-		"config:base"
+		"config:base",
+		"github>snickbit/configs//packages/renovate-config/docker",
+		"github>snickbit/configs//packages/renovate-config/automerge-linters",
+		"github>snickbit/configs//packages/renovate-config/automerge-minor",
+		"github>snickbit/configs//packages/renovate-config/replacements",
+		"github>snickbit/configs//packages/renovate-config/node",
+		"github>snickbit/configs//packages/renovate-config/automerge",
+		"github>snickbit/configs//packages/renovate-config/automerge-lock",
+		"github>snickbit/configs//packages/renovate-config/groups",
+		"github>snickbit/configs//packages/renovate-config/helpers",
+		"github>snickbit/configs//packages/renovate-config/automerge-pin",
+		"github>snickbit/configs//packages/renovate-config/automerge-types",
+		"github>snickbit/configs//packages/renovate-config/automerge-patch"
 	]
 }
