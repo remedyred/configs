@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.4](https://github.com/snickbit/configs/compare/@snickbit/eslint-config@0.0.3...@snickbit/eslint-config@0.0.4) (2022-08-08)
+
+### Bug Fixes
+
+* **eslint:** add typescript dev dep ([7a6f2dc](https://github.com/snickbit/configs/commit/7a6f2dcce8320f2885b13767bbc70f5237f2fa84))
+* **eslint:** set dependencies as optional ([8e835af](https://github.com/snickbit/configs/commit/8e835afc27c4240609b415322611a5b9aa1e834a))
+
 ## [0.0.3](https://github.com/snickbit/shareable-configs/compare/@snickbit/eslint-config@0.0.2...@snickbit/eslint-config@0.0.3) (2022-08-06)
 
 ### Bug Fixes
