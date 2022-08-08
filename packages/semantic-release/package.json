@@ -1,0 +1,58 @@
+{
+	"name": "@snickbit/semantic-release",
+	"version": "0.0.0",
+	"description": "Snickbit semantic-release config",
+	"license": "MIT",
+	"exports": {
+		"require": "./dist/index.js"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "indexer && tsup",
+		"index": "indexer",
+		"prod": "pnpm run build --minify",
+		"watch": "pnpm run build --watch"
+	},
+	"jest": {
+		"noStackTrace": true,
+		"passWithNoTests": true,
+		"preset": "ts-jest",
+		"silent": true,
+		"testEnvironment": "node"
+	},
+	"dependencies": {
+		"@semantic-release/changelog": "^6.0.1",
+		"@semantic-release/commit-analyzer": "^9.0.2",
+		"@semantic-release/git": "^10.0.1",
+		"@semantic-release/github": "^8.0.5",
+		"@semantic-release/npm": "^9.0.1",
+		"@semantic-release/release-notes-generator": "^10.0.3",
+		"conventional-changelog-conventionalcommits": "5.0.0"
+	},
+	"devDependencies": {
+		"@snickbit/indexer": "^2.5.7",
+		"@types/jest": "^27.5.2",
+		"@types/node": "^18.0.2",
+		"@types/semantic-release": "^17.2.4",
+		"jest": "^27.5.1",
+		"semantic-release": "^19.0.3",
+		"ts-jest": "^27.1.5",
+		"tsup": "6.2.1",
+		"typescript": "^4.7.4"
+	},
+	"engines": {
+		"node": ">= 12"
+	},
+	"tsup": {
+		"entry": [
+			"src/index.ts"
+		],
+		"clean": true,
+		"dts": false,
+		"format": [
+			"cjs"
+		]
+	}
+}
