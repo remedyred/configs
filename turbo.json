@@ -6,6 +6,9 @@
 		},
 		"//#fix": {
 			"outputs": []
+		},
+		"//#test": {
+			"outputs": []
 		}
 	}
 }
