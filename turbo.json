@@ -9,6 +9,9 @@
 		},
 		"//#test": {
 			"outputs": []
+		},
+		"//#validate": {
+			"outputs": []
 		}
 	}
 }
