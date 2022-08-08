@@ -4,6 +4,11 @@
 			"matchUpdateTypes": ["patch"],
 			"matchCurrentVersion": "!/^0/",
 			"automerge": true
+		},
+		{
+			"matchUpdateTypes": ["patch"],
+			"matchPackagePatterns": ["^esbuild"],
+			"automerge": true
 		}
 	]
 }
