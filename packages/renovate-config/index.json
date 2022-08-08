@@ -4,7 +4,6 @@
 		"config:base",
 		"github>snickbit/configs//packages/renovate-config/docker",
 		"github>snickbit/configs//packages/renovate-config/automerge-linters",
-		"github>snickbit/configs//packages/renovate-config/automerge-minor",
 		"github>snickbit/configs//packages/renovate-config/replacements",
 		"github>snickbit/configs//packages/renovate-config/node",
 		"github>snickbit/configs//packages/renovate-config/automerge",
