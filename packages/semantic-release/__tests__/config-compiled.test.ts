@@ -5,8 +5,8 @@ describe('config-compiled', () => {
 		expect(config).toBeInstanceOf(Object)
 	})
 
-	it('should have a branches property equalling ["main"]', () => {
-		expect(config.branches).toStrictEqual(['main'])
+	it('should have a branches property equalling ["main", "next"]', () => {
+		expect(config.branches).toStrictEqual(['main', 'next'])
 	})
 
 	describe('plugins', () => {
