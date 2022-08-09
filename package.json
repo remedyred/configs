@@ -22,7 +22,7 @@
 		"testEnvironment": "node"
 	},
 	"devDependencies": {
-		"@lerna-lite/cli": "1.9.1",
+		"@lerna-lite/cli": "1.10.0",
 		"@snickbit/eslint-config": "workspace:*",
 		"@types/jest": "28.1.6",
 		"@typescript-eslint/eslint-plugin": "5.32.0",
