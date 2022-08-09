@@ -3,8 +3,8 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"fix": "eslint **/*.json --cache --color --fix",
-		"lint": "eslint **/*.json --cache --color",
+		"fix": "eslint **/*.{ts,json} --cache --color --fix",
+		"lint": "eslint **/*.{ts,json} --cache --color",
 		"prepare": "husky install",
 		"prerelease": "turbo run prod fix test validate",
 		"release": "pnpm run prerelease && lerna publish",
@@ -12,7 +12,7 @@
 		"validate": "renovate-config-validator default.json && renovate-config-validator renovate.json"
 	},
 	"lint-staged": {
-		"*.{js,jsx,ts,tsx,json}": "eslint --fix --cache"
+		"*.{ts,json}": "eslint --fix --cache"
 	},
 	"jest": {
 		"noStackTrace": true,
