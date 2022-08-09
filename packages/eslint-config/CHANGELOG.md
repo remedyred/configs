@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.5](https://github.com/snickbit/configs/compare/@snickbit/eslint-config@0.0.4...@snickbit/eslint-config@0.0.5) (2022-08-09)
+
+### Bug Fixes
+
+* **eslint:** extend vue from recommended ([f26e164](https://github.com/snickbit/configs/commit/f26e164728eb911af666f602e7bd14c5facf82ae))
+
 ## [0.0.4](https://github.com/snickbit/configs/compare/@snickbit/eslint-config@0.0.3...@snickbit/eslint-config@0.0.4) (2022-08-08)
 
 ### Bug Fixes
