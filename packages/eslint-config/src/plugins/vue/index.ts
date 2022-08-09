@@ -1,6 +1,1 @@
-export = {
-	extends: [
-		"./config",
-		"./rules"
-	]
-}
+export = {extends: ['./config', './rules']}

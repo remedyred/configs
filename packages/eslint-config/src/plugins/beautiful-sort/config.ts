@@ -1,5 +1,1 @@
-export = {
-	plugins: [
-		"beautiful-sort"
-	]
-}
+export = {plugins: ['beautiful-sort']}

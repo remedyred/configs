@@ -1,6 +1,6 @@
 export = {
 	rules: {
-		"json-files/require-unique-dependency-names": "error",
-		"json-files/sort-package-json": "error",
+		'json-files/require-unique-dependency-names': 'error',
+		'json-files/sort-package-json': 'error'
 	}
 }

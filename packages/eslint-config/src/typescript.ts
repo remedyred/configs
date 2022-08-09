@@ -1,7 +1,4 @@
 export = {
-	extends: [
-		"./base",
-		"./plugins/typescript-eslint",
-	],
+	extends: ['./base', './plugins/typescript-eslint'],
 	rules: {}
 }

@@ -1,5 +1,1 @@
-export = {
-	plugins: [
-		"sort-class-members",
-	],
-}
+export = {plugins: ['sort-class-members']}
