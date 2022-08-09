@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.7](https://github.com/snickbit/configs/compare/@snickbit/eslint-config@0.0.6...@snickbit/eslint-config@0.0.7) (2022-08-09)
+
+### Bug Fixes
+
+* **eslint:** correct exports ([67da36d](https://github.com/snickbit/configs/commit/67da36dcb54b19710f7f3056d1cc09d5af7c9844))
+
 ## [0.0.6](https://github.com/snickbit/configs/compare/@snickbit/eslint-config@0.0.5...@snickbit/eslint-config@0.0.6) (2022-08-09)
 
 ### Bug Fixes
