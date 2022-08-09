@@ -1,1 +1,1 @@
-export default ['@semantic-release/github', {assets: ['pack/*.tgz', 'CHANGELOG.md']}]
+export default ['@semantic-release/github', {assets: 'pack/*.tgz'}]
