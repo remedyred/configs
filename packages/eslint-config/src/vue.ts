@@ -1,7 +1,4 @@
 export = {
-	extends: [
-		"./typescript",
-		"./plugins/vue",
-	],
+	extends: ['./index', './plugins/vue'],
 	rules: {}
 }
