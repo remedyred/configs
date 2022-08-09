@@ -12,4 +12,4 @@ const config: Partial<SemanticRelease.GlobalConfig> = {
 	plugins
 }
 
-export default config
+export = config
