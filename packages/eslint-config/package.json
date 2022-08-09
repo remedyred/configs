@@ -4,7 +4,12 @@
 	"description": "Snickbit eslint config",
 	"license": "MIT",
 	"exports": {
-		"require": "./dist/index.js"
+		".": "./dist/index.js",
+		"./vue": "./dist/vue.js",
+		"./typescript": "./dist/typescript.js",
+		"./json": "./dist/json.js",
+		"./sorting": "./dist/sorting.js",
+		"./base": "./dist/base.js"
 	},
 	"main": "./dist/index.js",
 	"files": [
