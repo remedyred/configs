@@ -12,6 +12,10 @@
 		},
 		"//#validate": {
 			"outputs": []
+		},
+		"prod": {
+			"dependsOn": ["^prod"],
+			"outputs": ["dist/**"]
 		}
 	}
 }
