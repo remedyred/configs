@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.6](https://github.com/snickbit/configs/compare/@snickbit/eslint-config@0.0.5...@snickbit/eslint-config@0.0.6) (2022-08-09)
+
+### Bug Fixes
+
+* **eslint:** duplicate recommended in vue ([1e6bf59](https://github.com/snickbit/configs/commit/1e6bf5986b0967a1bf3eff528f101f3f0e62bd07))
+
 ## [0.0.5](https://github.com/snickbit/configs/compare/@snickbit/eslint-config@0.0.4...@snickbit/eslint-config@0.0.5) (2022-08-09)
 
 ### Bug Fixes
