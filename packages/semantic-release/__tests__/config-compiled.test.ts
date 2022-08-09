@@ -1,6 +1,6 @@
-import config from '../src'
+import config from '../dist'
 
-describe('config', () => {
+describe('config-compiled', () => {
 	it('should be an object', () => {
 		expect(config).toBeInstanceOf(Object)
 	})
