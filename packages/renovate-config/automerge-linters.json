@@ -2,7 +2,7 @@
 	"packageRules": [
 		{
 			"matchDepTypes": ["devDependencies"],
-			"matchPackagePatterns": ["lint", "prettier"],
+			"matchPackagePatterns": ["lint", "prettier", "@snickbit/eslint-config"],
 			"automerge": true
 		}
 	]
