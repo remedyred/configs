@@ -18,6 +18,9 @@
 		"noStackTrace": true,
 		"passWithNoTests": true,
 		"preset": "ts-jest",
+		"projects": [
+			"<rootDir>/packages/*"
+		],
 		"silent": true,
 		"testEnvironment": "node"
 	},

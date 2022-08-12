@@ -1,0 +1,8 @@
+{
+	"packageRules": [
+		{
+			"matchPackagePrefixes": ["@snickbit", "@remedyred"],
+			"stabilityDays": 1
+		}
+	]
+}
