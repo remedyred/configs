@@ -1,0 +1,12 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"./plugins/*",
+		"./automerge/automerge",
+		"./automerge/automerge-linters",
+		"./automerge/automerge-lock",
+		"./automerge/automerge-patch",
+		"./automerge/automerge-pin",
+		"./automerge/automerge-types"
+	]
+}
