@@ -5,6 +5,7 @@
 			"outputs": []
 		},
 		"//#fix": {
+			"dependsOn": ["^prod"],
 			"outputs": []
 		},
 		"//#test": {

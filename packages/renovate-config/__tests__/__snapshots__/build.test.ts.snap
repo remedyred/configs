@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`build.ts buildFromDefinitionFile should reliably return a valid config 1`] = `
+Object {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "assignees": Array [
+    "snickbit",
+  ],
+  "automerge": true,
+  "extends": Array [
+    "preview:dockerCompose",
+    "preview:dockerVersions",
+    "regexManagers:dockerfileVersions",
+    "workarounds:doNotUpgradeFromAlpineStableToEdge",
+    "group:recommended",
+    "group:monorepos",
+    "helpers:disableTypesNodeMajor",
+    "npm:unpublishSafe",
+    "workarounds:typesNodeVersioning",
+    "replacements:all",
+  ],
+  "ignoreDeps": Array [],
+  "lockFileMaintenance": Object {
+    "automerge": true,
+    "automergeType": "pr",
+    "enabled": true,
+    "platformAutomerge": true,
+  },
+  "packageRules": Array [
+    Object {
+      "matchPackagePrefixes": Array [
+        "@snickbit",
+        "@remedyred",
+      ],
+      "stabilityDays": 1,
+    },
+    Object {
+      "automerge": true,
+      "matchDepTypes": Array [
+        "devDependencies",
+      ],
+      "matchPackagePatterns": Array [
+        "lint",
+        "prettier",
+        "@snickbit/eslint-config",
+      ],
+    },
+    Object {
+      "automerge": true,
+      "matchCurrentVersion": "!/^0/",
+      "matchUpdateTypes": Array [
+        "minor",
+      ],
+    },
+    Object {
+      "automerge": true,
+      "matchCurrentVersion": "!/^0/",
+      "matchUpdateTypes": Array [
+        "patch",
+      ],
+    },
+    Object {
+      "automerge": true,
+      "matchPackagePatterns": Array [
+        "^esbuild",
+      ],
+      "matchUpdateTypes": Array [
+        "patch",
+      ],
+    },
+    Object {
+      "automerge": true,
+      "groupName": "@types packages (minor or patch)",
+      "matchPackagePatterns": Array [
+        "^@types/",
+      ],
+      "matchUpdateTypes": Array [
+        "minor",
+        "patch",
+      ],
+    },
+  ],
+  "pin": Object {
+    "automerge": true,
+  },
+}
+`;
