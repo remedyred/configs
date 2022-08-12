@@ -28,6 +28,13 @@ Object {
   },
   "packageRules": Array [
     Object {
+      "matchPackagePrefixes": Array [
+        "@snickbit",
+        "@remedyred",
+      ],
+      "stabilityDays": 1,
+    },
+    Object {
       "automerge": true,
       "matchDepTypes": Array [
         "devDependencies",
@@ -36,6 +43,13 @@ Object {
         "lint",
         "prettier",
         "@snickbit/eslint-config",
+      ],
+    },
+    Object {
+      "automerge": true,
+      "matchCurrentVersion": "!/^0/",
+      "matchUpdateTypes": Array [
+        "minor",
       ],
     },
     Object {
@@ -64,13 +78,6 @@ Object {
         "minor",
         "patch",
       ],
-    },
-    Object {
-      "matchPackagePrefixes": Array [
-        "@snickbit",
-        "@remedyred",
-      ],
-      "stabilityDays": 1,
     },
   ],
   "pin": Object {
