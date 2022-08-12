@@ -35,7 +35,7 @@
 		"husky": "8.0.1",
 		"jest": "28.1.3",
 		"lint-staged": "13.0.3",
-		"renovate": "32.153.1",
+		"renovate": "32.156.0",
 		"sort-package-json": "1.57.0",
 		"ts-jest": "28.0.7",
 		"turbo": "1.4.2",
