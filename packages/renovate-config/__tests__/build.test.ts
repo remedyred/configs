@@ -1,7 +1,7 @@
 import {buildFromDefinitionFile} from '../src/actions/build'
 import {validateConfig} from 'renovate/dist/config/validation'
-import {unixify} from 'fast-glob/out/utils/path'
 import * as fs from 'fs'
+import unixify from 'unixify'
 import path from 'path'
 
 const VALID_CONFIG = {errors: [], warnings: []}

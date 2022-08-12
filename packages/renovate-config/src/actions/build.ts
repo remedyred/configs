@@ -5,7 +5,7 @@ import {getFileJson, saveFileJson} from '@snickbit/node-utilities'
 import {validateConfig} from 'renovate/dist/config/validation'
 import {mergeChildConfig} from 'renovate/dist/config/utils'
 import {RenovateConfig} from 'renovate/dist/config/types'
-import {unixify} from 'fast-glob/out/utils/path'
+import unixify from 'unixify'
 import fg from 'fast-glob'
 import path from 'path'
 
