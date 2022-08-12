@@ -2276,14 +2276,14 @@ packages:
       graceful-fs: 4.2.10
     dev: true
 
-  /@pnpm/read-project-manifest/3.0.8:
-    resolution: {integrity: sha512-GbB+FLRmQgCIIwM16ZKG7/MlBd6IDG2lvCTDyhyJp7x4TgS7voSU1L5N87GI4dPjeB7Ferm1iD5LZBY7ckbuLw==}
+  /@pnpm/read-project-manifest/3.0.9:
+    resolution: {integrity: sha512-27j40C48hA/tqsCiqk9ApJxp2g6WGrrj2RSs0NKhsSHynxAuA1tIvwatNISQbAiMjZiu1lfhzhq8m1QdblyNmA==}
     engines: {node: '>=14.6'}
     dependencies:
       '@pnpm/error': 3.0.1
       '@pnpm/graceful-fs': 2.0.0
       '@pnpm/types': 8.5.0
-      '@pnpm/write-project-manifest': 3.0.6
+      '@pnpm/write-project-manifest': 3.0.7
       detect-indent: 6.1.0
       fast-deep-equal: 3.1.3
       is-windows: 1.0.2
@@ -2317,8 +2317,8 @@ packages:
     engines: {node: '>=14.6'}
     dev: true
 
-  /@pnpm/write-project-manifest/3.0.6:
-    resolution: {integrity: sha512-6ninH9tnSTgVvdmOia6+FffojTcbYzZBgG7olxQCfxrwqeof4bdBq5s+7a5uLLrko7VOUZBOM5Ag0twisNpLHg==}
+  /@pnpm/write-project-manifest/3.0.7:
+    resolution: {integrity: sha512-rMgIWR52asESg1D7Cp/vBi3dBsv18iUWPvvtYNynrcOjRdE3NsH5CAdfZP/XN6HJF6CSY8rS9W4YC5Q3JGtxiw==}
     engines: {node: '>=14.6'}
     dependencies:
       '@pnpm/types': 8.5.0
@@ -5076,11 +5076,11 @@ packages:
     dependencies:
       to-regex-range: 5.0.1
 
-  /find-packages/9.0.8:
-    resolution: {integrity: sha512-t83Z4JIqGl0jf52Kf+2CpztPvtynmuhN34DM0edFdw+8MiZeABswFUmqrmpIDkUWvdV2QElJo6Fh5wpa+VW6Dg==}
+  /find-packages/9.0.9:
+    resolution: {integrity: sha512-XkzVZSz5YTBYdDvUEQrTTRa5PSrYde7AU/ax0ic/USy+IEoHI6RqQQQxZxq6KFfsJngbDfIf5MM2gyrQ9Ztzjg==}
     engines: {node: '>=14.6'}
     dependencies:
-      '@pnpm/read-project-manifest': 3.0.8
+      '@pnpm/read-project-manifest': 3.0.9
       '@pnpm/types': 8.5.0
       fast-glob: 3.2.11
       p-filter: 2.1.0
@@ -8571,7 +8571,7 @@ packages:
       emojibase-regex: 6.0.1
       extract-zip: 2.0.1
       fast-safe-stringify: 2.1.1
-      find-packages: 9.0.8
+      find-packages: 9.0.9
       find-up: 5.0.0
       fs-extra: 10.1.0
       git-url-parse: 12.0.0
