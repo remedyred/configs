@@ -51,6 +51,9 @@ async function generateFromDefinitionFile(source: string, config: Config): Promi
 
 export async function buildFromDefinitionFile(source: string, cwd?: string): Promise<RenovateConfig> {
 	const definition = getFileJson(source)
+	if (!definition) {
+		throw new Error(`Definition file not found: ${source}`)
+	}
 
 	const definitionConfig: SubConfig = {
 		source,
