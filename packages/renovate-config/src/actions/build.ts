@@ -49,13 +49,13 @@ async function generateFromDefinitionFile(source: string, config: Config): Promi
 	}
 }
 
-export async function buildFromDefinitionFile(source: string): Promise<RenovateConfig> {
+export async function buildFromDefinitionFile(source: string, cwd?: string): Promise<RenovateConfig> {
 	const definition = getFileJson(source)
 
 	const definitionConfig: SubConfig = {
 		source,
 		fileSources: objectPull(definition, 'extends') || [],
-		cwd: path.dirname(source)
+		cwd: cwd || path.dirname(source)
 	}
 
 	let results: RenovateConfig = {}
