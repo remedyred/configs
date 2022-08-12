@@ -5,6 +5,7 @@ import {getFileJson, saveFileJson} from '@snickbit/node-utilities'
 import {validateConfig} from 'renovate/dist/config/validation'
 import {mergeChildConfig} from 'renovate/dist/config/utils'
 import {RenovateConfig} from 'renovate/dist/config/types'
+import {unixify} from 'fast-glob/out/utils/path'
 import fg from 'fast-glob'
 import path from 'path'
 
@@ -64,6 +65,17 @@ export async function buildFromDefinitionFile(source: string): Promise<RenovateC
 	return results
 }
 
+export function cleanSource(fileSource: string, cwd?: string): string {
+	let cleanSource = unixify(fileSource).replace(/^\.\//, '').replace(/\/\*$/, '/**/*')
+	if (cwd) {
+		cleanSource = path.posix.join(cwd, cleanSource)
+	}
+	if (!cleanSource.endsWith('.json')) {
+		cleanSource += '.json'
+	}
+	return cleanSource
+}
+
 export async function buildFromDefinition(config: SubConfig): Promise<RenovateConfig> {
 	let combinedFiles: Record<string, unknown> = {}
 	const extensions: string[] = []
@@ -71,12 +83,7 @@ export async function buildFromDefinition(config: SubConfig): Promise<RenovateCo
 
 	for (const fileSource of config.fileSources) {
 		if (fileSource.startsWith('./')) {
-			let cleanSource = fileSource.replace(/^\.\//, '').replace(/[\\/]\*$/, '/**/*')
-			cleanSource = path.posix.join(config.cwd, cleanSource)
-			if (!cleanSource.endsWith('.json')) {
-				cleanSource += '.json'
-			}
-			fileSources.push(cleanSource)
+			fileSources.push(cleanSource(fileSource, config.cwd))
 		} else {
 			extensions.push(fileSource)
 		}
