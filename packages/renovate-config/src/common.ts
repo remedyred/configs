@@ -19,5 +19,5 @@ export interface SubConfig extends Omit<Config, 'output'> {
 
 export const defaultConfig: Config = {
 	source: `config`,
-	output: `.`
+	output: `../..`
 }
