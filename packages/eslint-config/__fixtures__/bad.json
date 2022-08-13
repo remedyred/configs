@@ -1,0 +1,45 @@
+{
+"_id": "62f81535cade7895ca27071c",
+"index": 0,
+"guid": "74c6813b-fb4d-44d4-aec2-572132c3c379",
+"isActive": true,
+"balance": "$1,818.99",
+"picture": "http://placehold.it/32x32",
+"age": 38,
+"eyeColor": "blue",
+"name": "Natalie Sanchez",
+"gender": "female",
+"company": "SUPPORTAL",
+"email": "nataliesanchez@supportal.com",
+"phone": "+1 (933) 449-2919",
+"address": "914 Albemarle Terrace, Grandview, Mississippi, 7794",
+"about": "Veniam esse esse veniam tempor commodo et occaecat reprehenderit. Ullamco sunt minim consequat magna pariatur. Ad Lorem eiusmod sint laborum labore. Consectetur cupidatat ad ea elit occaecat proident fugiat deserunt sint. Officia exercitation anim excepteur aute voluptate. Dolor sunt commodo incididunt laboris sint.\r\n",
+"registered": "2019-07-18T09:36:54 +04:00",
+"latitude": -47.269166,
+"longitude": 106.099233,
+"tags": [
+"cupidatat",
+"mollit",
+"elit",
+"ea",
+"voluptate",
+"cupidatat",
+"commodo"
+],
+"friends": [
+{
+"id": 0,
+"name": "Lizzie Potter"
+},
+{
+"id": 1,
+"name": "Kirsten Solomon"
+},
+{
+"id": 2,
+"name": "Dickson Moran"
+}
+],
+"greeting": "Hello, Natalie Sanchez! You have 8 unread messages.",
+"favoriteFruit": "apple"
+}
