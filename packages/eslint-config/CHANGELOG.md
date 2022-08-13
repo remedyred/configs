@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.8](https://github.com/snickbit/configs/compare/@snickbit/eslint-config@0.0.7...@snickbit/eslint-config@0.0.8) (2022-08-13)
+
+### Bug Fixes
+
+* **eslint:** adjust dependencies to always be loaded ([b3b190d](https://github.com/snickbit/configs/commit/b3b190dbf9cdb29902842234b8691a1efd74b2b8))
+* **eslint:** refactor and simplify files, add tests ([#19](https://github.com/snickbit/configs/issues/19)) ([7bc7a17](https://github.com/snickbit/configs/commit/7bc7a17216eb9d1387ec3dffa267057269f513c8))
+
 ## [0.0.7](https://github.com/snickbit/configs/compare/@snickbit/eslint-config@0.0.6...@snickbit/eslint-config@0.0.7) (2022-08-09)
 
 ### Bug Fixes
