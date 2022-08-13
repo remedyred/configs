@@ -18,9 +18,15 @@
 	"scripts": {
 		"build": "tsup",
 		"prod": "pnpm run build --minify",
-		"watch": "pnpm run build --watch"
+		"watch": "pnpm run build --watch",
+		"test": "jest"
+	},
+	"jest": {
+		"preset": "ts-jest",
+		"testEnvironment": "node"
 	},
 	"dependencies": {
+		"@types/eslint": "^8.4.5",
 		"@typescript-eslint/eslint-plugin": "^5.33.0",
 		"@typescript-eslint/parser": "^5.30.5",
 		"eslint-plugin-beautiful-sort": "^2.0.3",
@@ -31,7 +37,12 @@
 		"vue-eslint-parser": "^9.0.3"
 	},
 	"devDependencies": {
+		"@types/jest": "^28.0.0",
+		"@types/node": "^18.0.2",
 		"eslint": "8.21.0",
+		"fast-glob": "^3.2.11",
+		"jest": "^28.0.0",
+		"ts-jest": "^28.0.0",
 		"tsup": "6.2.2",
 		"typescript": "4.7.4"
 	},
