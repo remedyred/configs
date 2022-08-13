@@ -5,12 +5,7 @@
 	"license": "MIT",
 	"exports": {
 		".": "./dist/configs/index.js",
-		"./all": "./dist/configs/all.js",
-		"./base": "./dist/configs/base.js",
-		"./json": "./dist/configs/json.js",
-		"./sorting": "./dist/configs/sorting.js",
-		"./typescript": "./dist/configs/typescript.js",
-		"./vue": "./dist/configs/vue.js"
+		"./*": "./dist/configs/*.js"
 	},
 	"main": "./dist/index.js",
 	"files": [
