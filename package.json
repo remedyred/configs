@@ -9,7 +9,7 @@
 		"prerelease": "turbo run prod fix test validate",
 		"release": "pnpm run prerelease && lerna publish",
 		"test": "jest",
-		"validate": "renovate-config-validator default.json && renovate-config-validator renovate.json"
+		"validate": "renovate-config-validator default.json all.json renovate.json"
 	},
 	"lint-staged": {
 		"*.{ts,json}": "eslint --fix --cache"
