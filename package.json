@@ -3,8 +3,8 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"fix": "eslint **/*.{ts,json} --cache --color --fix",
-		"lint": "eslint **/*.{ts,json} --cache --color",
+		"fix": "eslint . --cache --color --fix",
+		"lint": "eslint . --cache --color",
 		"prepare": "husky install",
 		"prerelease": "turbo run prod fix test validate",
 		"release": "pnpm run prerelease && lerna publish",
