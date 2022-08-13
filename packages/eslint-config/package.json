@@ -4,12 +4,8 @@
 	"description": "Snickbit eslint config",
 	"license": "MIT",
 	"exports": {
-		".": "./dist/index.js",
-		"./vue": "./dist/vue.js",
-		"./typescript": "./dist/typescript.js",
-		"./json": "./dist/json.js",
-		"./sorting": "./dist/sorting.js",
-		"./base": "./dist/base.js"
+		".": "./dist/configs/index.js",
+		"./*": "./dist/configs/*.js"
 	},
 	"main": "./dist/index.js",
 	"files": [
@@ -18,8 +14,8 @@
 	"scripts": {
 		"build": "tsup",
 		"prod": "pnpm run build --minify",
-		"watch": "pnpm run build --watch",
-		"test": "jest"
+		"test": "jest",
+		"watch": "pnpm run build --watch"
 	},
 	"jest": {
 		"preset": "ts-jest",

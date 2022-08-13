@@ -4,6 +4,6 @@ export = {
 		browser: true,
 		es2021: true
 	},
-	extends: ['./plugins/eslint'],
+	extends: ['../plugins/eslint'],
 	rules: {}
 }
