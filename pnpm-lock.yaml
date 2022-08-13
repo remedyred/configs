@@ -44,6 +44,7 @@ importers:
 
   packages/eslint-config:
     specifiers:
+      '@snickbit/node-utilities': ^4.4.6
       '@types/eslint': ^8.4.5
       '@types/jest': ^28.0.0
       '@types/node': ^18.0.2
@@ -72,6 +73,7 @@ importers:
       eslint-plugin-vue: 9.3.0_eslint@8.21.0
       vue-eslint-parser: 9.0.3_eslint@8.21.0
     devDependencies:
+      '@snickbit/node-utilities': 4.4.6
       '@types/jest': 28.1.6
       '@types/node': 18.6.5
       eslint: 8.21.0
@@ -2577,7 +2579,7 @@ packages:
     resolution: {integrity: sha512-hP/kU0+g9hRuvv1dtPEpq6qdtd0rxdLFLj/GZ6f8PqxqFTdxj4OeWtFn64Xlr1scsAQz9PYFCmf4hZ6tO+fGrw==}
     engines: {node: '>= 12'}
     dependencies:
-      '@snickbit/utilities': 3.3.0
+      '@snickbit/utilities': 3.3.1
 
   /@snickbit/indexer/2.5.7:
     resolution: {integrity: sha512-5lee6hYSa+nih2GOcNWpW1AGLzzthN6wF4yVkWLy4RBZtjc+7lBt2KPtd8UJeuf7M5idSEH8zfv2G/EztboRVA==}
@@ -2628,13 +2630,27 @@ packages:
       nanospinner: 1.1.0
       prompts: 2.4.2
 
+  /@snickbit/node-utilities/4.4.6:
+    resolution: {integrity: sha512-DsKWpObdunYPkCNOS6xdtVgbEqa9qMQniOZE3jf98AmESgbezbhU+91+0aOG0Q6vRdjF+7K08Xjl7R4ixbWldg==}
+    engines: {node: '>= 12'}
+    dependencies:
+      '@snickbit/out': 2.0.37
+      '@snickbit/utilities': 3.3.1
+      ansi-styles-template: 1.0.0
+      cli-progress: 3.11.2
+      is-wsl: 2.2.0
+      lodash.throttle: 4.1.1
+      nanospinner: 1.1.0
+      prompts: 2.4.2
+    dev: true
+
   /@snickbit/out/2.0.37:
     resolution: {integrity: sha512-fTVcE5QKVSNKMddUVqwXGsc5jx87L8sKm6ufA1z/02ygibz/pCGqmDI5lQZsv7qIFwm+9h0r3ydk59RCf7gw8Q==}
     engines: {node: '>= 12'}
     dependencies:
       '@snickbit/ansi': 0.0.10
       '@snickbit/cycle': 0.0.29
-      '@snickbit/utilities': 3.3.0
+      '@snickbit/utilities': 3.3.1
       ansi-styles-template: 1.0.0
       browser-or-node: 2.0.0
       node-inspect-extracted: 1.1.0
@@ -2644,11 +2660,23 @@ packages:
     resolution: {integrity: sha512-l+8snpVb8ebef5vmY06B6Q8V0X7F4wtjZOskVSKOh6fNyO8o6tS6N0N8UHdJXsE7AYM4p0Vd4qIk2KrSSDynRw==}
     engines: {node: '>= 12'}
 
+  /@snickbit/plural/0.0.5:
+    resolution: {integrity: sha512-cU0brdILQdpe6MJ6MoqV5c5/1xvHcG8BYnJV6UQHJWpNOo/6klgq1Pqt5AO/DGxVz9j4z+F7JN7woXXa9o8GQg==}
+    engines: {node: '>= 12'}
+
   /@snickbit/utilities/3.3.0:
     resolution: {integrity: sha512-3+NXEykygauvgOeTrb3jbpGXj7ueHZwIz0q3lSRQd4XpcujgfYGLencQYe51FqsgmhLvrF19oWJMVy4uq2TIkA==}
     engines: {node: '>= 12'}
     dependencies:
       '@snickbit/plural': 0.0.4
+      just-camel-case: 6.1.1
+      nanoid: 3.3.4
+
+  /@snickbit/utilities/3.3.1:
+    resolution: {integrity: sha512-wPteAd4d3OXFV+ah37uDWIF9rmhQzWLS0zSxc4/19VQ+tGgUky2o7/nDhhjHHmYWIYOZ9MOrhz6yW0TZ3GF5bg==}
+    engines: {node: '>= 12'}
+    dependencies:
+      '@snickbit/plural': 0.0.5
       just-camel-case: 6.1.1
       nanoid: 3.3.4
 
