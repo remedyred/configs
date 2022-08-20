@@ -979,26 +979,157 @@ Object {
 exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should return the proper lint results 1`] = `
 Array [
   Object {
-    "errorCount": 1,
-    "fatalErrorCount": 1,
+    "errorCount": 6,
+    "fatalErrorCount": 0,
     "filePath": "C:\\\\Data\\\\Development\\\\Projects\\\\Packages\\\\configs\\\\packages\\\\eslint-config\\\\__fixtures__\\\\bad.js",
-    "fixableErrorCount": 0,
+    "fixableErrorCount": 6,
     "fixableWarningCount": 0,
     "messages": Array [
       Object {
-        "column": 205,
-        "fatal": true,
-        "line": 1,
-        "message": "Parsing error: ';' expected.",
-        "ruleId": null,
+        "column": 10,
+        "endColumn": 16,
+        "endLine": 4,
+        "line": 4,
+        "message": "'sample' is defined but never used.",
+        "messageId": "unusedVar",
+        "nodeType": "Identifier",
+        "ruleId": "@typescript-eslint/no-unused-vars",
+        "severity": 1,
+      },
+      Object {
+        "column": 27,
+        "endColumn": 28,
+        "endLine": 4,
+        "fix": Object {
+          "range": Array [
+            96,
+            96,
+          ],
+          "text": "
+",
+        },
+        "line": 4,
+        "message": "Statement inside of curly braces should be on next line.",
+        "messageId": "blockSameLine",
+        "nodeType": "Punctuator",
+        "ruleId": "@typescript-eslint/brace-style",
+        "severity": 2,
+      },
+      Object {
+        "column": 50,
+        "endColumn": 51,
+        "endLine": 4,
+        "fix": Object {
+          "range": Array [
+            119,
+            119,
+          ],
+          "text": "
+",
+        },
+        "line": 4,
+        "message": "Statement inside of curly braces should be on next line.",
+        "messageId": "blockSameLine",
+        "nodeType": "Punctuator",
+        "ruleId": "@typescript-eslint/brace-style",
+        "severity": 2,
+      },
+      Object {
+        "column": 80,
+        "endColumn": 81,
+        "endLine": 4,
+        "fix": Object {
+          "range": Array [
+            148,
+            148,
+          ],
+          "text": "
+",
+        },
+        "line": 4,
+        "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+        "messageId": "singleLineClose",
+        "nodeType": "Punctuator",
+        "ruleId": "@typescript-eslint/brace-style",
+        "severity": 2,
+      },
+      Object {
+        "column": 134,
+        "endColumn": 139,
+        "endLine": 4,
+        "line": 4,
+        "message": "'array' is never reassigned. Use 'const' instead.",
+        "messageId": "useConst",
+        "nodeType": "Identifier",
+        "ruleId": "prefer-const",
+        "severity": 1,
+      },
+      Object {
+        "column": 181,
+        "endColumn": 182,
+        "endLine": 4,
+        "fix": Object {
+          "range": Array [
+            250,
+            250,
+          ],
+          "text": "
+",
+        },
+        "line": 4,
+        "message": "Statement inside of curly braces should be on next line.",
+        "messageId": "blockSameLine",
+        "nodeType": "Punctuator",
+        "ruleId": "@typescript-eslint/brace-style",
+        "severity": 2,
+      },
+      Object {
+        "column": 209,
+        "endColumn": 210,
+        "endLine": 4,
+        "fix": Object {
+          "range": Array [
+            277,
+            277,
+          ],
+          "text": "
+",
+        },
+        "line": 4,
+        "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+        "messageId": "singleLineClose",
+        "nodeType": "Punctuator",
+        "ruleId": "@typescript-eslint/brace-style",
+        "severity": 2,
+      },
+      Object {
+        "column": 223,
+        "endColumn": 224,
+        "endLine": 4,
+        "fix": Object {
+          "range": Array [
+            291,
+            291,
+          ],
+          "text": "
+",
+        },
+        "line": 4,
+        "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
+        "messageId": "singleLineClose",
+        "nodeType": "Punctuator",
+        "ruleId": "@typescript-eslint/brace-style",
         "severity": 2,
       },
     ],
-    "source": "function sample(arr, req) {	arr = arr.sort(() => {		return 0.5 - Math.random()	});																				let i = 0,																					array = [];																				while (i < req) {		array.push(arr[i])		++i	}	return array}
+    "source": "// noinspection JSUnusedGlobalSymbols,JSAnnotator
+// @formatter:off
+
+function sample(arr, req) {	arr = arr.sort(() => {		return 0.5 - Math.random()	});																				let i = 0,																					array = [];																				while (i < req) {		array.push(arr[i]);		++i	}	return array}
 ",
     "suppressedMessages": Array [],
     "usedDeprecatedRules": Array [],
-    "warningCount": 0,
+    "warningCount": 2,
   },
 ]
 `;
