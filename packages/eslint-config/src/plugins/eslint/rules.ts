@@ -1,8 +1,12 @@
 export = {
 	rules: {
+		// todo: re-evaluate array-bracket / array-element rules
 		'array-bracket-newline': ['error', {minItems: 4}],
 		'array-bracket-spacing': ['error', 'never', {arraysInArrays: true}],
-		'array-element-newline': ['error', {minItems: 4}],
+		'array-element-newline': ['error', {
+			ArrayExpression: 'consistent',
+			ArrayPattern: {minItems: 3}
+		}],
 		'arrow-parens': ['error', 'as-needed'],
 		'arrow-spacing': 'error',
 		'comma-style': ['error', 'last'],
