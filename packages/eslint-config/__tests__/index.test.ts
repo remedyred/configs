@@ -73,7 +73,7 @@ describe('Validate ESLint configs', () => {
 
 		it('should return the proper lint results', async () => {
 			const lintResults = await linter.lintFile(file)
-			expect(lintResults).toMatchSnapshot()
+			expect(lintResults).toMatchSnapshot([ {filePath: expect.stringMatching(/(bad\.js|bad\.json|bad-ts\.ts)$/)} ])
 		})
 	})
 })

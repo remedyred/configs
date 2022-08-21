@@ -991,7 +991,7 @@ Array [
   Object {
     "errorCount": 6,
     "fatalErrorCount": 0,
-    "filePath": "C:\\\\Data\\\\Development\\\\Projects\\\\Packages\\\\configs\\\\packages\\\\eslint-config\\\\__fixtures__\\\\bad.js",
+    "filePath": StringMatching /\\(bad\\\\\\.js\\|bad\\\\\\.json\\|bad-ts\\\\\\.ts\\)\\$/,
     "fixableErrorCount": 6,
     "fixableWarningCount": 0,
     "messages": Array [
@@ -2135,7 +2135,7 @@ Array [
   Object {
     "errorCount": 0,
     "fatalErrorCount": 0,
-    "filePath": "C:\\\\Data\\\\Development\\\\Projects\\\\Packages\\\\configs\\\\packages\\\\eslint-config\\\\__fixtures__\\\\bad.json",
+    "filePath": StringMatching /\\(bad\\\\\\.js\\|bad\\\\\\.json\\|bad-ts\\\\\\.ts\\)\\$/,
     "fixableErrorCount": 0,
     "fixableWarningCount": 0,
     "messages": Array [],
@@ -3143,7 +3143,7 @@ Array [
   Object {
     "errorCount": 30,
     "fatalErrorCount": 0,
-    "filePath": "C:\\\\Data\\\\Development\\\\Projects\\\\Packages\\\\configs\\\\packages\\\\eslint-config\\\\__fixtures__\\\\bad-ts.ts",
+    "filePath": StringMatching /\\(bad\\\\\\.js\\|bad\\\\\\.json\\|bad-ts\\\\\\.ts\\)\\$/,
     "fixableErrorCount": 26,
     "fixableWarningCount": 3,
     "messages": Array [
