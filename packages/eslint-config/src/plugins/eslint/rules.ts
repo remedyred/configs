@@ -1,8 +1,8 @@
 export = {
 	rules: {
-		'array-bracket-newline': ['error', {multiline: true, minItems: 4}],
-		'array-bracket-spacing': ['error', 'never', {arraysInArrays: true, objectsInArrays: true}],
-		'array-element-newline': ['error', {multiline: true, minItems: 4}],
+		'array-bracket-newline': ['error', {multiline: true, minItems: 4} ],
+		'array-bracket-spacing': ['error', 'never', {arraysInArrays: true, objectsInArrays: true} ],
+		'array-element-newline': ['error', {multiline: true, minItems: 4} ],
 		'arrow-parens': ['error', 'as-needed'],
 		'arrow-spacing': 'error',
 		'comma-style': ['error', 'last'],
@@ -12,23 +12,30 @@ export = {
 		'eol-last': 'error',
 		eqeqeq: 'error',
 		'function-call-argument-newline': ['error', 'consistent'],
-		'function-paren-newline': ['error', {minItems: 6}],
+		'function-paren-newline': ['error', {minItems: 6} ],
 		'generator-star-spacing': 'error',
 		'implicit-arrow-linebreak': 'error',
-		indent: ['error', 'tab', {
-			MemberExpression: 1,
-			SwitchCase: 1
-		}],
+		indent: [
+			'error',
+			'tab',
+			{
+				MemberExpression: 1,
+				SwitchCase: 1
+			}
+		],
 		'key-spacing': 'error',
 		'linebreak-style': 'error',
-		'lines-around-comment': ['error', {
-			allowBlockStart: true,
-			beforeBlockComment: true
-		}],
+		'lines-around-comment': [
+			'error',
+			{
+				allowBlockStart: true,
+				beforeBlockComment: true
+			}
+		],
 		'no-else-return': 'error',
 		'no-lonely-if': 'error',
 		'no-multi-spaces': 'error',
-		'no-multiple-empty-lines': ['error', {max: 1}],
+		'no-multiple-empty-lines': ['error', {max: 1} ],
 		'no-trailing-spaces': 'error',
 		'no-undef-init': 'error',
 		'no-unneeded-ternary': 'error',
@@ -38,8 +45,8 @@ export = {
 		'no-var': 'error',
 		'no-whitespace-before-property': 'error',
 		'nonblock-statement-body-position': ['error', 'below'],
-		'object-curly-newline': ['error', {multiline: true}],
-		'object-shorthand': ['error', 'always', {avoidExplicitReturnArrows: true}],
+		'object-curly-newline': ['error', {multiline: true} ],
+		'object-shorthand': ['error', 'always', {avoidExplicitReturnArrows: true} ],
 		'operator-linebreak': 'error',
 		'padded-blocks': ['warn', 'never'],
 		'prefer-arrow-callback': 'error',

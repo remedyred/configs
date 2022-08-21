@@ -22,6 +22,7 @@ Object {
     "@typescript-eslint",
     "vue",
     "json-files",
+    "sort-annotation",
     "beautiful-sort",
     "sort-class-members",
   ],
@@ -185,6 +186,7 @@ Object {
       "error",
       Object {
         "minItems": 4,
+        "multiline": true,
       },
     ],
     "array-bracket-spacing": Array [
@@ -192,12 +194,14 @@ Object {
       "never",
       Object {
         "arraysInArrays": true,
+        "objectsInArrays": true,
       },
     ],
     "array-element-newline": Array [
       "error",
       Object {
         "minItems": 4,
+        "multiline": true,
       },
     ],
     "arrow-parens": Array [
@@ -560,6 +564,12 @@ Object {
       "error",
     ],
     "semi-style": Array [
+      "error",
+    ],
+    "sort-annotation/sort": Array [
+      "error",
+    ],
+    "sort-annotation/sort-keys": Array [
       "error",
     ],
     "sort-class-members/sort-class-members": Array [
@@ -1156,6 +1166,7 @@ Object {
     "@typescript-eslint",
     "vue",
     "json-files",
+    "sort-annotation",
     "beautiful-sort",
     "sort-class-members",
   ],
@@ -1319,6 +1330,7 @@ Object {
       "error",
       Object {
         "minItems": 4,
+        "multiline": true,
       },
     ],
     "array-bracket-spacing": Array [
@@ -1326,12 +1338,14 @@ Object {
       "never",
       Object {
         "arraysInArrays": true,
+        "objectsInArrays": true,
       },
     ],
     "array-element-newline": Array [
       "error",
       Object {
         "minItems": 4,
+        "multiline": true,
       },
     ],
     "arrow-parens": Array [
@@ -1694,6 +1708,12 @@ Object {
       "error",
     ],
     "semi-style": Array [
+      "error",
+    ],
+    "sort-annotation/sort": Array [
+      "error",
+    ],
+    "sort-annotation/sort-keys": Array [
       "error",
     ],
     "sort-class-members/sort-class-members": Array [
@@ -2148,6 +2168,7 @@ Object {
     "@typescript-eslint",
     "vue",
     "json-files",
+    "sort-annotation",
     "beautiful-sort",
     "sort-class-members",
   ],
@@ -2311,6 +2332,7 @@ Object {
       "error",
       Object {
         "minItems": 4,
+        "multiline": true,
       },
     ],
     "array-bracket-spacing": Array [
@@ -2318,12 +2340,14 @@ Object {
       "never",
       Object {
         "arraysInArrays": true,
+        "objectsInArrays": true,
       },
     ],
     "array-element-newline": Array [
       "error",
       Object {
         "minItems": 4,
+        "multiline": true,
       },
     ],
     "arrow-parens": Array [
@@ -2692,6 +2716,12 @@ Object {
       "error",
     ],
     "semi-style": Array [
+      "error",
+    ],
+    "sort-annotation/sort": Array [
+      "error",
+    ],
+    "sort-annotation/sort-keys": Array [
       "error",
     ],
     "sort-class-members/sort-class-members": Array [

@@ -1,1 +1,1 @@
-export default ['@semantic-release/release-notes-generator', {preset: 'conventionalcommits'}]
+export default ['@semantic-release/release-notes-generator', {preset: 'conventionalcommits'} ]
