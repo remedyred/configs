@@ -8,7 +8,14 @@ for (const plugin of Object.values(pluginConfigs)) {
 }
 
 const config: Partial<SemanticRelease.GlobalConfig> = {
-	branches: ['main', 'next'],
+	branches: [
+		'+([0-9])?(.{+([0-9]),x}).x',
+		'main',
+		'next',
+		'next-major',
+		{name: 'beta', prerelease: true},
+		{name: 'alpha', prerelease: true}
+	],
 	plugins
 }
 

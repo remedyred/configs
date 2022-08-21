@@ -5,8 +5,21 @@ describe('config', () => {
 		expect(config).toBeInstanceOf(Object)
 	})
 
-	it('should have a branches property equalling ["main", "next"]', () => {
-		expect(config.branches).toStrictEqual(['main', 'next'])
+	it('should have a branches that matches the default semantic-release config (with main instead of master)', () => {
+		expect(config.branches).toStrictEqual([
+			'+([0-9])?(.{+([0-9]),x}).x',
+			'main',
+			'next',
+			'next-major',
+			{
+				name: 'beta',
+				prerelease: true
+			},
+			{
+				name: 'alpha',
+				prerelease: true
+			}
+		])
 	})
 
 	describe('plugins', () => {
@@ -32,6 +45,6 @@ describe('config', () => {
 	})
 
 	it('should have a plugin where the first element is "@semantic-release/commit-analyzer" and the second element is {preset: "conventionalcommits"}', () => {
-		expect(config.plugins).toContainEqual(['@semantic-release/commit-analyzer', {preset: 'conventionalcommits'}])
+		expect(config.plugins).toContainEqual(['@semantic-release/commit-analyzer', {preset: 'conventionalcommits'} ])
 	})
 })
