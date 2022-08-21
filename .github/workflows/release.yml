@@ -15,18 +15,23 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 7
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
           cache: 'pnpm'
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
       - name: Build, test, and lint
         run: pnpm run prerelease
+
       - name: Build, test, and lint
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
