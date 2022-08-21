@@ -3,8 +3,7 @@ export = {
 		'./typescript',
 		'../plugins/vue',
 		'../plugins/json-files',
-		'../plugins/beautiful-sort',
-		'../plugins/sort-class-members'
+		'../plugins/sorting'
 	],
 	rules: {}
 }
