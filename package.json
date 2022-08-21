@@ -8,6 +8,7 @@
 		"prepare": "husky install",
 		"prerelease": "turbo run build fix test validate",
 		"release": "turbo run release",
+		"release:ci": "turbo run release --concurrency=1",
 		"test": "jest",
 		"validate": "renovate-config-validator default.json all.json renovate.json"
 	},
