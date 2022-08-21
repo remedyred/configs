@@ -1,21 +1,19 @@
-name: Release
+name: CI
 
 on:
-  push:
-    branches:
-      - main
-      - next
+  pull_request:
+    types: [opened, synchronize]
 
 jobs:
-  release:
-    name: Release
+  build:
+    name: Build and Test
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
+          fetch-depth: 2
 
       - uses: pnpm/action-setup@v2.2.2
         with:
@@ -31,10 +29,4 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build, test, and lint
-        run: pnpm run prerelease
-
-      - name: Build, test, and lint
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm turbo run release:ci
+        run: pnpm turbo run build lint test validate
