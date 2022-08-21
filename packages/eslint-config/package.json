@@ -14,8 +14,15 @@
 	"scripts": {
 		"build": "tsup",
 		"prod": "pnpm run build --minify",
+		"release": "semantic-release",
 		"test": "jest",
 		"watch": "pnpm run build --watch"
+	},
+	"release": {
+		"extends": [
+			"semantic-release-monorepo",
+			"@snickbit/semantic-release"
+		]
 	},
 	"jest": {
 		"preset": "ts-jest",
