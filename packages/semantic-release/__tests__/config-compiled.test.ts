@@ -32,6 +32,6 @@ describe('config-compiled', () => {
 	})
 
 	it('should have a plugin where the first element is "@semantic-release/commit-analyzer" and the second element is {preset: "conventionalcommits"}', () => {
-		expect(config.plugins).toContainEqual(['@semantic-release/commit-analyzer', {preset: 'conventionalcommits'}])
+		expect(config.plugins).toContainEqual(['@semantic-release/commit-analyzer', {preset: 'conventionalcommits'} ])
 	})
 })
