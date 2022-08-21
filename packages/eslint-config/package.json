@@ -39,6 +39,7 @@
 		"eslint-plugin-sort-class-members": "^1.14.1",
 		"eslint-plugin-unicorn": "^43.0.2",
 		"eslint-plugin-vue": "^9.3.0",
+		"eslint-plugin-yml": "^1.1.0",
 		"vue-eslint-parser": "^9.0.3"
 	},
 	"devDependencies": {

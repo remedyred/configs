@@ -1,0 +1,22 @@
+# ✗ BAD
+"BAD":
+  - "foo"
+
+
+
+  - "bar"
+
+
+---
+# ✗ BAD
+...
+
+
+: "BAD"
+"BAD":
+---
+# ✗ BAD
+...
+foo: bar
+...
+- bar

@@ -68,12 +68,22 @@ describe('Validate ESLint configs', () => {
 
 		it('should return the proper config', async () => {
 			const parsedConfig = await linter.getConfig(file)
-			expect(parsedConfig).toMatchSnapshot({parser: expect.stringMatching(/(vue-eslint-parser@9\.0\.3_eslint@8\.21\.0|espree@9\.3\.3)/)})
+			const PARSERS = ['vue-eslint-parser@9.0.3_eslint@8.21.0', 'espree@9.3.3', 'yaml-eslint-parser@1.1.0']
+			const PARSERS_MATCH = PARSERS.join('|')
+			const regexp = new RegExp(`(${PARSERS_MATCH})`)
+			expect(parsedConfig).toMatchSnapshot({parser: expect.stringMatching(regexp)})
 		})
 
 		it('should return the proper lint results', async () => {
 			const lintResults = await linter.lintFile(file)
-			expect(lintResults).toMatchSnapshot([ {filePath: expect.stringMatching(/(bad\.js|bad\.json|bad-ts\.ts)$/)} ])
+			const FIXTURE_FILE_TYPES = [
+				'ts',
+				'js',
+				'json',
+				'yml'
+			]
+			const regexp = new RegExp(`bad\\.(${FIXTURE_FILE_TYPES.join('|')})$`)
+			expect(lintResults).toMatchSnapshot([ {filePath: expect.stringMatching(regexp)} ])
 		})
 	})
 })
