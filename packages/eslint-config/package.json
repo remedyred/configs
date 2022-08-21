@@ -12,11 +12,10 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "tsup",
-		"prod": "pnpm run build --minify",
+		"build": "tsup --minify",
+		"dev": "tsup",
 		"release": "semantic-release",
-		"test": "jest",
-		"watch": "pnpm run build --watch"
+		"watch": "tsup --watch"
 	},
 	"release": {
 		"extends": [

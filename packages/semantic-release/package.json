@@ -10,11 +10,11 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "indexer && tsup",
+		"build": "indexer && tsup --minify",
+		"dev": "indexer && tsup",
 		"index": "indexer",
-		"prod": "pnpm run build --minify",
 		"release": "semantic-release",
-		"watch": "pnpm run build --watch"
+		"watch": "pnpm run dev --watch"
 	},
 	"release": {
 		"extends": [

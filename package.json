@@ -6,7 +6,7 @@
 		"fix": "eslint . --cache --color --fix",
 		"lint": "eslint . --cache --color",
 		"prepare": "husky install",
-		"prerelease": "turbo run prod fix test validate",
+		"prerelease": "turbo run build fix test validate",
 		"release": "turbo run release",
 		"test": "jest",
 		"validate": "renovate-config-validator default.json all.json renovate.json"
