@@ -27,6 +27,8 @@ export = {
 				'special',
 				'none'
 			]
-		}]
+		}],
+		'sort-annotation/sort-keys': 'error',
+		'sort-annotation/sort': 'error'
 	}
 }
