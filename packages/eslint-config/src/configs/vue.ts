@@ -4,7 +4,7 @@ export = {
 		'../plugins/vue',
 		'../plugins/unicorn',
 		'../plugins/jest',
-		'../plugins/json-files',
+		'../plugins/json',
 		'../plugins/sorting'
 	],
 	rules: {}
