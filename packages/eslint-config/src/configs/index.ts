@@ -4,6 +4,7 @@ export = {
 		'../plugins/jest',
 		'../plugins/unicorn',
 		'../plugins/json',
+		'../plugins/yaml',
 		'../plugins/sorting'
 	],
 	rules: {}
