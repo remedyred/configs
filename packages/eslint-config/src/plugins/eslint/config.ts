@@ -1,1 +1,5 @@
-export = {extends: ['eslint:recommended']}
+export = {
+	extends: ['eslint:recommended'],
+	plugins: ['function-name']
+}
+

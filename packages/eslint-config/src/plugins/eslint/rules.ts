@@ -56,6 +56,7 @@ export = {
 		'switch-colon-spacing': 'error',
 		'template-curly-spacing': 'error',
 		'template-tag-spacing': 'error',
-		'yield-star-spacing': 'error'
+		'yield-star-spacing': 'error',
+		'function-name/starts-with-verb': 'error'
 	}
 }
