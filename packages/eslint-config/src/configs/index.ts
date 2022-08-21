@@ -3,7 +3,7 @@ export = {
 		'./typescript',
 		'../plugins/jest',
 		'../plugins/unicorn',
-		'../plugins/json-files',
+		'../plugins/json',
 		'../plugins/sorting'
 	],
 	rules: {}
