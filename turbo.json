@@ -17,10 +17,6 @@
 		"prod": {
 			"dependsOn": ["^prod"],
 			"outputs": ["dist/**"]
-		},
-		"release": {
-			"dependsOn": ["^prod", "//#lint", "//#test", "//#validate"],
-			"outputs": []
 		}
 	}
 }

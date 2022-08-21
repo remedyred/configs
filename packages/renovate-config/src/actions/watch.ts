@@ -11,8 +11,8 @@ export default async function watch(args: ParsedArgs, config: Config) {
 	const runBuild = debounce(async () => {
 		try {
 			await build(args, config)
-		} catch (error) {
-			$out.error(error.message)
+		} catch (e) {
+			$out.error(e.message)
 		}
 
 		await sleep(500)
