@@ -13,7 +13,14 @@
 		"build": "indexer && tsup",
 		"index": "indexer",
 		"prod": "pnpm run build --minify",
+		"release": "semantic-release",
 		"watch": "pnpm run build --watch"
+	},
+	"release": {
+		"extends": [
+			"semantic-release-monorepo",
+			"./dist/index.js"
+		]
 	},
 	"jest": {
 		"noStackTrace": true,
