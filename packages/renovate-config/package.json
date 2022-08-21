@@ -5,8 +5,16 @@
 	"scripts": {
 		"build": "ts-node ./src/index.ts build",
 		"prod": "pnpm run build && pnpm run validate",
+		"release": "semantic-release",
 		"validate": "renovate-config-validator ../../default.json ../../all.json",
 		"watch": "ts-node ./src/index.ts watch"
+	},
+	"release": {
+		"dryRun": true,
+		"extends": [
+			"semantic-release-monorepo",
+			"@snickbit/semantic-release"
+		]
 	},
 	"jest": {
 		"preset": "ts-jest",
@@ -23,10 +31,13 @@
 		"unixify": "^1.0.0"
 	},
 	"devDependencies": {
+		"@snickbit/semantic-release": "workspace:^0.1.2",
 		"@types/jest": "^28.0.0",
 		"@types/node": "^18.0.2",
 		"jest": "^28.0.0",
 		"renovate": "^32.152.0",
+		"semantic-release": "19.0.3",
+		"semantic-release-monorepo": "^7.0.5",
 		"ts-jest": "^28.0.0",
 		"ts-node": "^10.9.1",
 		"typescript": "4.7.4"
