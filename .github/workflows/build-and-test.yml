@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     name: Build and Test
-    timeout-minutes: 15
+    timeout-minutes: 5
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
