@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [@snickbit/eslint-config-v1.1.0](https://github.com/snickbit/configs/compare/@snickbit/eslint-config-v1.0.0...@snickbit/eslint-config-v1.1.0) (2022-08-21)
+
+
+### Features
+
+* **eslint:** add yaml linting ([#38](https://github.com/snickbit/configs/issues/38)) ([1c72b22](https://github.com/snickbit/configs/commit/1c72b22a696bf88dfcc34a7b9267d262eb1ae000))
+
 ## @snickbit/eslint-config-v1.0.0 (2022-08-21)
 
 
