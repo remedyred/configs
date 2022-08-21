@@ -5,8 +5,15 @@
 	"scripts": {
 		"build": "ts-node ./src/index.ts build",
 		"prod": "pnpm run build && pnpm run validate",
+		"release": "semantic-release",
 		"validate": "renovate-config-validator ../../default.json ../../all.json",
 		"watch": "ts-node ./src/index.ts watch"
+	},
+	"release": {
+		"extends": [
+			"semantic-release-monorepo",
+			"@snickbit/semantic-release"
+		]
 	},
 	"jest": {
 		"preset": "ts-jest",
