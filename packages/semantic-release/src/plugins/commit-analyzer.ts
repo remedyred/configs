@@ -1,1 +1,1 @@
-export default ['@semantic-release/commit-analyzer', {preset: 'conventionalcommits'}]
+export default ['@semantic-release/commit-analyzer', {preset: 'conventionalcommits'} ]

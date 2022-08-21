@@ -1,1 +1,1 @@
-export default ['@semantic-release/npm', {tarballDir: 'pack'}]
+export default ['@semantic-release/npm', {tarballDir: 'pack'} ]
