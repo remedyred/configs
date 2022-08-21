@@ -14,16 +14,8 @@
 	"scripts": {
 		"build": "tsup",
 		"prod": "pnpm run build --minify",
-		"release": "semantic-release",
 		"test": "jest",
 		"watch": "pnpm run build --watch"
-	},
-	"release": {
-		"dryRun": true,
-		"extends": [
-			"semantic-release-monorepo",
-			"@snickbit/semantic-release"
-		]
 	},
 	"jest": {
 		"preset": "ts-jest",
@@ -39,20 +31,16 @@
 		"eslint-plugin-json-files": "^1.3.0",
 		"eslint-plugin-sort-annotation": "^1.0.4",
 		"eslint-plugin-sort-class-members": "^1.14.1",
-		"eslint-plugin-unicorn": "^43.0.2",
 		"eslint-plugin-vue": "^9.3.0",
 		"vue-eslint-parser": "^9.0.3"
 	},
 	"devDependencies": {
 		"@snickbit/node-utilities": "^4.4.6",
-		"@snickbit/semantic-release": "workspace:^0.1.2",
 		"@types/jest": "^28.0.0",
 		"@types/node": "^18.0.2",
 		"eslint": "8.21.0",
 		"fast-glob": "^3.2.11",
 		"jest": "^28.0.0",
-		"semantic-release": "19.0.3",
-		"semantic-release-monorepo": "^7.0.5",
 		"ts-jest": "^28.0.0",
 		"tsup": "6.2.2",
 		"typescript": "4.7.4"
