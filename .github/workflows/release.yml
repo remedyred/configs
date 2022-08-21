@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Build, test, and lint
-        run: pnpm turbo run prerelease
+        run: pnpm run prerelease
       - name: Build, test, and lint
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
