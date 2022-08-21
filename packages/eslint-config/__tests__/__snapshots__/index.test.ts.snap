@@ -200,11 +200,8 @@ Object {
     "array-element-newline": Array [
       "error",
       Object {
-        "ArrayExpression": "consistent",
-        "ArrayPattern": Object {
-          "minItems": 4,
+        "minItems": 4,
         "multiline": true,
-        },
       },
     ],
     "arrow-parens": Array [
@@ -1347,11 +1344,8 @@ Object {
     "array-element-newline": Array [
       "error",
       Object {
-        "ArrayExpression": "consistent",
-        "ArrayPattern": Object {
-          "minItems": 4,
+        "minItems": 4,
         "multiline": true,
-        },
       },
     ],
     "arrow-parens": Array [
@@ -2352,11 +2346,8 @@ Object {
     "array-element-newline": Array [
       "error",
       Object {
-        "ArrayExpression": "consistent",
-        "ArrayPattern": Object {
-          "minItems": 4,
+        "minItems": 4,
         "multiline": true,
-        },
       },
     ],
     "arrow-parens": Array [
