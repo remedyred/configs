@@ -12,7 +12,7 @@ Object {
   "globals": Object {},
   "ignorePatterns": Array [],
   "noInlineConfig": undefined,
-  "parser": "C:\\\\Data\\\\Development\\\\Projects\\\\Packages\\\\configs\\\\node_modules\\\\.pnpm\\\\vue-eslint-parser@9.0.3_eslint@8.21.0\\\\node_modules\\\\vue-eslint-parser\\\\index.js",
+  "parser": StringMatching /\\(vue-eslint-parser@9\\\\\\.0\\\\\\.3_eslint@8\\\\\\.21\\\\\\.0\\|espree@9\\\\\\.3\\\\\\.3\\)/,
   "parserOptions": Object {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
@@ -1156,7 +1156,7 @@ Object {
   "globals": Object {},
   "ignorePatterns": Array [],
   "noInlineConfig": undefined,
-  "parser": "C:\\\\Data\\\\Development\\\\Projects\\\\Packages\\\\configs\\\\node_modules\\\\.pnpm\\\\espree@9.3.3\\\\node_modules\\\\espree\\\\dist\\\\espree.cjs",
+  "parser": StringMatching /\\(vue-eslint-parser@9\\\\\\.0\\\\\\.3_eslint@8\\\\\\.21\\\\\\.0\\|espree@9\\\\\\.3\\\\\\.3\\)/,
   "parserOptions": Object {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
@@ -2158,7 +2158,7 @@ Object {
   "globals": Object {},
   "ignorePatterns": Array [],
   "noInlineConfig": undefined,
-  "parser": "C:\\\\Data\\\\Development\\\\Projects\\\\Packages\\\\configs\\\\node_modules\\\\.pnpm\\\\vue-eslint-parser@9.0.3_eslint@8.21.0\\\\node_modules\\\\vue-eslint-parser\\\\index.js",
+  "parser": StringMatching /\\(vue-eslint-parser@9\\\\\\.0\\\\\\.3_eslint@8\\\\\\.21\\\\\\.0\\|espree@9\\\\\\.3\\\\\\.3\\)/,
   "parserOptions": Object {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
