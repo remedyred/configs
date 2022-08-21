@@ -19,7 +19,7 @@
 			"outputs": ["dist/**"]
 		},
 		"release": {
-			"dependsOn": ["^prod", "lint", "test", "validate"],
+			"dependsOn": ["^prod", "//#lint", "//#test", "//#validate"],
 			"outputs": []
 		}
 	}
