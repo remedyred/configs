@@ -10,7 +10,6 @@
 		"watch": "ts-node ./src/index.ts watch"
 	},
 	"release": {
-		"dryRun": true,
 		"extends": [
 			"semantic-release-monorepo",
 			"@snickbit/semantic-release"
