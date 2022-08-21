@@ -17,6 +17,18 @@ export = {
 			],
 			accessorPairPositioning: 'getThenSet',
 			stopAfterFirstProblem: false
-		}]
+		}],
+		'beautiful-sort/import': ['error', {
+			order: [
+				'obj',
+				'defaultObj',
+				'namespace',
+				'default',
+				'special',
+				'none'
+			]
+		}],
+		'sort-annotation/sort-keys': 'error',
+		'sort-annotation/sort': 'error'
 	}
 }

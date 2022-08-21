@@ -1,8 +1,8 @@
 export = {
 	rules: {
-		'array-bracket-newline': ['error', {minItems: 4}],
-		'array-bracket-spacing': ['error', 'never', {arraysInArrays: true}],
-		'array-element-newline': ['error', {minItems: 4}],
+		'array-bracket-newline': ['error', {multiline: true, minItems: 4}],
+		'array-bracket-spacing': ['error', 'never', {arraysInArrays: true, objectsInArrays: true}],
+		'array-element-newline': ['error', {multiline: true, minItems: 4}],
 		'arrow-parens': ['error', 'as-needed'],
 		'arrow-spacing': 'error',
 		'comma-style': ['error', 'last'],
