@@ -17,7 +17,6 @@
 		"watch": "pnpm run build --watch"
 	},
 	"release": {
-		"dryRun": true,
 		"extends": [
 			"semantic-release-monorepo",
 			"./dist/index.js"
