@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Build and Test
+    name: Build, lint, and Test
     timeout-minutes: 5
     runs-on: ubuntu-latest
     steps:
@@ -28,5 +28,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build, test, and lint
+      - name: Build, lint, and Test
         run: pnpm turbo run build lint test validate
