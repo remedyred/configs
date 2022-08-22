@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      '@lerna-lite/cli': 1.10.0
+      '@lerna-lite/cli': 1.11.0
       '@snickbit/eslint-config': workspace:*
       '@types/jest': 28.1.7
       '@typescript-eslint/eslint-plugin': 5.33.1
@@ -23,7 +23,7 @@ importers:
       turbo: 1.4.3
       typescript: 4.7.4
     devDependencies:
-      '@lerna-lite/cli': 1.10.0
+      '@lerna-lite/cli': 1.11.0
       '@snickbit/eslint-config': link:packages/eslint-config
       '@types/jest': 28.1.7
       '@typescript-eslint/eslint-plugin': 5.33.1_vsoshirnpb7xw6mr7xomgfas2i
@@ -1833,17 +1833,17 @@ packages:
     resolution: {integrity: sha512-GaHYm+c0O9MjZRu0ongGBRbinu8gVAMd2UZjji6jVmqKtZluZnptXGWhz1E8j8D2HJ3f/yMxKAUC0b+57wncIw==}
     dev: true
 
-  /@lerna-lite/cli/1.10.0:
-    resolution: {integrity: sha512-wz71kSs62B5Dr5qe8/eVtQRTt3yygpSDqxW+MAq2QmmQdOGr2I9ES5xtPQccdG3lvedZpfTzaJ8JFkFMSTD8xA==}
+  /@lerna-lite/cli/1.11.0:
+    resolution: {integrity: sha512-QN+IDQV3+xwhfswhhBkIB7BrLhFa3eohyhYNDJdgg6sThio8MRmc3eF1PgwORdPrZ+YXCY3As87gyTGNBjn7IQ==}
     engines: {node: '>=14.15.0', npm: '>=8.0.0'}
     hasBin: true
     dependencies:
-      '@lerna-lite/core': 1.10.0
-      '@lerna-lite/info': 1.10.0
-      '@lerna-lite/init': 1.10.0
-      '@lerna-lite/listable': 1.10.0
-      '@lerna-lite/publish': 1.10.0
-      '@lerna-lite/version': 1.10.0
+      '@lerna-lite/core': 1.11.0
+      '@lerna-lite/info': 1.11.0
+      '@lerna-lite/init': 1.11.0
+      '@lerna-lite/listable': 1.11.0
+      '@lerna-lite/publish': 1.11.0
+      '@lerna-lite/version': 1.11.0
       dedent: 0.7.0
       dotenv: 16.0.1
       import-local: 3.1.0
@@ -1857,8 +1857,8 @@ packages:
       - supports-color
     dev: true
 
-  /@lerna-lite/core/1.10.0:
-    resolution: {integrity: sha512-e5HxFO0v/l3Kd6nGQXV0kGNu1jMQqIPvqAjch+63Czw82D0+xZN8g7j4yssD9fPKcVC11cJOZIXftEVUv6mE3g==}
+  /@lerna-lite/core/1.11.0:
+    resolution: {integrity: sha512-mM9ctEK7k8BpWdV4+F9oTUZiJJ0nEj7jv7JqFjmQzKpYQUWifiYuDcgV9gAjVde32bm3GyuUdWxVV3dODmJJcQ==}
     engines: {node: '>=14.15.0', npm: '>=8.0.0'}
     dependencies:
       os: 0.1.2
@@ -1911,7 +1911,6 @@ packages:
       tar: 6.1.11
       temp-dir: 1.0.0
       uuid: 8.3.2
-      whatwg-url: 11.0.0
       write-file-atomic: 4.0.2
       write-json-file: 4.3.0
       write-pkg: 4.0.0
@@ -1922,11 +1921,11 @@ packages:
       - supports-color
     dev: true
 
-  /@lerna-lite/info/1.10.0:
-    resolution: {integrity: sha512-Wi3s+tY+iZaNG7XuL+Tlz5x7yfvr1CMDLD4oZCnyhO8u8e/htPd1EbpzQQ7nGHW9e+GjIsTNhuWK6ubdQ0qGgQ==}
+  /@lerna-lite/info/1.11.0:
+    resolution: {integrity: sha512-UZyGbB+ybioeqk0TD4QuhX9vYTl2cprXUF4G+wuSXCAQgFS8AP1Gf9a9Pst3DAKSK0g87UrE3AxPUiSwg9nwvA==}
     engines: {node: '>=14.15.0', npm: '>=8.0.0'}
     dependencies:
-      '@lerna-lite/core': 1.10.0
+      '@lerna-lite/core': 1.11.0
       dedent: 0.7.0
       envinfo: 7.8.1
       yargs: 17.5.1
@@ -1936,11 +1935,11 @@ packages:
       - supports-color
     dev: true
 
-  /@lerna-lite/init/1.10.0:
-    resolution: {integrity: sha512-nvBVD4NyDPCR6LsEY1LGvv1wuOV9U2hY6hn+DT2iSuzdgY53Qdc4et7ekFqyLUpPaXmr3eweNmSST4x/jiMRvA==}
+  /@lerna-lite/init/1.11.0:
+    resolution: {integrity: sha512-FWcp9JJTK/Pf8lT3FNUmqmewUecKJ0hiRxfZaSqNPGQB1bo3KV7yU+xIXxZCeX5lK4uHEuDXYfxaZnhr96WJkA==}
     engines: {node: '>=14.15.0', npm: '>=8.0.0'}
     dependencies:
-      '@lerna-lite/core': 1.10.0
+      '@lerna-lite/core': 1.11.0
       fs-extra: 10.1.0
       p-map: 4.0.0
       write-json-file: 4.3.0
@@ -1950,11 +1949,11 @@ packages:
       - supports-color
     dev: true
 
-  /@lerna-lite/listable/1.10.0:
-    resolution: {integrity: sha512-ov8Jxfqwqd5rRjPQNuDCvpwZSsHocxc63RxWciJJV30xSJVmbRBFNO7NSBAtyj/gzfBCybqrd57Znm5W3zArEg==}
+  /@lerna-lite/listable/1.11.0:
+    resolution: {integrity: sha512-qEBP5BjabouV0OD2K5ngX6xDW8Ec7jgMrFXCAlyIPi8iES7sqti3sE7oZFJfdxK6+APIL1vRl7dz3abtPXz5ng==}
     engines: {node: '>=14.15.0', npm: '>=8.0.0'}
     dependencies:
-      '@lerna-lite/core': 1.10.0
+      '@lerna-lite/core': 1.11.0
       chalk: 4.1.2
       columnify: 1.6.0
     transitivePeerDependencies:
@@ -1963,13 +1962,13 @@ packages:
       - supports-color
     dev: true
 
-  /@lerna-lite/publish/1.10.0:
-    resolution: {integrity: sha512-AH2A9bA+3jvHcuIhVE/3qe6CuYeNj/ohbvbOAdjkdtZAUtz5UdxnHQZ50EQ9dBTMZPPFI8eVf4J2qiL6Y9ogtA==}
+  /@lerna-lite/publish/1.11.0:
+    resolution: {integrity: sha512-QbyDlmdvxTHCSvGZ8zGzJQMWpGnxklPfTMFO0HR5BLOQ5cIWyIGqmTVO8N9wCabbOSO5uJNQh6PFzW7RUk2pvA==}
     engines: {node: '>=14.15.0', npm: '>=8.0.0'}
     dependencies:
       os: 0.1.2
-      '@lerna-lite/core': 1.10.0
-      '@lerna-lite/version': 1.10.0
+      '@lerna-lite/core': 1.11.0
+      '@lerna-lite/version': 1.11.0
       byte-size: 7.0.1
       columnify: 1.6.0
       fs-extra: 10.1.0
@@ -1992,7 +1991,6 @@ packages:
       ssri: 9.0.1
       strong-log-transformer: 2.1.0
       tar: 6.1.11
-      whatwg-url: 11.0.0
       write-file-atomic: 4.0.2
       write-json-file: 4.3.0
       write-pkg: 4.0.0
@@ -2003,12 +2001,12 @@ packages:
       - supports-color
     dev: true
 
-  /@lerna-lite/version/1.10.0:
-    resolution: {integrity: sha512-5rN9s9EDIKJVLFemHYqMDEobmWijeOkpO9QICUMh63bL22uSjyQs4ahPjeEKmT2N03s5IS3wf0jkWLeSdBYmFw==}
+  /@lerna-lite/version/1.11.0:
+    resolution: {integrity: sha512-CshtipJ0LgpcAu66h+drLPB1lbl+7t90cdSKpXy1NjmUKYn5MIeWjif5cN2XiDq50hXP3xUfebaJEdAnSPZOXA==}
     engines: {node: '>=14.15.0', npm: '>=8.0.0'}
     dependencies:
       os: 0.1.2
-      '@lerna-lite/core': 1.10.0
+      '@lerna-lite/core': 1.11.0
       chalk: 4.1.2
       dedent: 0.7.0
       load-json-file: 6.2.0
@@ -7047,7 +7045,7 @@ packages:
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dependencies:
       agentkeepalive: 4.2.1
-      cacache: 16.1.1
+      cacache: 16.1.2
       http-cache-semantics: 4.1.0
       http-proxy-agent: 5.0.0
       https-proxy-agent: 5.0.1
@@ -9425,13 +9423,6 @@ packages:
       punycode: 2.1.1
     dev: true
 
-  /tr46/3.0.0:
-    resolution: {integrity: sha512-l7FvfAHlcmulp8kr+flpQZmVwtu7nfRV7NZujtN0OqES8EL4O4e0qqzL0DC5gAvx/ZC/9lk6rhcUwYvkBnBnYA==}
-    engines: {node: '>=12'}
-    dependencies:
-      punycode: 2.1.1
-    dev: true
-
   /traverse/0.6.6:
     resolution: {integrity: sha512-kdf4JKs8lbARxWdp7RKdNzoJBhGUcIalSYibuGyHJbmk40pOysQ0+QPvlkCOICOivDWU2IJo2rkrxyTK2AH4fw==}
 
@@ -10026,19 +10017,6 @@ packages:
 
   /webidl-conversions/4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
-    dev: true
-
-  /webidl-conversions/7.0.0:
-    resolution: {integrity: sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==}
-    engines: {node: '>=12'}
-    dev: true
-
-  /whatwg-url/11.0.0:
-    resolution: {integrity: sha512-RKT8HExMpoYx4igMiVMY83lN6UeITKJlBQ+vR/8ZJ8OCdSiN3RwCq+9gH0+Xzj0+5IrM6i4j/6LuvzbZIQgEcQ==}
-    engines: {node: '>=12'}
-    dependencies:
-      tr46: 3.0.0
-      webidl-conversions: 7.0.0
     dev: true
 
   /whatwg-url/5.0.0:
