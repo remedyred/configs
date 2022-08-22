@@ -38,7 +38,7 @@
 		"@snickbit/node-utilities": "^4.4.6",
 		"@types/jest": "^28.0.0",
 		"@types/node": "^18.0.2",
-		"eslint": "8.21.0",
+		"eslint": "8.22.0",
 		"fast-glob": "^3.2.11",
 		"jest": "^28.0.0",
 		"ts-jest": "^28.0.0",
