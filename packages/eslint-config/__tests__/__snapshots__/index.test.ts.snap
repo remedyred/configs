@@ -12,7 +12,7 @@ Object {
   "globals": Object {},
   "ignorePatterns": Array [],
   "noInlineConfig": undefined,
-  "parser": StringMatching /\\(vue-eslint-parser@9\\.0\\.3_eslint@8\\.21\\.0\\|espree@9\\.3\\.3\\|yaml-eslint-parser@1\\.1\\.0\\)/,
+  "parser": StringMatching /\\(vue-eslint-parser@\\|espree@\\|yaml-eslint-parser@\\)/,
   "parserOptions": Object {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
@@ -1223,7 +1223,7 @@ Object {
   "globals": Object {},
   "ignorePatterns": Array [],
   "noInlineConfig": undefined,
-  "parser": StringMatching /\\(vue-eslint-parser@9\\.0\\.3_eslint@8\\.21\\.0\\|espree@9\\.3\\.3\\|yaml-eslint-parser@1\\.1\\.0\\)/,
+  "parser": StringMatching /\\(vue-eslint-parser@\\|espree@\\|yaml-eslint-parser@\\)/,
   "parserOptions": Object {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
@@ -2292,7 +2292,7 @@ Object {
   "globals": Object {},
   "ignorePatterns": Array [],
   "noInlineConfig": undefined,
-  "parser": StringMatching /\\(vue-eslint-parser@9\\.0\\.3_eslint@8\\.21\\.0\\|espree@9\\.3\\.3\\|yaml-eslint-parser@1\\.1\\.0\\)/,
+  "parser": StringMatching /\\(vue-eslint-parser@\\|espree@\\|yaml-eslint-parser@\\)/,
   "parserOptions": Object {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
@@ -4005,7 +4005,7 @@ Object {
   "globals": Object {},
   "ignorePatterns": Array [],
   "noInlineConfig": undefined,
-  "parser": StringMatching /\\(vue-eslint-parser@9\\.0\\.3_eslint@8\\.21\\.0\\|espree@9\\.3\\.3\\|yaml-eslint-parser@1\\.1\\.0\\)/,
+  "parser": StringMatching /\\(vue-eslint-parser@\\|espree@\\|yaml-eslint-parser@\\)/,
   "parserOptions": Object {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
