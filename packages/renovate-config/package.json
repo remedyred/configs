@@ -30,7 +30,7 @@
 		"unixify": "^1.0.0"
 	},
 	"devDependencies": {
-		"@snickbit/semantic-release": "workspace:^0.1.2",
+		"@snickbit/semantic-release": "^0.1.2",
 		"@types/jest": "^28.1.7",
 		"@types/node": "^18.7.9",
 		"jest": "^28.1.3",

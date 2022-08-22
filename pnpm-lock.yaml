@@ -5,7 +5,7 @@ importers:
   .:
     specifiers:
       '@lerna-lite/cli': 1.11.0
-      '@snickbit/eslint-config': workspace:*
+      '@snickbit/eslint-config': '*'
       '@types/jest': 28.1.7
       '@typescript-eslint/eslint-plugin': 5.33.1
       '@typescript-eslint/parser': 5.33.1
@@ -49,7 +49,7 @@ importers:
   packages/eslint-config:
     specifiers:
       '@snickbit/node-utilities': ^4.4.7
-      '@snickbit/semantic-release': workspace:^0.1.2
+      '@snickbit/semantic-release': ^0.1.2
       '@types/eslint': ^8.4.6
       '@types/jest': ^28.1.7
       '@types/node': ^18.7.9
@@ -106,7 +106,7 @@ importers:
       '@snickbit/node-cli': ^3.0.4
       '@snickbit/node-utilities': ^4.4.7
       '@snickbit/out': ^2.0.37
-      '@snickbit/semantic-release': workspace:^0.1.2
+      '@snickbit/semantic-release': ^0.1.2
       '@snickbit/utilities': ^3.4.0
       '@types/jest': ^28.1.7
       '@types/node': ^18.7.9

@@ -44,7 +44,7 @@
 	},
 	"devDependencies": {
 		"@snickbit/node-utilities": "^4.4.7",
-		"@snickbit/semantic-release": "workspace:^0.1.2",
+		"@snickbit/semantic-release": "^0.1.2",
 		"@types/jest": "^28.1.7",
 		"@types/node": "^18.7.9",
 		"eslint": "8.22.0",
