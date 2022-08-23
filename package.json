@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"fix": "eslint \"**/*.{ts,json,yml,yaml}\" --cache --color --fix",
-		"lint": "eslint . --cache --color --ext .ts,.json,.yaml,.yml",
+		"lint": "eslint \"**/*.{ts,json,yml,yaml}\" --cache --color",
 		"prepare": "husky install",
 		"prerelease": "turbo run build fix test validate",
 		"release": "turbo run release",
@@ -13,7 +13,7 @@
 		"validate": "renovate-config-validator default.json all.json renovate.json"
 	},
 	"lint-staged": {
-		"*.{ts,json,yml,yaml}": "eslint --fix --cache --ext .ts,.json,.yaml,.yml"
+		"*.{ts,json,yml,yaml}": "eslint --fix --cache"
 	},
 	"jest": {
 		"noStackTrace": true,
