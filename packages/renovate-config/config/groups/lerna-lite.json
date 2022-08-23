@@ -1,0 +1,16 @@
+{
+	"packageRules": [
+		{
+			"matchSourceUrlPrefixes": [
+				"https://github.com/ghiscoding/lerna-lite"
+			],
+			"matchUpdateTypes": [
+				"digest",
+				"patch",
+				"minor",
+				"major"
+			],
+			"groupName": "lerna-lite monorepo"
+		}
+	]
+}
