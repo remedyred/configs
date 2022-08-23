@@ -1,7 +1,18 @@
 {
 	"extends": [
-		"group:recommended",
-		"group:monorepos"
+		"group:monorepos",
+		"group:nodeJs",
+		"group:allApollographql",
+		"group:fortawesome",
+		"group:illuminate",
+		"group:jestPlusTSJest",
+		"group:jestPlusTypes",
+		"group:kubernetes",
+		"group:socketio",
+		"group:symfony",
+		"group:linters",
+		"group:jsUnitTest",
+		"group:lernaMonorepo"
 	],
 	"ignoreDeps": []
 }
