@@ -157,6 +157,7 @@ importers:
       conventional-changelog-conventionalcommits: 5.0.0
       jest: 28.1.3
       semantic-release: 19.0.5
+      semantic-release-conventional-commits: ^3.0.0
       semantic-release-monorepo: ^7.0.5
       semantic-release-pr-analyzer: ^1.6.0
       ts-jest: 28.0.8
@@ -170,6 +171,7 @@ importers:
       '@semantic-release/npm': 9.0.1_semantic-release@19.0.5
       '@semantic-release/release-notes-generator': 10.0.3_semantic-release@19.0.5
       conventional-changelog-conventionalcommits: 5.0.0
+      semantic-release-conventional-commits: 3.0.0
       semantic-release-pr-analyzer: 1.6.0_semantic-release@19.0.5
     devDependencies:
       '@snickbit/indexer': 2.5.7
@@ -9303,6 +9305,13 @@ packages:
   /sax/1.2.4:
     resolution: {integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==}
     dev: true
+
+  /semantic-release-conventional-commits/3.0.0:
+    resolution: {integrity: sha512-y7pqPk64zWjc/kX7nfT1wONwYs7R+oD2rX2HwR0SVtXneUaSL8cTkzt3rwx00in8NSovzkajy9JYlYOJyqSzZg==}
+    engines: {node: '>=10'}
+    dependencies:
+      conventional-commits-parser: 3.2.4
+    dev: false
 
   /semantic-release-monorepo/7.0.5_semantic-release@19.0.5:
     resolution: {integrity: sha512-riOYD8eZ5PIST7o97Ltc01l8VQW7q01NmPDRPOBycaeZczJowyKkzkBfo92kTIWDFWbdO3G8A695JrrYjoTaiw==}
