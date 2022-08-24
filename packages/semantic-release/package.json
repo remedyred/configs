@@ -10,9 +10,8 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "indexer && tsup --minify",
-		"dev": "indexer && tsup",
-		"index": "indexer",
+		"build": "tsup --minify",
+		"dev": "tsup",
 		"release": "semantic-release",
 		"watch": "pnpm run dev --watch"
 	},
@@ -31,17 +30,14 @@
 	},
 	"dependencies": {
 		"@semantic-release/changelog": "^6.0.1",
-		"@semantic-release/commit-analyzer": "^9.0.2",
 		"@semantic-release/git": "^10.0.1",
 		"@semantic-release/github": "^8.0.5",
 		"@semantic-release/npm": "^9.0.1",
 		"@semantic-release/release-notes-generator": "^10.0.3",
 		"conventional-changelog-conventionalcommits": "5.0.0",
-		"semantic-release-conventional-commits": "^3.0.0",
-		"semantic-release-pr-analyzer": "^1.6.0"
+		"semantic-release-conventional-commits": "^3.0.0"
 	},
 	"devDependencies": {
-		"@snickbit/indexer": "2.5.7",
 		"@types/jest": "28.1.7",
 		"@types/node": "18.7.9",
 		"@types/semantic-release": "17.2.4",
