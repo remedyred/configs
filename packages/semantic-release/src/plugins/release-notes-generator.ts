@@ -1,4 +1,1 @@
-/* eslint-disable object-curly-newline */
-export default {
-	preset: 'conventionalcommits'
-}
+export default ['@semantic-release/release-notes-generator', {preset: 'conventionalcommits'} ]
