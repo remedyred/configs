@@ -1,1 +1,4 @@
-export default ['@semantic-release/commit-analyzer', {preset: 'conventionalcommits'} ]
+/* eslint-disable object-curly-newline */
+export default {
+	preset: 'conventionalcommits'
+}

@@ -1,1 +1,4 @@
-export default ['@semantic-release/npm', {tarballDir: 'pack'} ]
+/* eslint-disable object-curly-newline */
+export default {
+	tarballDir: 'pack'
+}

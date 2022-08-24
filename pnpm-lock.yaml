@@ -150,7 +150,6 @@ importers:
       '@semantic-release/github': ^8.0.5
       '@semantic-release/npm': ^9.0.1
       '@semantic-release/release-notes-generator': ^10.0.3
-      '@snickbit/indexer': 2.5.7
       '@types/jest': 28.1.7
       '@types/node': 18.7.9
       '@types/semantic-release': 17.2.4
@@ -174,7 +173,6 @@ importers:
       semantic-release-conventional-commits: 3.0.0
       semantic-release-pr-analyzer: 1.6.0_semantic-release@19.0.5
     devDependencies:
-      '@snickbit/indexer': 2.5.7
       '@types/jest': 28.1.7
       '@types/node': 18.7.9
       '@types/semantic-release': 17.2.4
@@ -2728,31 +2726,6 @@ packages:
       - typescript
     dev: true
 
-  /@snickbit/indexer/2.5.7:
-    resolution: {integrity: sha512-5lee6hYSa+nih2GOcNWpW1AGLzzthN6wF4yVkWLy4RBZtjc+7lBt2KPtd8UJeuf7M5idSEH8zfv2G/EztboRVA==}
-    engines: {node: '>= 12'}
-    hasBin: true
-    dependencies:
-      '@snickbit/node-cli': 2.0.2
-      '@snickbit/node-utilities': 4.4.6
-      '@snickbit/out': 2.0.37
-      '@snickbit/utilities': 3.3.1
-      fast-glob: 3.2.11
-      lilconfig: 2.0.6
-      picomatch: 2.3.1
-    dev: true
-
-  /@snickbit/node-cli/2.0.2:
-    resolution: {integrity: sha512-AAvtvzmL+b9lqT0gIzjWR98MVE5TEVDTv1eFFqAvEB9g+A+3aBE1wgdxLPqndaQpDg20SpbMl/xlzG4o3er0zQ==}
-    engines: {node: '>= 12'}
-    dependencies:
-      '@snickbit/node-utilities': 4.4.6
-      '@snickbit/out': 2.0.37
-      '@snickbit/utilities': 3.3.1
-      lilconfig: 2.0.6
-      yargs-parser: 21.1.1
-    dev: true
-
   /@snickbit/node-cli/3.0.4:
     resolution: {integrity: sha512-z9trPbhQCoqh38ptSvwx0U6yZF1RCx6RnnSwEnJs63lSaYv2yCfCXzt0fwkn6GSG0127za+7szU5M4wRLVKj+g==}
     engines: {node: '>= 12'}
@@ -2763,20 +2736,6 @@ packages:
       lilconfig: 2.0.6
       yargs-parser: 21.1.1
     dev: false
-
-  /@snickbit/node-utilities/4.4.6:
-    resolution: {integrity: sha512-DsKWpObdunYPkCNOS6xdtVgbEqa9qMQniOZE3jf98AmESgbezbhU+91+0aOG0Q6vRdjF+7K08Xjl7R4ixbWldg==}
-    engines: {node: '>= 12'}
-    dependencies:
-      '@snickbit/out': 2.0.37
-      '@snickbit/utilities': 3.3.1
-      ansi-styles-template: 1.0.0
-      cli-progress: 3.11.2
-      is-wsl: 2.2.0
-      lodash.throttle: 4.1.1
-      nanospinner: 1.1.0
-      prompts: 2.4.2
-    dev: true
 
   /@snickbit/node-utilities/4.4.7:
     resolution: {integrity: sha512-6zu9Z/78Uwa3z8AbUpInN5dOe+EwovV5h3XgutL3bzTn6Kk32iL4fvMErXof1bcfJId9DuSx+gOcmJnstWo9/g==}
@@ -2806,15 +2765,6 @@ packages:
   /@snickbit/plural/0.0.5:
     resolution: {integrity: sha512-cU0brdILQdpe6MJ6MoqV5c5/1xvHcG8BYnJV6UQHJWpNOo/6klgq1Pqt5AO/DGxVz9j4z+F7JN7woXXa9o8GQg==}
     engines: {node: '>= 12'}
-
-  /@snickbit/utilities/3.3.1:
-    resolution: {integrity: sha512-wPteAd4d3OXFV+ah37uDWIF9rmhQzWLS0zSxc4/19VQ+tGgUky2o7/nDhhjHHmYWIYOZ9MOrhz6yW0TZ3GF5bg==}
-    engines: {node: '>= 12'}
-    dependencies:
-      '@snickbit/plural': 0.0.5
-      just-camel-case: 6.1.1
-      nanoid: 3.3.4
-    dev: true
 
   /@snickbit/utilities/3.4.0:
     resolution: {integrity: sha512-kIEvgxnD/gt0h3Qi9sIDLFHpAZ1qCtbdZVIvfRG7KEuNzO5NokGg85Q1D+lGqyosH66sn+6r+2y4CZunNIQq0g==}
