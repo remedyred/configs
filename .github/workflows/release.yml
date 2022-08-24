@@ -1,13 +1,16 @@
 name: Release
 
 on:
-  push:
+  pull_request_target:
+    types:
+      - closed
     branches:
       - main
       - next
 
 jobs:
   release:
+    if: github.event.pull_request.merged == true
     name: Release
     timeout-minutes: 5
     runs-on: ubuntu-latest
@@ -36,5 +39,6 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_PR_NUMBER: ${{ github.event.pull_request.number }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm turbo run release:ci
