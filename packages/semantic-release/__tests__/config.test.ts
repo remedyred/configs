@@ -6,21 +6,8 @@ describe.each([ ['ts', configTS], ['cjs', configCJS] ])('config %s', (label, con
 		expect(config).toBeInstanceOf(Object)
 	})
 
-	it('should have a branches that matches the default semantic-release config (with main instead of master)', () => {
-		expect(config.branches).toStrictEqual([
-			'+([0-9])?(.{+([0-9]),x}).x',
-			'main',
-			'next',
-			'next-major',
-			{
-				name: 'beta',
-				prerelease: true
-			},
-			{
-				name: 'alpha',
-				prerelease: true
-			}
-		])
+	it('should have a branches that contain main and next', () => {
+		expect(config.branches).toEqual(expect.arrayContaining(['main', 'next']))
 	})
 
 	describe('plugins', () => {
@@ -30,7 +17,9 @@ describe.each([ ['ts', configTS], ['cjs', configCJS] ])('config %s', (label, con
 
 		it('should be an array of arrays or strings', () => {
 			for (const plugin of config.plugins) {
-				const type = Array.isArray(plugin) ? 'array' : typeof plugin
+				const type = Array.isArray(plugin)
+					? 'array'
+					: typeof plugin
 				expect(['string', 'array']).toContain(type)
 			}
 		})
