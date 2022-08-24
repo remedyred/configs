@@ -3,10 +3,9 @@
 exports[`build.ts buildFromDefinitionFile should reliably return a valid config 1`] = `
 Object {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "assignees": Array [
-    "snickbit",
-  ],
   "automerge": true,
+  "automergeStrategy": "squash",
+  "automergeType": "pr",
   "extends": Array [
     "preview:dockerCompose",
     "preview:dockerVersions",

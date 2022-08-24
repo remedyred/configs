@@ -1,7 +1,6 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"automerge": true,
-	"assignees": [
-		"snickbit"
-	]
+	"automergeStrategy": "squash",
+	"automergeType": "pr"
 }
