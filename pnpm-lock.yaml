@@ -145,7 +145,6 @@ importers:
   packages/semantic-release:
     specifiers:
       '@semantic-release/changelog': ^6.0.1
-      '@semantic-release/commit-analyzer': ^9.0.2
       '@semantic-release/git': ^10.0.1
       '@semantic-release/github': ^8.0.5
       '@semantic-release/npm': ^9.0.1
@@ -164,7 +163,6 @@ importers:
       typescript: 4.7.4
     dependencies:
       '@semantic-release/changelog': 6.0.1_semantic-release@19.0.5
-      '@semantic-release/commit-analyzer': 9.0.2_semantic-release@19.0.5
       '@semantic-release/git': 10.0.1_semantic-release@19.0.5
       '@semantic-release/github': 8.0.5_semantic-release@19.0.5
       '@semantic-release/npm': 9.0.1_semantic-release@19.0.5
