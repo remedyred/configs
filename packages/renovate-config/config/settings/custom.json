@@ -1,3 +1,17 @@
 {
-
+	"assignees": [
+		"snickbit"
+	],
+	"baseBranches": [
+		"main",
+		"next"
+	],
+	"configMigration": true,
+	"java": false,
+	"postUpgradeTasks": {
+		"commands": [
+			"pnpm i --lockfile-only",
+			"pnpm run fix"
+		]
+	}
 }
