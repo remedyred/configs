@@ -8,10 +8,14 @@
 	],
 	"configMigration": true,
 	"java": false,
+	"ruby": false,
+	"rust": false,
 	"postUpgradeTasks": {
 		"commands": [
 			"pnpm i --lockfile-only",
 			"pnpm run fix"
 		]
-	}
+	},
+	"rebaseWhen": "conflicted",
+	"semanticCommits": "enabled"
 }
