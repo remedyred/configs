@@ -1,1 +1,4 @@
-export default ['@semantic-release/github', {assets: 'pack/*.tgz'} ]
+/* eslint-disable object-curly-newline */
+export default {
+	assets: 'pack/*.tgz'
+}
