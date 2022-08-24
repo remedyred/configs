@@ -2,7 +2,8 @@ export = {
 	extends: [
 		'./typescript',
 		'../plugins/vue',
-		'../plugins/json-files',
+		'../plugins/json',
+		'../plugins/yaml',
 		'../plugins/sorting'
 	],
 	rules: {}

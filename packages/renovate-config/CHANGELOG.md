@@ -1,3 +1,31 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## renovate-config-v1.0.0 (2022-08-21)
+
+
+### Features
+
+* add better renovate configurations ([0ca4304](https://github.com/snickbit/configs/commit/0ca43048c45e187d7f2ddd5f187dfe17bf584ce9))
+* add semantic release workflow ([#36](https://github.com/snickbit/configs/issues/36)) ([9b380d5](https://github.com/snickbit/configs/commit/9b380d517b5caed2245bff29b81a2529d0a4d786))
+* **renovate:** rebuild renovate config using a build script ([#16](https://github.com/snickbit/configs/issues/16)) ([7cd59b1](https://github.com/snickbit/configs/commit/7cd59b1b0b94868b24815877fd506e36ac72a741))
+
+
+### Bug Fixes
+
+* adjust groups ([905bbf4](https://github.com/snickbit/configs/commit/905bbf44aae5efa8a9403ba760a9952d5d3e9a5f))
+* **ci:** disable semantic-release dry run ([40b0d6e](https://github.com/snickbit/configs/commit/40b0d6e6f9addefd23faab06841f7aa1a4c92814))
+* **ci:** rename build to dev and prod to build ([329dabd](https://github.com/snickbit/configs/commit/329dabd1e82d1efb19283c76935643efaffddc21))
+* remove patch from minor ([ad3f8cf](https://github.com/snickbit/configs/commit/ad3f8cfc1cb43d360b26be875a30b970980c8b90))
+* **renovate:** add @snickbit/eslint-config to lint grouping ([9c8b3fc](https://github.com/snickbit/configs/commit/9c8b3fcffddbb8083e8e00adf8586d3223bc089d))
+* **renovate:** add missing typescript dev dependency ([9b94f7e](https://github.com/snickbit/configs/commit/9b94f7e3644d37fc46a556896cc1e569d6da3489))
+* **renovate:** allow ^0 patches for esbuild ([6537d92](https://github.com/snickbit/configs/commit/6537d92186ba8e5af01629a3c61c0ee19bdeee40))
+* **renovate:** move generated configs to root ([5db7d26](https://github.com/snickbit/configs/commit/5db7d26b0e4196e08c340130b5fa71d303e38561))
+* **renovate:** use correct config paths for validation ([0aa85df](https://github.com/snickbit/configs/commit/0aa85df6da12c48314b29cb0a3cde597bee3bb2b))
+* update default config ([9b6cb1c](https://github.com/snickbit/configs/commit/9b6cb1cdc2be07952efcf61f04cc5d395b845427))
+
 # Change Log
 
 All notable changes to this project will be documented in this file.

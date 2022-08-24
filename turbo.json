@@ -2,21 +2,35 @@
 	"$schema": "https://turborepo.org/schema.json",
 	"pipeline": {
 		"//#lint": {
+			"dependsOn": ["^build"],
 			"outputs": []
 		},
 		"//#fix": {
-			"dependsOn": ["^prod"],
-			"outputs": []
+			"dependsOn": ["^build"],
+			"outputs": [],
+			"outputMode": "new-only"
 		},
 		"//#test": {
+			"dependsOn": ["^build"],
 			"outputs": []
 		},
 		"//#validate": {
+			"dependsOn": ["^build"],
 			"outputs": []
 		},
-		"prod": {
-			"dependsOn": ["^prod"],
-			"outputs": ["dist/**"]
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": ["dist/**"],
+			"outputMode": "new-only"
+		},
+		"release": {
+			"dependsOn": ["^build", "//#lint", "//#test", "//#validate"],
+			"outputs": ["CHANGELOG.md", "package.json"]
+		},
+		"//#release:ci": {
+			"dependsOn": ["$GITHUB_TOKEN", "$NPM_TOKEN"],
+			"outputs": ["CHANGELOG.md", "package.json"],
+			"outputMode": "new-only"
 		}
 	}
 }

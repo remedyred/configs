@@ -1,6 +1,7 @@
-import config from '../src'
+import configTS from '../src'
+import configCJS from '../dist'
 
-describe('config', () => {
+describe.each([ ['ts', configTS], ['cjs', configCJS] ])('config %s', (label, config) => {
 	it('should be an object', () => {
 		expect(config).toBeInstanceOf(Object)
 	})

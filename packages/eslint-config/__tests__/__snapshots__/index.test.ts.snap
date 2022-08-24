@@ -12,7 +12,7 @@ Object {
   "globals": Object {},
   "ignorePatterns": Array [],
   "noInlineConfig": undefined,
-  "parser": "C:\\\\Data\\\\Development\\\\Projects\\\\Packages\\\\configs\\\\node_modules\\\\.pnpm\\\\vue-eslint-parser@9.0.3_eslint@8.21.0\\\\node_modules\\\\vue-eslint-parser\\\\index.js",
+  "parser": StringMatching /\\(vue-eslint-parser@\\|espree@\\|yaml-eslint-parser@\\)/,
   "parserOptions": Object {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
@@ -22,6 +22,7 @@ Object {
     "@typescript-eslint",
     "vue",
     "json-files",
+    "yml",
     "sort-annotation",
     "beautiful-sort",
     "sort-class-members",
@@ -981,6 +982,72 @@ Object {
     "yield-star-spacing": Array [
       "error",
     ],
+    "yml/block-mapping": Array [
+      "error",
+    ],
+    "yml/block-mapping-question-indicator-newline": Array [
+      "error",
+    ],
+    "yml/block-sequence": Array [
+      "error",
+    ],
+    "yml/block-sequence-hyphen-indicator-newline": Array [
+      "error",
+    ],
+    "yml/flow-mapping-curly-newline": Array [
+      "error",
+    ],
+    "yml/flow-mapping-curly-spacing": Array [
+      "error",
+    ],
+    "yml/flow-sequence-bracket-newline": Array [
+      "error",
+    ],
+    "yml/flow-sequence-bracket-spacing": Array [
+      "error",
+    ],
+    "yml/indent": Array [
+      "error",
+    ],
+    "yml/key-spacing": Array [
+      "error",
+    ],
+    "yml/no-empty-document": Array [
+      "error",
+    ],
+    "yml/no-empty-key": Array [
+      "error",
+    ],
+    "yml/no-empty-mapping-value": Array [
+      "error",
+    ],
+    "yml/no-empty-sequence-entry": Array [
+      "error",
+    ],
+    "yml/no-irregular-whitespace": Array [
+      "error",
+    ],
+    "yml/no-multiple-empty-lines": Array [
+      "error",
+      Object {
+        "max": 1,
+      },
+    ],
+    "yml/no-tab-indent": Array [
+      "error",
+    ],
+    "yml/plain-scalar": Array [
+      "error",
+    ],
+    "yml/quotes": Array [
+      "error",
+    ],
+    "yml/spaced-comment": Array [
+      "error",
+    ],
+    "yml/vue-custom-block/no-parsing-error": Array [
+      "error",
+    ],
   },
   "settings": Object {},
 }
@@ -991,7 +1058,7 @@ Array [
   Object {
     "errorCount": 6,
     "fatalErrorCount": 0,
-    "filePath": "C:\\\\Data\\\\Development\\\\Projects\\\\Packages\\\\configs\\\\packages\\\\eslint-config\\\\__fixtures__\\\\bad.js",
+    "filePath": StringMatching /bad\\\\\\.\\(ts\\|js\\|json\\|yml\\)\\$/,
     "fixableErrorCount": 6,
     "fixableWarningCount": 0,
     "messages": Array [
@@ -1156,7 +1223,7 @@ Object {
   "globals": Object {},
   "ignorePatterns": Array [],
   "noInlineConfig": undefined,
-  "parser": "C:\\\\Data\\\\Development\\\\Projects\\\\Packages\\\\configs\\\\node_modules\\\\.pnpm\\\\espree@9.3.3\\\\node_modules\\\\espree\\\\dist\\\\espree.cjs",
+  "parser": StringMatching /\\(vue-eslint-parser@\\|espree@\\|yaml-eslint-parser@\\)/,
   "parserOptions": Object {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
@@ -1166,6 +1233,7 @@ Object {
     "@typescript-eslint",
     "vue",
     "json-files",
+    "yml",
     "sort-annotation",
     "beautiful-sort",
     "sort-class-members",
@@ -2125,6 +2193,72 @@ Object {
     "yield-star-spacing": Array [
       "error",
     ],
+    "yml/block-mapping": Array [
+      "error",
+    ],
+    "yml/block-mapping-question-indicator-newline": Array [
+      "error",
+    ],
+    "yml/block-sequence": Array [
+      "error",
+    ],
+    "yml/block-sequence-hyphen-indicator-newline": Array [
+      "error",
+    ],
+    "yml/flow-mapping-curly-newline": Array [
+      "error",
+    ],
+    "yml/flow-mapping-curly-spacing": Array [
+      "error",
+    ],
+    "yml/flow-sequence-bracket-newline": Array [
+      "error",
+    ],
+    "yml/flow-sequence-bracket-spacing": Array [
+      "error",
+    ],
+    "yml/indent": Array [
+      "error",
+    ],
+    "yml/key-spacing": Array [
+      "error",
+    ],
+    "yml/no-empty-document": Array [
+      "error",
+    ],
+    "yml/no-empty-key": Array [
+      "error",
+    ],
+    "yml/no-empty-mapping-value": Array [
+      "error",
+    ],
+    "yml/no-empty-sequence-entry": Array [
+      "error",
+    ],
+    "yml/no-irregular-whitespace": Array [
+      "error",
+    ],
+    "yml/no-multiple-empty-lines": Array [
+      "error",
+      Object {
+        "max": 1,
+      },
+    ],
+    "yml/no-tab-indent": Array [
+      "error",
+    ],
+    "yml/plain-scalar": Array [
+      "error",
+    ],
+    "yml/quotes": Array [
+      "error",
+    ],
+    "yml/spaced-comment": Array [
+      "error",
+    ],
+    "yml/vue-custom-block/no-parsing-error": Array [
+      "error",
+    ],
   },
   "settings": Object {},
 }
@@ -2135,7 +2269,7 @@ Array [
   Object {
     "errorCount": 0,
     "fatalErrorCount": 0,
-    "filePath": "C:\\\\Data\\\\Development\\\\Projects\\\\Packages\\\\configs\\\\packages\\\\eslint-config\\\\__fixtures__\\\\bad.json",
+    "filePath": StringMatching /bad\\\\\\.\\(ts\\|js\\|json\\|yml\\)\\$/,
     "fixableErrorCount": 0,
     "fixableWarningCount": 0,
     "messages": Array [],
@@ -2146,7 +2280,7 @@ Array [
 ]
 `;
 
-exports[`Validate ESLint configs .add(Validate ESLint configs for bad-ts.ts) should return the proper config 1`] = `
+exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should return the proper config 1`] = `
 Object {
   "env": Object {
     "browser": true,
@@ -2158,7 +2292,7 @@ Object {
   "globals": Object {},
   "ignorePatterns": Array [],
   "noInlineConfig": undefined,
-  "parser": "C:\\\\Data\\\\Development\\\\Projects\\\\Packages\\\\configs\\\\node_modules\\\\.pnpm\\\\vue-eslint-parser@9.0.3_eslint@8.21.0\\\\node_modules\\\\vue-eslint-parser\\\\index.js",
+  "parser": StringMatching /\\(vue-eslint-parser@\\|espree@\\|yaml-eslint-parser@\\)/,
   "parserOptions": Object {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
@@ -2168,6 +2302,7 @@ Object {
     "@typescript-eslint",
     "vue",
     "json-files",
+    "yml",
     "sort-annotation",
     "beautiful-sort",
     "sort-class-members",
@@ -3133,17 +3268,83 @@ Object {
     "yield-star-spacing": Array [
       "error",
     ],
+    "yml/block-mapping": Array [
+      "error",
+    ],
+    "yml/block-mapping-question-indicator-newline": Array [
+      "error",
+    ],
+    "yml/block-sequence": Array [
+      "error",
+    ],
+    "yml/block-sequence-hyphen-indicator-newline": Array [
+      "error",
+    ],
+    "yml/flow-mapping-curly-newline": Array [
+      "error",
+    ],
+    "yml/flow-mapping-curly-spacing": Array [
+      "error",
+    ],
+    "yml/flow-sequence-bracket-newline": Array [
+      "error",
+    ],
+    "yml/flow-sequence-bracket-spacing": Array [
+      "error",
+    ],
+    "yml/indent": Array [
+      "error",
+    ],
+    "yml/key-spacing": Array [
+      "error",
+    ],
+    "yml/no-empty-document": Array [
+      "error",
+    ],
+    "yml/no-empty-key": Array [
+      "error",
+    ],
+    "yml/no-empty-mapping-value": Array [
+      "error",
+    ],
+    "yml/no-empty-sequence-entry": Array [
+      "error",
+    ],
+    "yml/no-irregular-whitespace": Array [
+      "error",
+    ],
+    "yml/no-multiple-empty-lines": Array [
+      "error",
+      Object {
+        "max": 1,
+      },
+    ],
+    "yml/no-tab-indent": Array [
+      "error",
+    ],
+    "yml/plain-scalar": Array [
+      "error",
+    ],
+    "yml/quotes": Array [
+      "error",
+    ],
+    "yml/spaced-comment": Array [
+      "error",
+    ],
+    "yml/vue-custom-block/no-parsing-error": Array [
+      "error",
+    ],
   },
   "settings": Object {},
 }
 `;
 
-exports[`Validate ESLint configs .add(Validate ESLint configs for bad-ts.ts) should return the proper lint results 1`] = `
+exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should return the proper lint results 1`] = `
 Array [
   Object {
     "errorCount": 30,
     "fatalErrorCount": 0,
-    "filePath": "C:\\\\Data\\\\Development\\\\Projects\\\\Packages\\\\configs\\\\packages\\\\eslint-config\\\\__fixtures__\\\\bad-ts.ts",
+    "filePath": StringMatching /bad\\\\\\.\\(ts\\|js\\|json\\|yml\\)\\$/,
     "fixableErrorCount": 26,
     "fixableWarningCount": 3,
     "messages": Array [
@@ -3788,6 +3989,1379 @@ const user: User =              new UserAccount(\\"Murphy\\", 1);
     "suppressedMessages": Array [],
     "usedDeprecatedRules": Array [],
     "warningCount": 4,
+  },
+]
+`;
+
+exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) should return the proper config 1`] = `
+Object {
+  "env": Object {
+    "browser": true,
+    "es2021": true,
+    "es6": true,
+    "node": true,
+    "vue/setup-compiler-macros": true,
+  },
+  "globals": Object {},
+  "ignorePatterns": Array [],
+  "noInlineConfig": undefined,
+  "parser": StringMatching /\\(vue-eslint-parser@\\|espree@\\|yaml-eslint-parser@\\)/,
+  "parserOptions": Object {
+    "ecmaVersion": 2020,
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module",
+  },
+  "plugins": Array [
+    "@typescript-eslint",
+    "vue",
+    "json-files",
+    "yml",
+    "sort-annotation",
+    "beautiful-sort",
+    "sort-class-members",
+  ],
+  "reportUnusedDisableDirectives": undefined,
+  "rules": Object {
+    "@typescript-eslint/adjacent-overload-signatures": Array [
+      "error",
+    ],
+    "@typescript-eslint/ban-ts-comment": Array [
+      "off",
+    ],
+    "@typescript-eslint/ban-types": Array [
+      "error",
+    ],
+    "@typescript-eslint/brace-style": Array [
+      "error",
+      "1tbs",
+    ],
+    "@typescript-eslint/comma-dangle": Array [
+      "error",
+      "never",
+    ],
+    "@typescript-eslint/comma-spacing": Array [
+      "error",
+      Object {
+        "after": true,
+        "before": false,
+      },
+    ],
+    "@typescript-eslint/func-call-spacing": Array [
+      "error",
+    ],
+    "@typescript-eslint/keyword-spacing": Array [
+      "error",
+    ],
+    "@typescript-eslint/lines-between-class-members": Array [
+      "error",
+      "always",
+      Object {
+        "exceptAfterSingleLine": true,
+      },
+    ],
+    "@typescript-eslint/member-delimiter-style": Array [
+      "error",
+      Object {
+        "multiline": Object {
+          "delimiter": "none",
+          "requireLast": true,
+        },
+        "multilineDetection": "brackets",
+        "singleline": Object {
+          "delimiter": "semi",
+          "requireLast": false,
+        },
+      },
+    ],
+    "@typescript-eslint/method-signature-style": Array [
+      "warn",
+      "method",
+    ],
+    "@typescript-eslint/no-array-constructor": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-empty-function": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-empty-interface": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-explicit-any": Array [
+      "off",
+    ],
+    "@typescript-eslint/no-extra-non-null-assertion": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-extra-parens": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-extra-semi": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-inferrable-types": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-loss-of-precision": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-misused-new": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-namespace": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-non-null-asserted-optional-chain": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-non-null-assertion": Array [
+      "warn",
+    ],
+    "@typescript-eslint/no-this-alias": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-unnecessary-type-constraint": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-unused-vars": Array [
+      "warn",
+    ],
+    "@typescript-eslint/no-var-requires": Array [
+      "error",
+    ],
+    "@typescript-eslint/object-curly-spacing": Array [
+      "error",
+      "never",
+    ],
+    "@typescript-eslint/prefer-as-const": Array [
+      "error",
+    ],
+    "@typescript-eslint/prefer-namespace-keyword": Array [
+      "error",
+    ],
+    "@typescript-eslint/prefer-ts-expect-error": Array [
+      "warn",
+    ],
+    "@typescript-eslint/quotes": Array [
+      "error",
+      "single",
+      Object {
+        "allowTemplateLiterals": true,
+        "avoidEscape": true,
+      },
+    ],
+    "@typescript-eslint/semi": Array [
+      "error",
+      "never",
+    ],
+    "@typescript-eslint/sort-type-union-intersection-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/space-before-blocks": Array [
+      "error",
+    ],
+    "@typescript-eslint/space-before-function-paren": Array [
+      "error",
+      Object {
+        "anonymous": "never",
+        "asyncArrow": "always",
+        "named": "never",
+      },
+    ],
+    "@typescript-eslint/space-infix-ops": Array [
+      "error",
+    ],
+    "@typescript-eslint/triple-slash-reference": Array [
+      "error",
+    ],
+    "@typescript-eslint/type-annotation-spacing": Array [
+      "error",
+    ],
+    "array-bracket-newline": Array [
+      "error",
+      Object {
+        "minItems": 4,
+        "multiline": true,
+      },
+    ],
+    "array-bracket-spacing": Array [
+      "error",
+      "never",
+      Object {
+        "arraysInArrays": true,
+        "objectsInArrays": true,
+      },
+    ],
+    "array-element-newline": Array [
+      "error",
+      Object {
+        "minItems": 4,
+        "multiline": true,
+      },
+    ],
+    "arrow-parens": Array [
+      "error",
+      "as-needed",
+    ],
+    "arrow-spacing": Array [
+      "error",
+    ],
+    "beautiful-sort/import": Array [
+      "error",
+      Object {
+        "order": Array [
+          "obj",
+          "defaultObj",
+          "namespace",
+          "default",
+          "special",
+          "none",
+        ],
+      },
+    ],
+    "comma-style": Array [
+      "error",
+      "last",
+    ],
+    "computed-property-spacing": Array [
+      "error",
+    ],
+    "constructor-super": Array [
+      "error",
+    ],
+    "curly": Array [
+      "error",
+      "all",
+    ],
+    "dot-location": Array [
+      "error",
+      "property",
+    ],
+    "eol-last": Array [
+      "error",
+    ],
+    "eqeqeq": Array [
+      "error",
+    ],
+    "for-direction": Array [
+      "error",
+    ],
+    "function-call-argument-newline": Array [
+      "error",
+      "consistent",
+    ],
+    "function-paren-newline": Array [
+      "error",
+      Object {
+        "minItems": 6,
+      },
+    ],
+    "generator-star-spacing": Array [
+      "error",
+    ],
+    "getter-return": Array [
+      "error",
+    ],
+    "implicit-arrow-linebreak": Array [
+      "error",
+    ],
+    "indent": Array [
+      "error",
+      "tab",
+      Object {
+        "MemberExpression": 1,
+        "SwitchCase": 1,
+        "flatTernaryExpressions": false,
+        "ignoreComments": false,
+        "offsetTernaryExpressions": false,
+      },
+    ],
+    "json-files/require-unique-dependency-names": Array [
+      "error",
+    ],
+    "json-files/sort-package-json": Array [
+      "error",
+    ],
+    "key-spacing": Array [
+      "error",
+    ],
+    "linebreak-style": Array [
+      "error",
+    ],
+    "lines-around-comment": Array [
+      "error",
+      Object {
+        "afterBlockComment": false,
+        "afterLineComment": false,
+        "allowBlockEnd": false,
+        "allowBlockStart": true,
+        "beforeBlockComment": true,
+        "beforeLineComment": false,
+      },
+    ],
+    "no-array-constructor": Array [
+      "off",
+    ],
+    "no-async-promise-executor": Array [
+      "error",
+    ],
+    "no-case-declarations": Array [
+      "error",
+    ],
+    "no-class-assign": Array [
+      "error",
+    ],
+    "no-compare-neg-zero": Array [
+      "error",
+    ],
+    "no-cond-assign": Array [
+      "error",
+    ],
+    "no-const-assign": Array [
+      "error",
+    ],
+    "no-constant-condition": Array [
+      "error",
+    ],
+    "no-control-regex": Array [
+      "error",
+    ],
+    "no-debugger": Array [
+      "error",
+    ],
+    "no-delete-var": Array [
+      "error",
+    ],
+    "no-dupe-args": Array [
+      "error",
+    ],
+    "no-dupe-class-members": Array [
+      "error",
+    ],
+    "no-dupe-else-if": Array [
+      "error",
+    ],
+    "no-dupe-keys": Array [
+      "error",
+    ],
+    "no-duplicate-case": Array [
+      "error",
+    ],
+    "no-else-return": Array [
+      "error",
+    ],
+    "no-empty": Array [
+      "error",
+    ],
+    "no-empty-character-class": Array [
+      "error",
+    ],
+    "no-empty-function": Array [
+      "off",
+    ],
+    "no-empty-pattern": Array [
+      "error",
+    ],
+    "no-ex-assign": Array [
+      "error",
+    ],
+    "no-extra-boolean-cast": Array [
+      "error",
+    ],
+    "no-extra-semi": Array [
+      "off",
+    ],
+    "no-fallthrough": Array [
+      "error",
+    ],
+    "no-func-assign": Array [
+      "error",
+    ],
+    "no-global-assign": Array [
+      "error",
+    ],
+    "no-import-assign": Array [
+      "error",
+    ],
+    "no-inner-declarations": Array [
+      "error",
+    ],
+    "no-invalid-regexp": Array [
+      "error",
+    ],
+    "no-irregular-whitespace": Array [
+      "off",
+    ],
+    "no-lonely-if": Array [
+      "error",
+    ],
+    "no-loss-of-precision": Array [
+      "off",
+    ],
+    "no-misleading-character-class": Array [
+      "error",
+    ],
+    "no-mixed-spaces-and-tabs": Array [
+      "error",
+    ],
+    "no-multi-spaces": Array [
+      "error",
+    ],
+    "no-multiple-empty-lines": Array [
+      "error",
+      Object {
+        "max": 1,
+      },
+    ],
+    "no-new-symbol": Array [
+      "error",
+    ],
+    "no-nonoctal-decimal-escape": Array [
+      "error",
+    ],
+    "no-obj-calls": Array [
+      "error",
+    ],
+    "no-octal": Array [
+      "error",
+    ],
+    "no-prototype-builtins": Array [
+      "error",
+    ],
+    "no-redeclare": Array [
+      "error",
+    ],
+    "no-regex-spaces": Array [
+      "error",
+    ],
+    "no-self-assign": Array [
+      "error",
+    ],
+    "no-setter-return": Array [
+      "error",
+    ],
+    "no-shadow-restricted-names": Array [
+      "error",
+    ],
+    "no-sparse-arrays": Array [
+      "error",
+    ],
+    "no-this-before-super": Array [
+      "error",
+    ],
+    "no-trailing-spaces": Array [
+      "error",
+    ],
+    "no-undef": Array [
+      "error",
+    ],
+    "no-undef-init": Array [
+      "error",
+    ],
+    "no-unexpected-multiline": Array [
+      "error",
+    ],
+    "no-unneeded-ternary": Array [
+      "error",
+    ],
+    "no-unreachable": Array [
+      "error",
+    ],
+    "no-unsafe-finally": Array [
+      "error",
+    ],
+    "no-unsafe-negation": Array [
+      "error",
+    ],
+    "no-unsafe-optional-chaining": Array [
+      "error",
+    ],
+    "no-unused-labels": Array [
+      "error",
+    ],
+    "no-unused-vars": Array [
+      "off",
+    ],
+    "no-useless-backreference": Array [
+      "error",
+    ],
+    "no-useless-catch": Array [
+      "error",
+    ],
+    "no-useless-computed-key": Array [
+      "error",
+    ],
+    "no-useless-escape": Array [
+      "error",
+    ],
+    "no-useless-rename": Array [
+      "error",
+    ],
+    "no-useless-return": Array [
+      "error",
+    ],
+    "no-var": Array [
+      "error",
+    ],
+    "no-whitespace-before-property": Array [
+      "error",
+    ],
+    "no-with": Array [
+      "error",
+    ],
+    "nonblock-statement-body-position": Array [
+      "error",
+      "below",
+    ],
+    "object-curly-newline": Array [
+      "error",
+      Object {
+        "multiline": true,
+      },
+    ],
+    "object-shorthand": Array [
+      "error",
+      "always",
+      Object {
+        "avoidExplicitReturnArrows": true,
+      },
+    ],
+    "operator-linebreak": Array [
+      "error",
+    ],
+    "padded-blocks": Array [
+      "warn",
+      "never",
+    ],
+    "prefer-arrow-callback": Array [
+      "error",
+    ],
+    "prefer-const": Array [
+      "warn",
+    ],
+    "prefer-object-spread": Array [
+      "error",
+    ],
+    "prefer-template": Array [
+      "error",
+    ],
+    "quote-props": Array [
+      "error",
+      "as-needed",
+    ],
+    "require-yield": Array [
+      "error",
+    ],
+    "rest-spread-spacing": Array [
+      "error",
+    ],
+    "semi-spacing": Array [
+      "error",
+    ],
+    "semi-style": Array [
+      "error",
+    ],
+    "sort-annotation/sort": Array [
+      "error",
+    ],
+    "sort-annotation/sort-keys": Array [
+      "error",
+    ],
+    "sort-class-members/sort-class-members": Array [
+      2,
+      Object {
+        "accessorPairPositioning": "getThenSet",
+        "order": Array [
+          "[static-properties]",
+          "[properties]",
+          "[conventional-private-properties]",
+          "constructor",
+          "[getters]",
+          "[setters]",
+          "[accessor-pairs]",
+          "[static-methods]",
+          "[methods]",
+          "[async-methods]",
+          "[conventional-private-methods]",
+          "[everything-else]",
+        ],
+        "stopAfterFirstProblem": false,
+      },
+    ],
+    "space-in-parens": Array [
+      "error",
+    ],
+    "space-unary-ops": Array [
+      "error",
+    ],
+    "spaced-comment": Array [
+      "off",
+      "always",
+    ],
+    "switch-colon-spacing": Array [
+      "error",
+    ],
+    "template-curly-spacing": Array [
+      "error",
+    ],
+    "template-tag-spacing": Array [
+      "error",
+    ],
+    "use-isnan": Array [
+      "error",
+    ],
+    "valid-typeof": Array [
+      "error",
+    ],
+    "vue/attribute-hyphenation": Array [
+      "warn",
+    ],
+    "vue/attributes-order": Array [
+      "warn",
+    ],
+    "vue/comment-directive": Array [
+      "error",
+    ],
+    "vue/component-definition-name-casing": Array [
+      "warn",
+    ],
+    "vue/component-tags-order": Array [
+      "warn",
+    ],
+    "vue/first-attribute-linebreak": Array [
+      "warn",
+    ],
+    "vue/html-closing-bracket-newline": Array [
+      "warn",
+    ],
+    "vue/html-closing-bracket-spacing": Array [
+      "off",
+    ],
+    "vue/html-end-tags": Array [
+      "warn",
+    ],
+    "vue/html-indent": Array [
+      "error",
+      "tab",
+    ],
+    "vue/html-quotes": Array [
+      "warn",
+    ],
+    "vue/html-self-closing": Array [
+      "warn",
+    ],
+    "vue/jsx-uses-vars": Array [
+      "error",
+    ],
+    "vue/max-attributes-per-line": Array [
+      "error",
+      Object {
+        "multiline": Object {
+          "max": 1,
+        },
+        "singleline": Object {
+          "max": 4,
+        },
+      },
+    ],
+    "vue/multi-word-component-names": Array [
+      "error",
+    ],
+    "vue/multiline-html-element-content-newline": Array [
+      "warn",
+    ],
+    "vue/mustache-interpolation-spacing": Array [
+      "warn",
+    ],
+    "vue/no-arrow-functions-in-watch": Array [
+      "error",
+    ],
+    "vue/no-async-in-computed-properties": Array [
+      "error",
+    ],
+    "vue/no-child-content": Array [
+      "error",
+    ],
+    "vue/no-computed-properties-in-data": Array [
+      "error",
+    ],
+    "vue/no-deprecated-data-object-declaration": Array [
+      "error",
+    ],
+    "vue/no-deprecated-destroyed-lifecycle": Array [
+      "error",
+    ],
+    "vue/no-deprecated-dollar-listeners-api": Array [
+      "error",
+    ],
+    "vue/no-deprecated-dollar-scopedslots-api": Array [
+      "error",
+    ],
+    "vue/no-deprecated-events-api": Array [
+      "error",
+    ],
+    "vue/no-deprecated-filter": Array [
+      "error",
+    ],
+    "vue/no-deprecated-functional-template": Array [
+      "error",
+    ],
+    "vue/no-deprecated-html-element-is": Array [
+      "error",
+    ],
+    "vue/no-deprecated-inline-template": Array [
+      "error",
+    ],
+    "vue/no-deprecated-props-default-this": Array [
+      "error",
+    ],
+    "vue/no-deprecated-router-link-tag-prop": Array [
+      "error",
+    ],
+    "vue/no-deprecated-scope-attribute": Array [
+      "error",
+    ],
+    "vue/no-deprecated-slot-attribute": Array [
+      "error",
+    ],
+    "vue/no-deprecated-slot-scope-attribute": Array [
+      "error",
+    ],
+    "vue/no-deprecated-v-bind-sync": Array [
+      "error",
+    ],
+    "vue/no-deprecated-v-is": Array [
+      "error",
+    ],
+    "vue/no-deprecated-v-on-native-modifier": Array [
+      "error",
+    ],
+    "vue/no-deprecated-v-on-number-modifiers": Array [
+      "error",
+    ],
+    "vue/no-deprecated-vue-config-keycodes": Array [
+      "error",
+    ],
+    "vue/no-dupe-keys": Array [
+      "error",
+    ],
+    "vue/no-dupe-v-else-if": Array [
+      "error",
+    ],
+    "vue/no-duplicate-attributes": Array [
+      "error",
+    ],
+    "vue/no-export-in-script-setup": Array [
+      "error",
+    ],
+    "vue/no-expose-after-await": Array [
+      "error",
+    ],
+    "vue/no-lifecycle-after-await": Array [
+      "error",
+    ],
+    "vue/no-lone-template": Array [
+      "warn",
+    ],
+    "vue/no-multi-spaces": Array [
+      "warn",
+    ],
+    "vue/no-multiple-slot-args": Array [
+      "warn",
+    ],
+    "vue/no-mutating-props": Array [
+      "error",
+    ],
+    "vue/no-parsing-error": Array [
+      "error",
+    ],
+    "vue/no-ref-as-operand": Array [
+      "error",
+    ],
+    "vue/no-reserved-component-names": Array [
+      "error",
+    ],
+    "vue/no-reserved-keys": Array [
+      "error",
+    ],
+    "vue/no-reserved-props": Array [
+      "error",
+    ],
+    "vue/no-setup-props-destructure": Array [
+      "off",
+    ],
+    "vue/no-shared-component-data": Array [
+      "error",
+    ],
+    "vue/no-side-effects-in-computed-properties": Array [
+      "error",
+    ],
+    "vue/no-spaces-around-equal-signs-in-attribute": Array [
+      "warn",
+    ],
+    "vue/no-static-inline-styles": Array [
+      "error",
+      Object {
+        "allowBinding": true,
+      },
+    ],
+    "vue/no-template-key": Array [
+      "error",
+    ],
+    "vue/no-template-shadow": Array [
+      "warn",
+    ],
+    "vue/no-textarea-mustache": Array [
+      "error",
+    ],
+    "vue/no-unused-components": Array [
+      "error",
+    ],
+    "vue/no-unused-vars": Array [
+      "error",
+    ],
+    "vue/no-use-computed-property-like-method": Array [
+      "error",
+    ],
+    "vue/no-use-v-if-with-v-for": Array [
+      "error",
+    ],
+    "vue/no-useless-template-attributes": Array [
+      "error",
+    ],
+    "vue/no-v-for-template-key-on-child": Array [
+      "error",
+    ],
+    "vue/no-v-html": Array [
+      "warn",
+    ],
+    "vue/no-v-text-v-html-on-component": Array [
+      "error",
+    ],
+    "vue/no-watch-after-await": Array [
+      "error",
+    ],
+    "vue/one-component-per-file": Array [
+      "warn",
+    ],
+    "vue/order-in-components": Array [
+      "warn",
+    ],
+    "vue/prefer-import-from-vue": Array [
+      "error",
+    ],
+    "vue/prop-name-casing": Array [
+      "warn",
+    ],
+    "vue/require-component-is": Array [
+      "error",
+    ],
+    "vue/require-default-prop": Array [
+      "off",
+    ],
+    "vue/require-explicit-emits": Array [
+      "warn",
+    ],
+    "vue/require-prop-type-constructor": Array [
+      "error",
+    ],
+    "vue/require-prop-types": Array [
+      "warn",
+    ],
+    "vue/require-render-return": Array [
+      "error",
+    ],
+    "vue/require-slots-as-functions": Array [
+      "error",
+    ],
+    "vue/require-toggle-inside-transition": Array [
+      "error",
+    ],
+    "vue/require-v-for-key": Array [
+      "error",
+    ],
+    "vue/require-valid-default-prop": Array [
+      "error",
+    ],
+    "vue/return-in-computed-property": Array [
+      "error",
+    ],
+    "vue/return-in-emits-validator": Array [
+      "error",
+    ],
+    "vue/singleline-html-element-content-newline": Array [
+      "warn",
+    ],
+    "vue/this-in-template": Array [
+      "warn",
+    ],
+    "vue/use-v-on-exact": Array [
+      "error",
+    ],
+    "vue/v-bind-style": Array [
+      "warn",
+    ],
+    "vue/v-on-event-hyphenation": Array [
+      "warn",
+    ],
+    "vue/v-on-style": Array [
+      "warn",
+    ],
+    "vue/v-slot-style": Array [
+      "warn",
+    ],
+    "vue/valid-attribute-name": Array [
+      "error",
+    ],
+    "vue/valid-define-emits": Array [
+      "error",
+    ],
+    "vue/valid-define-props": Array [
+      "error",
+    ],
+    "vue/valid-next-tick": Array [
+      "error",
+    ],
+    "vue/valid-template-root": Array [
+      "error",
+    ],
+    "vue/valid-v-bind": Array [
+      "error",
+    ],
+    "vue/valid-v-cloak": Array [
+      "error",
+    ],
+    "vue/valid-v-else": Array [
+      "error",
+    ],
+    "vue/valid-v-else-if": Array [
+      "error",
+    ],
+    "vue/valid-v-for": Array [
+      "error",
+    ],
+    "vue/valid-v-html": Array [
+      "error",
+    ],
+    "vue/valid-v-if": Array [
+      "error",
+    ],
+    "vue/valid-v-is": Array [
+      "error",
+    ],
+    "vue/valid-v-memo": Array [
+      "error",
+    ],
+    "vue/valid-v-model": Array [
+      "error",
+    ],
+    "vue/valid-v-on": Array [
+      "error",
+    ],
+    "vue/valid-v-once": Array [
+      "error",
+    ],
+    "vue/valid-v-pre": Array [
+      "error",
+    ],
+    "vue/valid-v-show": Array [
+      "error",
+    ],
+    "vue/valid-v-slot": Array [
+      "error",
+    ],
+    "vue/valid-v-text": Array [
+      "error",
+    ],
+    "yield-star-spacing": Array [
+      "error",
+    ],
+    "yml/block-mapping": Array [
+      "error",
+    ],
+    "yml/block-mapping-question-indicator-newline": Array [
+      "error",
+    ],
+    "yml/block-sequence": Array [
+      "error",
+    ],
+    "yml/block-sequence-hyphen-indicator-newline": Array [
+      "error",
+    ],
+    "yml/flow-mapping-curly-newline": Array [
+      "error",
+    ],
+    "yml/flow-mapping-curly-spacing": Array [
+      "error",
+    ],
+    "yml/flow-sequence-bracket-newline": Array [
+      "error",
+    ],
+    "yml/flow-sequence-bracket-spacing": Array [
+      "error",
+    ],
+    "yml/indent": Array [
+      "error",
+    ],
+    "yml/key-spacing": Array [
+      "error",
+    ],
+    "yml/no-empty-document": Array [
+      "error",
+    ],
+    "yml/no-empty-key": Array [
+      "error",
+    ],
+    "yml/no-empty-mapping-value": Array [
+      "error",
+    ],
+    "yml/no-empty-sequence-entry": Array [
+      "error",
+    ],
+    "yml/no-irregular-whitespace": Array [
+      "error",
+    ],
+    "yml/no-multiple-empty-lines": Array [
+      "error",
+      Object {
+        "max": 1,
+      },
+    ],
+    "yml/no-tab-indent": Array [
+      "error",
+    ],
+    "yml/plain-scalar": Array [
+      "error",
+    ],
+    "yml/quotes": Array [
+      "error",
+    ],
+    "yml/spaced-comment": Array [
+      "error",
+    ],
+    "yml/vue-custom-block/no-parsing-error": Array [
+      "error",
+    ],
+  },
+  "settings": Object {},
+}
+`;
+
+exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) should return the proper lint results 1`] = `
+Array [
+  Object {
+    "errorCount": 17,
+    "fatalErrorCount": 0,
+    "filePath": StringMatching /bad\\\\\\.\\(ts\\|js\\|json\\|yml\\)\\$/,
+    "fixableErrorCount": 13,
+    "fixableWarningCount": 0,
+    "messages": Array [
+      Object {
+        "column": 1,
+        "endColumn": 6,
+        "endLine": 2,
+        "fix": Object {
+          "range": Array [
+            8,
+            13,
+          ],
+          "text": "BAD",
+        },
+        "line": 2,
+        "message": "Must use plain style scalar.",
+        "messageId": "required",
+        "nodeType": "YAMLScalar",
+        "ruleId": "yml/plain-scalar",
+        "severity": 2,
+      },
+      Object {
+        "column": 5,
+        "endColumn": 10,
+        "endLine": 3,
+        "fix": Object {
+          "range": Array [
+            19,
+            24,
+          ],
+          "text": "foo",
+        },
+        "line": 3,
+        "message": "Must use plain style scalar.",
+        "messageId": "required",
+        "nodeType": "YAMLScalar",
+        "ruleId": "yml/plain-scalar",
+        "severity": 2,
+      },
+      Object {
+        "column": 1,
+        "endColumn": 1,
+        "endLine": 7,
+        "fix": Object {
+          "range": Array [
+            26,
+            28,
+          ],
+          "text": "",
+        },
+        "line": 5,
+        "message": "More than 1 blank line not allowed.",
+        "messageId": "consecutiveBlank",
+        "nodeType": null,
+        "ruleId": "yml/no-multiple-empty-lines",
+        "severity": 2,
+      },
+      Object {
+        "column": 1,
+        "endColumn": 1,
+        "endLine": 7,
+        "fix": Object {
+          "range": Array [
+            25,
+            27,
+          ],
+          "text": "",
+        },
+        "line": 5,
+        "message": "More than 1 blank line not allowed.",
+        "messageId": "consecutiveBlank",
+        "nodeType": "Program",
+        "ruleId": "no-multiple-empty-lines",
+        "severity": 2,
+      },
+      Object {
+        "column": 5,
+        "endColumn": 10,
+        "endLine": 7,
+        "fix": Object {
+          "range": Array [
+            32,
+            37,
+          ],
+          "text": "bar",
+        },
+        "line": 7,
+        "message": "Must use plain style scalar.",
+        "messageId": "required",
+        "nodeType": "YAMLScalar",
+        "ruleId": "yml/plain-scalar",
+        "severity": 2,
+      },
+      Object {
+        "column": 1,
+        "endColumn": 1,
+        "endLine": 10,
+        "fix": Object {
+          "range": Array [
+            39,
+            40,
+          ],
+          "text": "",
+        },
+        "line": 9,
+        "message": "More than 1 blank line not allowed.",
+        "messageId": "consecutiveBlank",
+        "nodeType": null,
+        "ruleId": "yml/no-multiple-empty-lines",
+        "severity": 2,
+      },
+      Object {
+        "column": 1,
+        "endColumn": 1,
+        "endLine": 10,
+        "fix": Object {
+          "range": Array [
+            38,
+            39,
+          ],
+          "text": "",
+        },
+        "line": 9,
+        "message": "More than 1 blank line not allowed.",
+        "messageId": "consecutiveBlank",
+        "nodeType": "Program",
+        "ruleId": "no-multiple-empty-lines",
+        "severity": 2,
+      },
+      Object {
+        "column": 1,
+        "endColumn": 4,
+        "endLine": 12,
+        "line": 10,
+        "message": "Empty documents are forbidden.",
+        "messageId": "unexpectedEmpty",
+        "nodeType": "YAMLDocument",
+        "ruleId": "yml/no-empty-document",
+        "severity": 2,
+      },
+      Object {
+        "column": 1,
+        "endColumn": 8,
+        "endLine": 11,
+        "fix": Object {
+          "range": Array [
+            44,
+            44,
+          ],
+          "text": "
+",
+        },
+        "line": 11,
+        "message": "Expected line before comment.",
+        "messageId": "before",
+        "nodeType": "Block",
+        "ruleId": "lines-around-comment",
+        "severity": 2,
+      },
+      Object {
+        "column": 1,
+        "endColumn": 1,
+        "endLine": 15,
+        "fix": Object {
+          "range": Array [
+            57,
+            58,
+          ],
+          "text": "",
+        },
+        "line": 14,
+        "message": "More than 1 blank line not allowed.",
+        "messageId": "consecutiveBlank",
+        "nodeType": null,
+        "ruleId": "yml/no-multiple-empty-lines",
+        "severity": 2,
+      },
+      Object {
+        "column": 1,
+        "endColumn": 1,
+        "endLine": 15,
+        "fix": Object {
+          "range": Array [
+            56,
+            57,
+          ],
+          "text": "",
+        },
+        "line": 14,
+        "message": "More than 1 blank line not allowed.",
+        "messageId": "consecutiveBlank",
+        "nodeType": "Program",
+        "ruleId": "no-multiple-empty-lines",
+        "severity": 2,
+      },
+      Object {
+        "column": 1,
+        "endColumn": 8,
+        "endLine": 15,
+        "line": 15,
+        "message": "Empty mapping keys are forbidden.",
+        "messageId": "unexpectedEmpty",
+        "nodeType": "YAMLPair",
+        "ruleId": "yml/no-empty-key",
+        "severity": 2,
+      },
+      Object {
+        "column": 3,
+        "endColumn": 8,
+        "endLine": 15,
+        "fix": Object {
+          "range": Array [
+            60,
+            65,
+          ],
+          "text": "BAD",
+        },
+        "line": 15,
+        "message": "Must use plain style scalar.",
+        "messageId": "required",
+        "nodeType": "YAMLScalar",
+        "ruleId": "yml/plain-scalar",
+        "severity": 2,
+      },
+      Object {
+        "column": 1,
+        "endColumn": 7,
+        "endLine": 16,
+        "line": 16,
+        "message": "Empty mapping values are forbidden.",
+        "messageId": "unexpectedEmpty",
+        "nodeType": "YAMLPair",
+        "ruleId": "yml/no-empty-mapping-value",
+        "severity": 2,
+      },
+      Object {
+        "column": 1,
+        "endColumn": 6,
+        "endLine": 16,
+        "fix": Object {
+          "range": Array [
+            66,
+            71,
+          ],
+          "text": "BAD",
+        },
+        "line": 16,
+        "message": "Must use plain style scalar.",
+        "messageId": "required",
+        "nodeType": "YAMLScalar",
+        "ruleId": "yml/plain-scalar",
+        "severity": 2,
+      },
+      Object {
+        "column": 1,
+        "endColumn": 4,
+        "endLine": 19,
+        "line": 17,
+        "message": "Empty documents are forbidden.",
+        "messageId": "unexpectedEmpty",
+        "nodeType": "YAMLDocument",
+        "ruleId": "yml/no-empty-document",
+        "severity": 2,
+      },
+      Object {
+        "column": 1,
+        "endColumn": 8,
+        "endLine": 18,
+        "fix": Object {
+          "range": Array [
+            77,
+            77,
+          ],
+          "text": "
+",
+        },
+        "line": 18,
+        "message": "Expected line before comment.",
+        "messageId": "before",
+        "nodeType": "Block",
+        "ruleId": "lines-around-comment",
+        "severity": 2,
+      },
+    ],
+    "source": "# ✗ BAD
+\\"BAD\\":
+  - \\"foo\\"
+
+
+
+  - \\"bar\\"
+
+
+---
+# ✗ BAD
+...
+
+
+: \\"BAD\\"
+\\"BAD\\":
+---
+# ✗ BAD
+...
+foo: bar
+...
+- bar
+",
+    "suppressedMessages": Array [],
+    "usedDeprecatedRules": Array [],
+    "warningCount": 0,
   },
 ]
 `;

@@ -2,7 +2,9 @@ export = {
 	extends: [
 		'./typescript',
 		'../plugins/jest',
-		'../plugins/json-files',
+		'../plugins/unicorn',
+		'../plugins/json',
+		'../plugins/yaml',
 		'../plugins/sorting'
 	],
 	rules: {}
