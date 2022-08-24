@@ -1,9 +1,7 @@
 name: Release
 
 on:
-  pull_request_target:
-    types:
-      - closed
+  push:
     branches:
       - main
       - next
