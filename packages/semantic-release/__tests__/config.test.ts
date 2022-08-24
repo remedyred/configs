@@ -45,7 +45,7 @@ describe.each([ ['ts', configTS], ['cjs', configCJS] ])('config %s', (label, con
 		})
 	})
 
-	it('should have a plugin where the first element is "@semantic-release/commit-analyzer" and the second element is {preset: "conventionalcommits"}', () => {
-		expect(config.plugins).toContainEqual(['@semantic-release/commit-analyzer', {preset: 'conventionalcommits'} ])
+	it('should have a plugin where the first element is "@semantic-release/npm" and the second element is {tarballDir: "pack"}', () => {
+		expect(config.plugins).toContainEqual(['@semantic-release/npm', {tarballDir: 'pack'} ])
 	})
 })

@@ -36,7 +36,8 @@
 		"@semantic-release/github": "^8.0.5",
 		"@semantic-release/npm": "^9.0.1",
 		"@semantic-release/release-notes-generator": "^10.0.3",
-		"conventional-changelog-conventionalcommits": "5.0.0"
+		"conventional-changelog-conventionalcommits": "5.0.0",
+		"semantic-release-pr-analyzer": "^1.6.0"
 	},
 	"devDependencies": {
 		"@snickbit/indexer": "2.5.7",
