@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [@snickbit/eslint-config-v1.3.2](https://github.com/snickbit/configs/compare/@snickbit/eslint-config-v1.3.1...@snickbit/eslint-config-v1.3.2) (2022-08-25)
+
+
+### Bug Fixes
+
+* allow kebab-case and PascalCase for filenames ([#68](https://github.com/snickbit/configs/issues/68)) ([9b37fc8](https://github.com/snickbit/configs/commit/9b37fc85ff9c6e62054acff01b19a693c042b8fc))
+
 ## [@snickbit/eslint-config-v1.1.0](https://github.com/snickbit/configs/compare/@snickbit/eslint-config-v1.0.0...@snickbit/eslint-config-v1.1.0) (2022-08-21)
 
 
