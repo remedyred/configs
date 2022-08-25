@@ -1,5 +1,0 @@
-{
-	"source": "src/plugins/*.ts",
-	"output": "src/plugins/index.ts",
-	"type": "default"
-}
