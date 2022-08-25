@@ -15,21 +15,17 @@ describe.each([ ['ts', configTS], ['cjs', configCJS] ])('config %s', (label, con
 			expect(config.plugins).toBeInstanceOf(Array)
 		})
 
-		it('should be an array of arrays or strings', () => {
-			for (const plugin of config.plugins) {
-				const type = Array.isArray(plugin)
-					? 'array'
-					: typeof plugin
-				expect(['string', 'array']).toContain(type)
-			}
-		})
-
-		it('array configs, first element should be a string', () => {
-			for (const plugin of config.plugins) {
-				if (Array.isArray(plugin)) {
-					const first = plugin[0]
-					expect(typeof first).toBe('string')
-				}
+		describe.each(config.plugins)('plugin %s', plugin => {
+			if (Array.isArray(plugin)) {
+				it('array configs should be a string and a config object', () => {
+					const [pkg, config] = plugin
+					expect(pkg).toEqual(expect.stringContaining('semantic'))
+					expect(config).toEqual(expect.any(Object))
+				})
+			} else {
+				it('string plugins should be a string containing "semantic"', () => {
+					expect(plugin).toEqual(expect.stringContaining('semantic'))
+				})
 			}
 		})
 	})
