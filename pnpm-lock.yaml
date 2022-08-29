@@ -70,7 +70,7 @@ importers:
       semantic-release: 19.0.5
       semantic-release-monorepo: ^7.0.5
       ts-jest: ^28.0.8
-      tsup: 6.2.2
+      tsup: 6.2.3
       typescript: 4.8.2
       vue-eslint-parser: ^9.0.3
     dependencies:
@@ -98,7 +98,7 @@ importers:
       semantic-release: 19.0.5
       semantic-release-monorepo: 7.0.5_semantic-release@19.0.5
       ts-jest: 28.0.8_556mfp7b5dutuj2jcrj5i7zc5q
-      tsup: 6.2.2_typescript@4.8.2
+      tsup: 6.2.3_typescript@4.8.2
       typescript: 4.8.2
 
   packages/renovate-config:
@@ -158,7 +158,7 @@ importers:
       semantic-release: 19.0.5
       semantic-release-monorepo: ^7.0.5
       ts-jest: 28.0.8
-      tsup: 6.2.2
+      tsup: 6.2.3
       typescript: 4.8.2
     dependencies:
       '@semantic-release/changelog': 6.0.1_semantic-release@19.0.5
@@ -176,7 +176,7 @@ importers:
       jest: 28.1.3_@types+node@18.7.9
       semantic-release: 19.0.5
       ts-jest: 28.0.8_556mfp7b5dutuj2jcrj5i7zc5q
-      tsup: 6.2.2_typescript@4.8.2
+      tsup: 6.2.3_typescript@4.8.2
       typescript: 4.8.2
 
 packages:
@@ -9812,8 +9812,8 @@ packages:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
     dev: true
 
-  /tsup/6.2.2_typescript@4.8.2:
-    resolution: {integrity: sha512-vJ9IAdif4GKAz2XMZzjX1hNqhBezJWXjm0qeQEoI7y//a64cxgCF8178eTMV4jBu7YNKnfAPpPSuyXW4mN+9rA==}
+  /tsup/6.2.3_typescript@4.8.2:
+    resolution: {integrity: sha512-J5Pu2Dx0E1wlpIEsVFv9ryzP1pZ1OYsJ2cBHZ7GrKteytNdzaSz5hmLX7/nAxtypq+jVkVvA79d7S83ETgHQ5w==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
