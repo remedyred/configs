@@ -1,6 +1,7 @@
 import SemanticRelease from 'semantic-release'
 
 const config: Partial<SemanticRelease.GlobalConfig> = {
+	extends: ['semantic-release-monorepo'],
 	branches: [
 		'+([0-9])?(.{+([0-9]),x}).x',
 		'main',
