@@ -19,7 +19,6 @@
 	},
 	"release": {
 		"extends": [
-			"semantic-release-monorepo",
 			"@snickbit/semantic-release"
 		]
 	},
