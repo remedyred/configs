@@ -13,6 +13,7 @@
 	"java": false,
 	"ruby": false,
 	"rust": false,
+	"prCreation": "not-pending",
 	"postUpgradeTasks": {
 		"commands": [
 			"pnpm i --lockfile-only",
