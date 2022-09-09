@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/remedyred/configs/compare/v1.0.4...v1.0.5) (2022-09-09)
+
+
+### Bug Fixes
+
+* **renovate:** add reviewers ([8e71dee](https://github.com/remedyred/configs/commit/8e71dee9a9919c0d0600de4593fe48fc9af3c312))
+* **renovate:** don't create PRs until not pending ([66bff98](https://github.com/remedyred/configs/commit/66bff980ff071608d3f5fe07589cb7953f4f1d5c))
+
 ## 1.0.0 (2022-09-05)
 
 
