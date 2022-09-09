@@ -54,11 +54,6 @@
 		"entry": [
 			"src/index.ts",
 			"src/monorepo.ts"
-		],
-		"clean": true,
-		"dts": false,
-		"format": [
-			"cjs"
 		]
 	}
 }
