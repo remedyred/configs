@@ -19,7 +19,7 @@
 	},
 	"release": {
 		"extends": [
-			"@snickbit/semantic-release"
+			"../semantic-release/dist/index.js"
 		]
 	},
 	"jest": {
