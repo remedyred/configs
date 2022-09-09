@@ -6,4 +6,4 @@ dist/
 
 packages/eslint-config/__fixtures__
 
-pnpm-lock.yaml
+pnpm-*.yaml
