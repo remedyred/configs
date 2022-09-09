@@ -1,0 +1,14 @@
+{
+	"packageRules": [
+		{
+			"groupName": "Twilio",
+			"matchPackagePrefixes": [
+				"@twilio/"
+			],
+			"matchPackageNames": [
+				"twilio-*",
+				"twilio"
+			]
+		}
+	]
+}
