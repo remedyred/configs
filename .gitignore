@@ -19,6 +19,3 @@ dist/
 !.*ignore
 !.*rc*
 !.husky/
-
-# Forced
-.npmrc
