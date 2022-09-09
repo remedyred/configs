@@ -15,7 +15,7 @@ describe.each([ ['ts', configTS], ['cjs', configCJS] ])('config %s', (label, con
 			expect(config.plugins).toBeInstanceOf(Array)
 		})
 
-		describe.each(config.plugins)('plugin %s', plugin => {
+		describe.each(config.plugins as [string, any])('plugin %s', plugin => {
 			if (Array.isArray(plugin)) {
 				it('array configs should be a string and a config object', () => {
 					const [pkg, config] = plugin
