@@ -9,7 +9,7 @@ on:
 jobs:
   release:
     name: Release
-    timeout-minutes: 5
+    timeout-minutes: 15
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
