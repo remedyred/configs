@@ -1,6 +1,6 @@
 {
 	"name": "@snickbit/semantic-release",
-	"version": "1.0.4",
+	"version": "0.2.0",
 	"description": "Snickbit semantic-release config",
 	"license": "MIT",
 	"exports": {
