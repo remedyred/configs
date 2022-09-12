@@ -109,7 +109,7 @@ importers:
       typescript: 4.8.2
       unixify: ^1.0.0
     dependencies:
-      '@snickbit/node-cli': 3.0.18
+      '@snickbit/node-cli': 3.0.19
       '@snickbit/node-utilities': 4.4.12
       '@snickbit/out': 2.0.42
       '@snickbit/utilities': 3.4.9
@@ -3209,8 +3209,8 @@ packages:
     dependencies:
       '@snickbit/utilities': 3.4.9
 
-  /@snickbit/node-cli/3.0.18:
-    resolution: {integrity: sha512-G+IekSu8gemkVFVA/yPtBh64g0NUnvOcm0xREWLP0kuHS+jhlJtB3xLfnxMDbJKY6I3tmCPE9VpwOaRzX6mTPg==}
+  /@snickbit/node-cli/3.0.19:
+    resolution: {integrity: sha512-ziA8SbKXXAvSU6O9zlKi6ESGFf47S22I7NZ9b11iUkDNLqDUpddMmEnl7q2zAd/GqzOW4DlubqookGhUsWe7Mg==}
     engines: {node: '>= 12'}
     dependencies:
       '@snickbit/node-utilities': 4.4.9
