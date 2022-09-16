@@ -22,5 +22,6 @@
 		]
 	},
 	"rebaseWhen": "conflicted",
-	"semanticCommits": "enabled"
+	"semanticCommits": "enabled",
+	"dependencyDashboard": false
 }
