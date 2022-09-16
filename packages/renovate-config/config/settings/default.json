@@ -1,0 +1,10 @@
+{
+	"extends": [
+		"./common"
+	],
+	"baseBranches": [
+		"main",
+		"next",
+		"dev"
+	]
+}

@@ -6,11 +6,6 @@
 	"reviewers": [
 		"snickbit"
 	],
-	"baseBranches": [
-		"main",
-		"next",
-		"dev"
-	],
 	"configMigration": true,
 	"prCreation": "not-pending",
 	"postUpgradeTasks": {
