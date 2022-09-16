@@ -4,11 +4,6 @@
 		"./settings/common",
 		"./plugins/*",
 		"./groups/*",
-		"./automerge/automerge",
-		"./automerge/automerge-linters",
-		"./automerge/automerge-lock",
-		"./automerge/automerge-patch",
-		"./automerge/automerge-pin",
-		"./automerge/automerge-types"
+		"./automerge/*"
 	]
 }
