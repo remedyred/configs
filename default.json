@@ -23,9 +23,19 @@
 		"workarounds:typesNodeVersioning",
 		"replacements:all"
 	],
+	"assignees": [
+		"snickbit"
+	],
 	"automerge": true,
 	"automergeStrategy": "squash",
 	"automergeType": "pr",
+	"baseBranches": [
+		"main",
+		"next",
+		"dev"
+	],
+	"configMigration": true,
+	"dependencyDashboard": false,
 	"ignoreDeps": [],
 	"lockFileMaintenance": {
 		"enabled": true,
@@ -34,6 +44,35 @@
 		"platformAutomerge": true
 	},
 	"packageRules": [
+		{
+			"matchPackagePrefixes": [
+				"@snickbit",
+				"@remedyred"
+			],
+			"stabilityDays": 1
+		},
+		{
+			"matchSourceUrlPrefixes": [
+				"https://github.com/ghiscoding/lerna-lite"
+			],
+			"matchUpdateTypes": [
+				"digest",
+				"patch",
+				"minor",
+				"major"
+			],
+			"groupName": "lerna-lite monorepo"
+		},
+		{
+			"groupName": "Twilio",
+			"matchPackagePrefixes": [
+				"@twilio/"
+			],
+			"matchPackageNames": [
+				"twilio-*",
+				"twilio"
+			]
+		},
 		{
 			"matchDepTypes": [
 				"devDependencies"
@@ -62,25 +101,26 @@
 			"automerge": true
 		},
 		{
-			"groupName": "@types packages (minor or patch)",
+			"groupName": "@types packages",
 			"matchPackagePatterns": [
 				"^@types/"
 			],
-			"matchUpdateTypes": [
-				"minor",
-				"patch"
-			],
 			"automerge": true
-		},
-		{
-			"matchPackagePrefixes": [
-				"@snickbit",
-				"@remedyred"
-			],
-			"stabilityDays": 1
 		}
 	],
 	"pin": {
 		"automerge": true
-	}
+	},
+	"postUpgradeTasks": {
+		"commands": [
+			"pnpm i --lockfile-only",
+			"pnpm run fix"
+		]
+	},
+	"prCreation": "not-pending",
+	"rebaseWhen": "conflicted",
+	"reviewers": [
+		"snickbit"
+	],
+	"semanticCommits": "enabled"
 }
