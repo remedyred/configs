@@ -69,13 +69,24 @@ export async function buildFromDefinitionFile(source: string, cwd?: string): Pro
 }
 
 export function cleanSource(fileSource: string, cwd?: string): string {
-	let cleanSource = unixify(fileSource).replace(/^\.\//, '').replace(/\/\*$/, '/**/*')
+	let cleanSource = fileSource
+
 	if (cwd) {
+		if (path.isAbsolute(cleanSource)) {
+			cleanSource = path.relative(cwd, cleanSource)
+		}
+
 		cleanSource = path.posix.join(cwd, cleanSource)
 	}
+
 	if (!cleanSource.endsWith('.json')) {
 		cleanSource += '.json'
 	}
+
+	cleanSource = unixify(cleanSource)
+		.replace(/^\.\//, '')
+		.replace(/\/\*$/, '/**/*')
+
 	return cleanSource
 }
 
@@ -84,26 +95,33 @@ export async function buildFromDefinition(config: SubConfig): Promise<RenovateCo
 	const extensions: string[] = []
 	const fileSources: string[] = []
 
-	for (const fileSource of config.fileSources) {
-		if (fileSource.startsWith('./')) {
-			fileSources.push(cleanSource(fileSource, config.cwd))
-		} else {
-			extensions.push(fileSource)
+	const addExtensions = (sources: string[], cwd?: string) => {
+		for (const fileSource of sources) {
+			if (fileSource.startsWith('./') || fileSource.startsWith('../')) {
+				fileSources.push(cleanSource(fileSource, cwd || config.cwd))
+			} else {
+				extensions.push(fileSource)
+			}
 		}
 	}
 
-	const files = await fg(fileSources, {absolute: true})
+	addExtensions(config.fileSources)
 
-	for (const file of files) {
-		const json: RenovateConfig = getFileJson(file)
-		const dirname = path.basename(path.dirname(file))
-		const basename = path.basename(file)
-		if (json) {
-			$out.debug(`adding file ${dirname}/${basename}`)
-			if (json.extends) {
-				extensions.push(...json.extends)
+	while (fileSources.length > 0) {
+		const searches = fileSources.shift()
+		const files = await fg(searches, {cwd: config.cwd})
+
+		for (const file of files) {
+			const json: RenovateConfig = getFileJson(file)
+			const dirname = path.basename(path.dirname(file))
+			const basename = path.basename(file)
+			if (json) {
+				$out.debug(`adding file ${dirname}/${basename}`)
+				if (json.extends) {
+					addExtensions(json.extends, path.dirname(file))
+				}
+				combinedFiles = mergeChildConfig(combinedFiles, json)
 			}
-			combinedFiles = mergeChildConfig(combinedFiles, json)
 		}
 	}
 
