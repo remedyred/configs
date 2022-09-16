@@ -1,4 +1,1 @@
-export = {
-	extends: ['./base', '../plugins/yaml'],
-	rules: {}
-}
+export = {extends: ['./base', '../plugins/yaml']}
