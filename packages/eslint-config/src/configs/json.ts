@@ -1,4 +1,1 @@
-export = {
-	extends: ['./base', '../plugins/json'],
-	rules: {}
-}
+export = {extends: ['./base', '../plugins/json']}

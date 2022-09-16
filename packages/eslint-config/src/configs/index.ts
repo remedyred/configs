@@ -6,6 +6,5 @@ export = {
 		'../plugins/json',
 		'../plugins/yaml',
 		'../plugins/sorting'
-	],
-	rules: {}
+	]
 }
