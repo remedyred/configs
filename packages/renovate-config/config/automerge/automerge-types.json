@@ -2,9 +2,8 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"packageRules": [
 		{
-			"groupName": "@types packages (minor or patch)",
+			"groupName": "@types packages",
 			"matchPackagePatterns": ["^@types/"],
-			"matchUpdateTypes": ["minor", "patch"],
 			"automerge": true
 		}
 	]
