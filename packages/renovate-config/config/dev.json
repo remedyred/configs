@@ -1,7 +1,12 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
+		"./settings/common",
 		"./plugins/*",
+		"./groups/*",
 		"./automerge/*"
+	],
+	"baseBranches": [
+		"dev"
 	]
 }
