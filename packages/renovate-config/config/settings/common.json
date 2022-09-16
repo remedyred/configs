@@ -12,9 +12,6 @@
 		"dev"
 	],
 	"configMigration": true,
-	"java": false,
-	"ruby": false,
-	"rust": false,
 	"prCreation": "not-pending",
 	"postUpgradeTasks": {
 		"commands": [
