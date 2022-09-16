@@ -1,0 +1,124 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"preview:dockerCompose",
+		"preview:dockerVersions",
+		"regexManagers:dockerfileVersions",
+		"workarounds:doNotUpgradeFromAlpineStableToEdge",
+		"group:monorepos",
+		"group:nodeJs",
+		"group:allApollographql",
+		"group:fortawesome",
+		"group:illuminate",
+		"group:jestPlusTSJest",
+		"group:jestPlusTypes",
+		"group:kubernetes",
+		"group:socketio",
+		"group:symfony",
+		"group:linters",
+		"group:jsUnitTest",
+		"group:lernaMonorepo",
+		"helpers:disableTypesNodeMajor",
+		"npm:unpublishSafe",
+		"workarounds:typesNodeVersioning",
+		"replacements:all"
+	],
+	"assignees": [
+		"snickbit"
+	],
+	"automerge": true,
+	"automergeStrategy": "squash",
+	"automergeType": "pr",
+	"baseBranches": [
+		"dev"
+	],
+	"configMigration": true,
+	"dependencyDashboard": false,
+	"ignoreDeps": [],
+	"lockFileMaintenance": {
+		"enabled": true,
+		"automerge": true,
+		"automergeType": "pr",
+		"platformAutomerge": true
+	},
+	"packageRules": [
+		{
+			"matchPackagePrefixes": [
+				"@snickbit",
+				"@remedyred"
+			],
+			"stabilityDays": 1
+		},
+		{
+			"matchSourceUrlPrefixes": [
+				"https://github.com/ghiscoding/lerna-lite"
+			],
+			"matchUpdateTypes": [
+				"digest",
+				"patch",
+				"minor",
+				"major"
+			],
+			"groupName": "lerna-lite monorepo"
+		},
+		{
+			"groupName": "Twilio",
+			"matchPackagePrefixes": [
+				"@twilio/"
+			],
+			"matchPackageNames": [
+				"twilio-*",
+				"twilio"
+			]
+		},
+		{
+			"matchDepTypes": [
+				"devDependencies"
+			],
+			"matchPackagePatterns": [
+				"lint",
+				"prettier",
+				"@snickbit/eslint-config"
+			],
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": [
+				"patch"
+			],
+			"matchCurrentVersion": "!/^0/",
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": [
+				"patch"
+			],
+			"matchPackagePatterns": [
+				"^esbuild"
+			],
+			"automerge": true
+		},
+		{
+			"groupName": "@types packages",
+			"matchPackagePatterns": [
+				"^@types/"
+			],
+			"automerge": true
+		}
+	],
+	"pin": {
+		"automerge": true
+	},
+	"postUpgradeTasks": {
+		"commands": [
+			"pnpm i --lockfile-only",
+			"pnpm run fix"
+		]
+	},
+	"prCreation": "not-pending",
+	"rebaseWhen": "conflicted",
+	"reviewers": [
+		"snickbit"
+	],
+	"semanticCommits": "enabled"
+}

@@ -6,7 +6,7 @@
 		"build": "pnpm run dev && pnpm run validate",
 		"dev": "ts-node ./src/index.ts build",
 		"release": "semantic-release",
-		"validate": "renovate-config-validator ../../default.json ../../all.json",
+		"validate": "renovate-config-validator ../../default.json ../../dev.json ../../dev-next.json",
 		"watch": "ts-node ./src/index.ts watch"
 	},
 	"release": {
