@@ -603,6 +603,11 @@ Object {
     "spaced-comment": Array [
       "error",
       "always",
+      Object {
+        "markers": Array [
+          "/",
+        ],
+      },
     ],
     "switch-colon-spacing": Array [
       "error",
@@ -1814,6 +1819,11 @@ Object {
     "spaced-comment": Array [
       "error",
       "always",
+      Object {
+        "markers": Array [
+          "/",
+        ],
+      },
     ],
     "switch-colon-spacing": Array [
       "error",
@@ -2889,6 +2899,11 @@ Object {
     "spaced-comment": Array [
       "error",
       "always",
+      Object {
+        "markers": Array [
+          "/",
+        ],
+      },
     ],
     "switch-colon-spacing": Array [
       "error",
@@ -4596,6 +4611,11 @@ Object {
     "spaced-comment": Array [
       "off",
       "always",
+      Object {
+        "markers": Array [
+          "/",
+        ],
+      },
     ],
     "switch-colon-spacing": Array [
       "error",
