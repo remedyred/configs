@@ -6,7 +6,7 @@ import path from 'path'
 
 const VALID_CONFIG = {errors: [], warnings: []}
 
-const CONFIG_FILE = unixify(path.join(__dirname, '..', 'config', 'all.json')) // 'config/all.json'
+const CONFIG_FILE = unixify(path.join(__dirname, '..', 'config', 'dev.json')) // 'config/dev.json'
 
 describe('build.ts', () => {
 	it(`config file should exist at ${CONFIG_FILE}`, () => {
