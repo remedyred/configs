@@ -100,7 +100,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-extra-parens": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/no-extra-semi": Array [
       "error",
@@ -1316,7 +1316,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-extra-parens": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/no-extra-semi": Array [
       "error",
@@ -2390,7 +2390,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-extra-parens": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/no-extra-semi": Array [
       "error",
@@ -4108,7 +4108,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-extra-parens": Array [
-      "error",
+      "off",
     ],
     "@typescript-eslint/no-extra-semi": Array [
       "error",
