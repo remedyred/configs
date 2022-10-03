@@ -27,7 +27,7 @@
 	},
 	"devDependencies": {
 		"@snickbit/eslint-config": "*",
-		"@types/jest": "28.1.8",
+		"@types/jest": "29.1.1",
 		"@typescript-eslint/eslint-plugin": "5.38.1",
 		"@typescript-eslint/parser": "5.38.1",
 		"eslint": "8.24.0",
