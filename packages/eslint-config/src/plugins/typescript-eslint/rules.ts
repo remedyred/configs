@@ -32,7 +32,7 @@ export = {
 		],
 		'@typescript-eslint/method-signature-style': ['warn', 'method'],
 		'@typescript-eslint/no-explicit-any': 'off',
-		'@typescript-eslint/no-extra-parens': ['error'],
+		'@typescript-eslint/no-extra-parens': 'off',
 		'@typescript-eslint/object-curly-spacing': ['error', 'never'],
 		'@typescript-eslint/prefer-ts-expect-error': 'warn',
 		'@typescript-eslint/quotes': [

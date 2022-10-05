@@ -59,7 +59,7 @@ export = {
 		'semi-style': 'error',
 		'space-in-parens': 'error',
 		'space-unary-ops': 'error',
-		'spaced-comment': ['error', 'always'],
+		'spaced-comment': ['error', 'always', {markers: ['/']} ],
 		'switch-colon-spacing': 'error',
 		'template-curly-spacing': 'error',
 		'template-tag-spacing': 'error',
