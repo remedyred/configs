@@ -21,7 +21,7 @@
 			"pnpm run fix"
 		]
 	},
-	"rebaseWhen": "conflicted",
+	"rebaseWhen": "auto",
 	"semanticCommits": "enabled",
 	"dependencyDashboard": false
 }
