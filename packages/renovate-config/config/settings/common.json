@@ -6,6 +6,7 @@
 	"reviewers": [
 		"snickbit"
 	],
+	"rangeStrategy": "auto",
 	"configMigration": true,
 	"prCreation": "not-pending",
 	"prConcurrentLimit": 10,
