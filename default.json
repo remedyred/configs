@@ -36,7 +36,6 @@
 	],
 	"configMigration": true,
 	"dependencyDashboard": false,
-	"ignoreDeps": [],
 	"lockFileMaintenance": {
 		"enabled": true,
 		"automerge": true,
