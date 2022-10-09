@@ -1,5 +1,5 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"schedule": ["before 9am on Sat"],
+	"schedule": ["before 8am"],
 	"automerge": true
 }
