@@ -1,41 +1,22 @@
-import {$out, Config, SubConfig} from '../common'
+import {$out, Config, RenovateConfig, SubConfig} from '../common'
 import {ParsedArgs} from '@snickbit/node-cli'
-import {isEmpty, objectExcept, objectPull, objectSort} from '@snickbit/utilities'
+import {isArray, isEmpty, objectExcept, objectPull, objectSort} from '@snickbit/utilities'
 import {getFileJson, saveFileJson} from '@snickbit/node-utilities'
 import {validateConfig} from 'renovate/dist/config/validation'
 import {mergeChildConfig} from 'renovate/dist/config/utils'
-import {RenovateConfig} from 'renovate/dist/config/types'
 import unixify from 'unixify'
 import fg from 'fast-glob'
 import path from 'path'
 
+let definitionLoops = 0
 export default async function build(args: ParsedArgs, config: Config) {
 	$out.block
 		.heading('builder')
 		.info(`Building renovate config`)
 
-	return generateFromDefinitionFiles(config)
-}
-
-export async function generateFromDefinitionFiles(config: Config): Promise<void> {
-	await fromDefinitionFiles('generate', config)
-}
-
-export async function buildFromDefinitionFiles(config: Config): Promise<RenovateConfig[]> {
-	return fromDefinitionFiles('build', config)
-}
-
-async function fromDefinitionFiles(action: 'build' | 'generate', config: Config): Promise<RenovateConfig[]> {
 	const definitionFiles = await fg(`${config.source}/*.json`, {absolute: true})
-
-	const promises = []
-	for (const definitionFile of definitionFiles) {
-		promises.push(action === 'build'
-			? buildFromDefinitionFile(definitionFile)
-			: generateFromDefinitionFile(definitionFile, config))
-	}
-
-	return Promise.all(promises)
+	definitionLoops = 0
+	return Promise.all(definitionFiles.map(definitionFile => generateFromDefinitionFile(definitionFile, config)))
 }
 
 async function generateFromDefinitionFile(source: string, config: Config): Promise<void> {
@@ -63,7 +44,7 @@ export async function buildFromDefinitionFile(source: string, cwd?: string): Pro
 
 	let results: RenovateConfig = {}
 	if (definitionConfig.fileSources.length) {
-		results = await buildFromDefinition(definitionConfig)
+		results = await buildFromSources(definitionConfig)
 	}
 	return results
 }
@@ -90,59 +71,93 @@ export function cleanSource(fileSource: string, cwd?: string): string {
 	return cleanSource
 }
 
-export async function buildFromDefinition(config: SubConfig): Promise<RenovateConfig> {
+export async function buildFromSources(config: {fileSources: string[]; cwd?: string}): Promise<RenovateConfig> {
+	return buildFromDefinitions([ {extends: config.fileSources} ], {cwd: config.cwd})
+}
+
+const isRelativeExtend = (extend: string): boolean => extend.startsWith('./') || extend.startsWith('../')
+
+const isRelativeExtendArray = (extendsArray: string[]): boolean => isArray(extendsArray) && extendsArray.some(extend => isRelativeExtend(extend))
+
+export async function buildFromDefinitions(definitions: RenovateConfig[], config: {cwd?: string}): Promise<RenovateConfig | undefined> {
 	let combinedFiles: Record<string, unknown> = {}
 	const extensions: string[] = []
-	const fileSources: string[] = []
 
-	const addExtensions = (sources: string[], cwd?: string) => {
+	const addExtensions = async (sources: string[], cwd?: string) => {
 		for (const fileSource of sources) {
-			if (fileSource.startsWith('./') || fileSource.startsWith('../')) {
-				fileSources.push(cleanSource(fileSource, cwd || config.cwd))
+			if (isRelativeExtend(fileSource)) {
+				const clean_source_paths = cleanSource(fileSource, cwd || config.cwd)
+				const files = await fg(clean_source_paths, {cwd: config.cwd})
+				if (files.length) {
+					definitions.push(...files.map(file => {
+						return {
+							...getFileJson(file),
+							file: unixify(file)
+						}
+					}))
+				} else {
+					throw new Error(`No files found for source: ${fileSource} (${clean_source_paths})`)
+				}
 			} else {
 				extensions.push(fileSource)
 			}
 		}
 	}
 
-	addExtensions(config.fileSources)
-
-	while (fileSources.length > 0) {
-		const searches = fileSources.shift()
-		const files = await fg(searches, {cwd: config.cwd})
-
-		for (const file of files) {
-			const json: RenovateConfig = getFileJson(file)
-			const dirname = path.basename(path.dirname(file))
-			const basename = path.basename(file)
-			if (json) {
-				$out.debug(`adding file ${dirname}/${basename}`)
-				if (json.extends) {
-					addExtensions(json.extends, path.dirname(file))
-				}
-				combinedFiles = mergeChildConfig(combinedFiles, json)
+	while (definitions.length > 0) {
+		definitionLoops++
+		const definition = definitions.shift()
+		const name = definition.file || `definition ${definitionLoops}`
+		$out.debug(`Processing definition: ${name}`)
+		if (definition) {
+			if (definition.extends) {
+				await addExtensions(definition.extends, definition.file ? path.dirname(definition.file) : undefined)
 			}
+			if (
+				definition.packageRules &&
+				Array.isArray(definition.packageRules) &&
+				definition.packageRules.some(rule => isRelativeExtendArray(rule.extends))
+			) {
+				const packageRules = []
+				for (const rule of definition.packageRules) {
+					if (isRelativeExtendArray(rule.extends)) {
+						const combinedRule = await buildFromDefinitions([rule] as RenovateConfig[], {cwd: definition.file ? path.dirname(definition.file) : config.cwd})
+						packageRules.push(combinedRule)
+					}
+				}
+				definition.packageRules = packageRules
+			}
+			combinedFiles = mergeChildConfig(combinedFiles, definition)
 		}
 	}
 
-	combinedFiles = objectSort(objectExcept(combinedFiles, ['extends', '$schema']))
+	combinedFiles = objectSort(objectExcept(combinedFiles, ['extends', '$schema', 'file']))
 
-	const results: RenovateConfig = {
-		$schema: 'https://docs.renovatebot.com/renovate-schema.json',
-		extends: extensions,
-		...combinedFiles
+	let results: Partial<RenovateConfig> = {}
+
+	if (isArray(extensions)) {
+		results.extends = extensions
 	}
 
-	await validate(results)
+	if (!isEmpty(combinedFiles)) {
+		results = {...results, ...combinedFiles}
+	}
 
-	return results
+	if (!Object.keys(results).length) {
+		return undefined
+	}
+
+	return {
+		$schema: 'https://docs.renovatebot.com/renovate-schema.json',
+		...results
+	}
 }
 
 export async function validate(results: any) {
 	const validation = await validateConfig(results, true)
 
 	if (validation.errors.length > 0) {
-		$out.fatal('RENOVATE ERROR:', ...validation.errors)
+		$out.error('RENOVATE ERROR:', ...validation.errors)
 	} else if (validation.warnings.length > 0) {
 		$out.warn('RENOVATE WARNING:', ...validation.warnings)
 	} else {
