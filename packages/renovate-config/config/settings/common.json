@@ -8,6 +8,7 @@
 	],
 	"configMigration": true,
 	"prCreation": "not-pending",
+	"prConcurrentLimit": 10,
 	"postUpgradeTasks": {
 		"commands": [
 			"pnpm i --lockfile-only",
