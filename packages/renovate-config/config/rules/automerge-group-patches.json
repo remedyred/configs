@@ -1,0 +1,19 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"packageRules": [
+		{
+			"extends": [
+				"../matchers/all-patches-group",
+				"../presets/automerge-weekly"
+			],
+			"matchCurrentVersion": "!/^0/"
+		},
+		{
+			"extends": [
+				"../matchers/all-patches-group",
+				"../presets/automerge-weekly"
+			],
+			"matchPackagePatterns": ["^esbuild"]
+		}
+	]
+}
