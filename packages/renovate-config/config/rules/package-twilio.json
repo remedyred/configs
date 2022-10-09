@@ -3,6 +3,9 @@
 	"packageRules": [
 		{
 			"groupName": "twilio",
+			"matchUpdateTypes": [
+				"major"
+			],
 			"matchPackagePrefixes": [
 				"@twilio/"
 			],

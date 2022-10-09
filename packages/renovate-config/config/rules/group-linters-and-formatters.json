@@ -3,24 +3,24 @@
 	"packageRules": [
 		{
 			"extends": [
-				"../matchers/bundlers",
+				"../matchers/linters-and-formatters",
 				"../presets/automerge-weekly"
 			],
+			"groupName": "linters & formatters",
+			"groupSlug": "linters-and-formatters",
 			"matchUpdateTypes": [
 				"digest",
 				"patch",
 				"minor"
 			],
-			"matchDepTypes": ["devDependencies"],
-			"groupName": "bundlers & transpilers",
-			"groupSlug": "bundlers-transpilers"
+			"matchDepTypes": ["devDependencies"]
 		},
 		{
 			"extends": [
-				"../matchers/bundlers"
+				"../matchers/linters-and-formatters"
 			],
-			"groupName": "bundlers & transpilers (major)",
-			"groupSlug": "bundlers-transpilers-major",
+			"groupName": "linters & formatters (major)",
+			"groupSlug": "linters-and-formatters-major",
 			"matchUpdateTypes": [
 				"major"
 			],

@@ -3,12 +3,13 @@
 	"lockFileMaintenance": {
 		"enabled": true,
 		"automerge": true,
-		"automergeType": "pr",
+		"automergeType": "branch",
 		"platformAutomerge": true,
 		"recreateClosed": true,
 		"rebaseWhen": "behind-base-branch",
 		"branchTopic": "lock-file-maintenance",
 		"commitMessageAction": "Lock file maintenance",
+		"commitMessageExtra": "[skip ci]",
 		"schedule": ["before 5am on monday"],
 		"prBodyDefinitions": {"Change": "All locks refreshed"}
 	}
