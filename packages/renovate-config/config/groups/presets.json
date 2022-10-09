@@ -1,0 +1,9 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"group:monorepos",
+		"group:recommended",
+		"group:linters",
+		"group:lernaMonorepo"
+	]
+}
