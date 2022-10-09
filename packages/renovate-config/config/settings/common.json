@@ -4,6 +4,8 @@
 		":semanticPrefixFixDepsChoreOthers",
 		":ignoreModulesAndTests"
 	],
+	"automergeStrategy": "squash",
+	"automergeType": "branch",
 	"assignees": [
 		"snickbit"
 	],
