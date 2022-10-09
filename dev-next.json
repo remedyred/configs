@@ -14,6 +14,20 @@
 		":ignoreModulesAndTests",
 		"npm:unpublishSafe",
 		"workarounds:typesNodeVersioning",
+		"replacements:all",
+		"preview:dockerCompose",
+		"preview:dockerVersions",
+		"regexManagers:dockerfileVersions",
+		"workarounds:doNotUpgradeFromAlpineStableToEdge",
+		"group:monorepos",
+		"group:recommended",
+		"group:linters",
+		"group:lernaMonorepo",
+		"helpers:disableTypesNodeMajor",
+		":semanticPrefixFixDepsChoreOthers",
+		":ignoreModulesAndTests",
+		"npm:unpublishSafe",
+		"workarounds:typesNodeVersioning",
 		"replacements:all"
 	],
 	"assignees": [
@@ -23,7 +37,7 @@
 	"automergeType": "branch",
 	"baseBranches": [
 		"next",
-		"dev"
+		"release"
 	],
 	"configMigration": true,
 	"dependencyDashboard": false,
@@ -45,6 +59,199 @@
 		}
 	},
 	"packageRules": [
+		{
+			"matchPackagePrefixes": [
+				"@snickbit",
+				"@remedyred"
+			],
+			"stabilityDays": 1
+		},
+		{
+			"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+			"automerge": true,
+			"groupName": "bundlers & transpilers",
+			"groupSlug": "bundlers-transpilers",
+			"matchDepTypes": [
+				"devDependencies",
+				"devDependencies"
+			],
+			"matchPackagePatterns": [
+				"^tsup",
+				"^esbuild",
+				"^vite",
+				"^rollup",
+				"^babel",
+				"^@babel",
+				"^webpack"
+			],
+			"matchUpdateTypes": [
+				"digest",
+				"patch",
+				"minor"
+			],
+			"schedule": [
+				"before 9am on Sat"
+			]
+		},
+		{
+			"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+			"groupName": "bundlers & transpilers (major)",
+			"groupSlug": "bundlers-transpilers-major",
+			"matchDepTypes": [
+				"devDependencies",
+				"devDependencies"
+			],
+			"matchPackagePatterns": [
+				"^tsup",
+				"^esbuild",
+				"^vite",
+				"^rollup",
+				"^babel",
+				"^@babel",
+				"^webpack"
+			],
+			"matchUpdateTypes": [
+				"major"
+			]
+		},
+		{
+			"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+			"extends": [
+				"packages:linters"
+			],
+			"automerge": true,
+			"groupName": "linters & formatters",
+			"groupSlug": "linters-and-formatters",
+			"matchDepTypes": [
+				"devDependencies"
+			],
+			"matchPackagePatterns": [
+				"^prettier",
+				"@snickbit/eslint-config",
+				"^dprint"
+			],
+			"matchUpdateTypes": [
+				"digest",
+				"patch",
+				"minor"
+			],
+			"schedule": [
+				"before 9am on Sat"
+			]
+		},
+		{
+			"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+			"extends": [
+				"packages:linters"
+			],
+			"groupName": "linters & formatters (major)",
+			"groupSlug": "linters-and-formatters-major",
+			"matchDepTypes": [
+				"devDependencies"
+			],
+			"matchPackagePatterns": [
+				"^prettier",
+				"@snickbit/eslint-config",
+				"^dprint"
+			],
+			"matchUpdateTypes": [
+				"major"
+			]
+		},
+		{
+			"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+			"automerge": true,
+			"groupName": "all patch dependencies",
+			"groupSlug": "all-patch",
+			"matchCurrentVersion": "!/^0/",
+			"matchUpdateTypes": [
+				"patch"
+			],
+			"schedule": [
+				"before 9am on Sat"
+			]
+		},
+		{
+			"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+			"automerge": true,
+			"groupName": "all patch dependencies",
+			"groupSlug": "all-patch",
+			"matchPackagePatterns": [
+				"^esbuild"
+			],
+			"matchUpdateTypes": [
+				"patch"
+			],
+			"schedule": [
+				"before 9am on Sat"
+			]
+		},
+		{
+			"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+			"automerge": true,
+			"groupName": "tooling & utilities",
+			"groupSlug": "tooling-and-utilities",
+			"matchDepTypes": [
+				"devDependencies"
+			],
+			"matchPackagePatterns": [
+				"turbo",
+				"nodemon",
+				"depcheck",
+				"lerna",
+				"npm-check-updates",
+				"semantic-release",
+				"release-it",
+				"husky",
+				"lint-staged",
+				"plop",
+				"hygen",
+				"^tsup",
+				"^esbuild",
+				"^vite",
+				"^rollup",
+				"^babel",
+				"^@babel",
+				"^webpack"
+			],
+			"matchUpdateTypes": [
+				"digest",
+				"patch",
+				"minor"
+			],
+			"schedule": [
+				"before 9am on Sat"
+			]
+		},
+		{
+			"groupName": "@types packages",
+			"matchPackagePatterns": [
+				"^@types/"
+			],
+			"automerge": true
+		},
+		{
+			"matchSourceUrlPrefixes": [
+				"https://github.com/ghiscoding/lerna-lite"
+			],
+			"matchUpdateTypes": [
+				"major"
+			],
+			"groupName": "lerna-lite monorepo"
+		},
+		{
+			"groupName": "twilio",
+			"matchUpdateTypes": [
+				"major"
+			],
+			"matchPackagePrefixes": [
+				"@twilio/"
+			],
+			"matchPackageNames": [
+				"twilio-*",
+				"twilio"
+			]
+		},
 		{
 			"matchPackagePrefixes": [
 				"@snickbit",
