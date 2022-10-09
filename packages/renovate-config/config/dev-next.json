@@ -3,7 +3,6 @@
 	"extends": [
 		"./settings/dev-next",
 		"./presets/*",
-		"./automerge/*",
-		"./package-rules/*"
+		"./rules/*"
 	]
 }
