@@ -2,9 +2,11 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"packageRules": [
 		{
-			"extends": "packages:linters",
+			"extends": [
+				"packages:linters"
+			],
 			"groupName": "linters & formatters",
-			"group-slug": "linters-and-formatters",
+			"groupSlug": "linters-and-formatters",
 			"matchDepTypes": ["devDependencies"],
 			"matchPackagePatterns": ["^prettier", "@snickbit/eslint-config", "^dprint"]
 		}
