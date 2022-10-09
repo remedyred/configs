@@ -6,7 +6,7 @@
 		"automergeType": "pr",
 		"platformAutomerge": true,
 		"recreateClosed": true,
-		"rebaseStalePrs": true,
+		"rebaseWhen": "behind-base-branch",
 		"branchTopic": "lock-file-maintenance",
 		"commitMessageAction": "Lock file maintenance",
 		"schedule": ["before 5am on monday"],
