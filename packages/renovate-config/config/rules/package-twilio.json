@@ -2,7 +2,10 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"packageRules": [
 		{
-			"groupName": "Twilio",
+			"groupName": "twilio",
+			"matchUpdateTypes": [
+				"major"
+			],
 			"matchPackagePrefixes": [
 				"@twilio/"
 			],

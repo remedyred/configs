@@ -1,20 +1,29 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"../renovate-presets/*",
+		"../rules/*"
+	],
+	"automergeStrategy": "squash",
+	"automergeType": "branch",
 	"assignees": [
 		"snickbit"
 	],
 	"reviewers": [
 		"snickbit"
 	],
+	"rangeStrategy": "auto",
 	"configMigration": true,
 	"prCreation": "not-pending",
+	"prConcurrentLimit": 10,
+	"prHourlyLimit": 2,
 	"postUpgradeTasks": {
 		"commands": [
 			"pnpm i --lockfile-only",
 			"pnpm run fix"
 		]
 	},
-	"rebaseWhen": "conflicted",
+	"rebaseWhen": "auto",
 	"semanticCommits": "enabled",
 	"dependencyDashboard": false
 }

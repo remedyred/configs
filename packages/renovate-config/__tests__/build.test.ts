@@ -32,10 +32,5 @@ describe('build.ts', () => {
 		it('should reliably return a valid config', async () => {
 			expect(await buildFromDefinitionFile(CONFIG_FILE)).toMatchSnapshot()
 		})
-
-		it('should have an automerge property with a value of true', async () => {
-			const config = await buildFromDefinitionFile(CONFIG_FILE)
-			expect(config.automerge).toBe(true)
-		})
 	})
 })

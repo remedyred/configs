@@ -1,4 +1,5 @@
 import {Out} from '@snickbit/out'
+import {RenovateConfig as RawRenovateConfig} from 'renovate/dist/config/types'
 
 export const $out = new Out('build')
 
@@ -21,3 +22,5 @@ export const defaultConfig: Config = {
 	source: `config`,
 	output: `../..`
 }
+
+export type RenovateConfig = RawRenovateConfig & {file?: string}

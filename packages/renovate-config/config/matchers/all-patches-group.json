@@ -1,0 +1,8 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"../matchers/all-patches"
+	],
+	"groupName": "all patch dependencies",
+	"groupSlug": "all-patch"
+}

@@ -1,6 +1,10 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
-		"./settings/default"
+		"./common"
+	],
+	"baseBranches": [
+		"next",
+		"release"
 	]
 }

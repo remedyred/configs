@@ -1,0 +1,30 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"packageRules": [
+		{
+			"extends": [
+				"../matchers/linters-and-formatters",
+				"../presets/automerge-weekly"
+			],
+			"groupName": "linters & formatters",
+			"groupSlug": "linters-and-formatters",
+			"matchUpdateTypes": [
+				"digest",
+				"patch",
+				"minor"
+			],
+			"matchDepTypes": ["devDependencies"]
+		},
+		{
+			"extends": [
+				"../matchers/linters-and-formatters"
+			],
+			"groupName": "linters & formatters (major)",
+			"groupSlug": "linters-and-formatters-major",
+			"matchUpdateTypes": [
+				"major"
+			],
+			"matchDepTypes": ["devDependencies"]
+		}
+	]
+}

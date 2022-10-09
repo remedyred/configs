@@ -1,0 +1,18 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"packageRules": [
+		{
+			"extends": [
+				"../matchers/tooling",
+				"../presets/automerge-weekly"
+			],
+			"matchUpdateTypes": [
+				"digest",
+				"patch",
+				"minor"
+			],
+			"groupName": "tooling & utilities",
+			"groupSlug": "tooling-and-utilities"
+		}
+	]
+}

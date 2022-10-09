@@ -1,0 +1,30 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"packageRules": [
+		{
+			"extends": [
+				"../matchers/bundlers",
+				"../presets/automerge-weekly"
+			],
+			"matchUpdateTypes": [
+				"digest",
+				"patch",
+				"minor"
+			],
+			"matchDepTypes": ["devDependencies"],
+			"groupName": "bundlers & transpilers",
+			"groupSlug": "bundlers-transpilers"
+		},
+		{
+			"extends": [
+				"../matchers/bundlers"
+			],
+			"groupName": "bundlers & transpilers (major)",
+			"groupSlug": "bundlers-transpilers-major",
+			"matchUpdateTypes": [
+				"major"
+			],
+			"matchDepTypes": ["devDependencies"]
+		}
+	]
+}
