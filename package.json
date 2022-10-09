@@ -10,7 +10,7 @@
 		"release": "turbo run release",
 		"release:ci": "multi-semantic-release",
 		"test": "jest",
-		"validate": "renovate-config-validator default.json dev.json dev-next.json renovate.json"
+		"validate": "renovate-config-validator default.json dev.json dev-next.json next-release.json renovate.json"
 	},
 	"lint-staged": {
 		"*.{ts,json,yml,yaml}": "eslint --fix --cache"
