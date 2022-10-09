@@ -14,6 +14,5 @@
 		"group:linters",
 		"group:jsUnitTest",
 		"group:lernaMonorepo"
-	],
-	"ignoreDeps": []
+	]
 }
