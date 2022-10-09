@@ -1,0 +1,19 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"../matchers/bundlers"
+	],
+	"matchPackagePatterns": [
+		"turbo",
+		"nodemon",
+		"depcheck",
+		"lerna",
+		"npm-check-updates",
+		"semantic-release",
+		"release-it",
+		"husky",
+		"lint-staged",
+		"plop",
+		"hygen"
+	]
+}

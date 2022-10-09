@@ -1,0 +1,11 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"packages:linters"
+	],
+	"matchPackagePatterns": [
+		"^prettier",
+		"@snickbit/eslint-config",
+		"^dprint"
+	]
+}
