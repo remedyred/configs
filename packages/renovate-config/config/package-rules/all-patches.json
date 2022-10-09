@@ -1,0 +1,16 @@
+{
+	"packageRules": [
+		{
+			"matchPackagePatterns": [
+				"*"
+			],
+			"matchUpdateTypes": [
+				"patch"
+			],
+			"groupName": "all patch dependencies",
+			"groupSlug": "all-patch",
+			"schedule": ["before 2am on saturday"],
+			"automerge": true
+		}
+	]
+}
