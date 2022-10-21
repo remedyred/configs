@@ -305,6 +305,13 @@ Object {
         "beforeLineComment": false,
       },
     ],
+    "logical-assignment-operators": Array [
+      "error",
+      "always",
+      Object {
+        "enforceForIfStatements": true,
+      },
+    ],
     "no-array-constructor": Array [
       "off",
     ],
@@ -1521,6 +1528,13 @@ Object {
         "beforeLineComment": false,
       },
     ],
+    "logical-assignment-operators": Array [
+      "error",
+      "always",
+      Object {
+        "enforceForIfStatements": true,
+      },
+    ],
     "no-array-constructor": Array [
       "off",
     ],
@@ -2593,6 +2607,13 @@ Object {
         "allowBlockStart": true,
         "beforeBlockComment": true,
         "beforeLineComment": false,
+      },
+    ],
+    "logical-assignment-operators": Array [
+      "error",
+      "always",
+      Object {
+        "enforceForIfStatements": true,
       },
     ],
     "no-array-constructor": Array [
@@ -4311,6 +4332,13 @@ Object {
         "allowBlockStart": true,
         "beforeBlockComment": true,
         "beforeLineComment": false,
+      },
+    ],
+    "logical-assignment-operators": Array [
+      "error",
+      "always",
+      Object {
+        "enforceForIfStatements": true,
       },
     ],
     "no-array-constructor": Array [
