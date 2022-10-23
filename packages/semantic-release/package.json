@@ -4,7 +4,8 @@
 	"description": "Snickbit semantic-release config",
 	"license": "MIT",
 	"exports": {
-		"require": "./dist/index.js"
+		".": "./dist/index.js",
+		"./*": "./dist/*.js"
 	},
 	"files": [
 		"dist"
@@ -51,8 +52,8 @@
 	},
 	"tsup": {
 		"entry": [
-			"src/index.ts",
-			"src/monorepo.ts"
-		]
+			"src/exports/*.ts"
+		],
+		"clean": true
 	}
 }
