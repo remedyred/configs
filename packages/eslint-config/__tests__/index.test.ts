@@ -83,7 +83,7 @@ describe('Validate ESLint configs', () => {
 				'yml'
 			]
 			const regexp = new RegExp(`bad\\.(${FIXTURE_FILE_TYPES.join('|')})$`)
-			expect(lintResults).toMatchSnapshot([ {filePath: expect.stringMatching(regexp)} ])
+			expect({lintResults}).toMatchSnapshot({lintResults: [ {filePath: expect.stringMatching(regexp)} ]})
 		})
 	})
 })
