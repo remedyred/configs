@@ -2291,19 +2291,21 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
 `;
 
 exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) should return the proper lint results 1`] = `
-Array [
-  Object {
-    "errorCount": 0,
-    "fatalErrorCount": 0,
-    "filePath": StringMatching /bad\\\\\\.\\(ts\\|js\\|json\\|yml\\)\\$/,
-    "fixableErrorCount": 0,
-    "fixableWarningCount": 0,
-    "messages": Array [],
-    "suppressedMessages": Array [],
-    "usedDeprecatedRules": Array [],
-    "warningCount": 0,
-  },
-]
+{
+  "lintResults": [
+    {
+      "errorCount": 0,
+      "fatalErrorCount": 0,
+      "filePath": StringMatching /bad\\\\\\.\\(ts\\|js\\|json\\|yml\\)\\$/,
+      "fixableErrorCount": 0,
+      "fixableWarningCount": 0,
+      "messages": [],
+      "suppressedMessages": [],
+      "usedDeprecatedRules": [],
+      "warningCount": 0,
+    },
+  ],
+}
 `;
 
 exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should return the proper config 1`] = `
@@ -3378,610 +3380,611 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
 `;
 
 exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should return the proper lint results 1`] = `
-Array [
-  Object {
-    "errorCount": 30,
-    "fatalErrorCount": 0,
-    "filePath": StringMatching /bad\\\\\\.\\(ts\\|js\\|json\\|yml\\)\\$/,
-    "fixableErrorCount": 26,
-    "fixableWarningCount": 3,
-    "messages": Array [
-      Object {
-        "column": 1,
-        "endColumn": 2,
-        "endLine": 2,
-        "fix": Object {
-          "range": Array [
-            14,
-            15,
-          ],
-          "text": " ",
+{
+  "lintResults": [
+    {
+      "errorCount": 30,
+      "fatalErrorCount": 0,
+      "filePath": StringMatching /bad\\\\\\.\\(ts\\|js\\|json\\|yml\\)\\$/,
+      "fixableErrorCount": 26,
+      "fixableWarningCount": 3,
+      "messages": [
+        {
+          "column": 1,
+          "endColumn": 2,
+          "endLine": 2,
+          "fix": {
+            "range": [
+              14,
+              15,
+            ],
+            "text": " ",
+          },
+          "line": 2,
+          "message": "Opening curly brace does not appear on the same line as controlling statement.",
+          "messageId": "nextLineOpen",
+          "nodeType": "Punctuator",
+          "ruleId": "@typescript-eslint/brace-style",
+          "severity": 2,
         },
-        "line": 2,
-        "message": "Opening curly brace does not appear on the same line as controlling statement.",
-        "messageId": "nextLineOpen",
-        "nodeType": "Punctuator",
-        "ruleId": "@typescript-eslint/brace-style",
-        "severity": 2,
-      },
-      Object {
-        "column": 16,
-        "endColumn": 16,
-        "endLine": 3,
-        "fix": Object {
-          "range": Array [
-            31,
-            32,
-          ],
-          "text": "",
+        {
+          "column": 16,
+          "endColumn": 16,
+          "endLine": 3,
+          "fix": {
+            "range": [
+              31,
+              32,
+            ],
+            "text": "",
+          },
+          "line": 3,
+          "message": "Unexpected separator (;).",
+          "messageId": "unexpectedSemi",
+          "nodeType": "Punctuator",
+          "ruleId": "@typescript-eslint/member-delimiter-style",
+          "severity": 2,
         },
-        "line": 3,
-        "message": "Unexpected separator (;).",
-        "messageId": "unexpectedSemi",
-        "nodeType": "Punctuator",
-        "ruleId": "@typescript-eslint/member-delimiter-style",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 1,
-        "endLine": 6,
-        "fix": Object {
-          "range": Array [
-            33,
-            34,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 1,
+          "endLine": 6,
+          "fix": {
+            "range": [
+              33,
+              34,
+            ],
+            "text": "",
+          },
+          "line": 5,
+          "message": "More than 1 blank line not allowed.",
+          "messageId": "consecutiveBlank",
+          "nodeType": "Program",
+          "ruleId": "no-multiple-empty-lines",
+          "severity": 2,
         },
-        "line": 5,
-        "message": "More than 1 blank line not allowed.",
-        "messageId": "consecutiveBlank",
-        "nodeType": "Program",
-        "ruleId": "no-multiple-empty-lines",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 3,
-        "endLine": 7,
-        "line": 7,
-        "message": "Mixed spaces and tabs.",
-        "messageId": "mixedSpacesAndTabs",
-        "nodeType": "Program",
-        "ruleId": "no-mixed-spaces-and-tabs",
-        "severity": 2,
-      },
-      Object {
-        "column": 11,
-        "endColumn": 11,
-        "endLine": 7,
-        "fix": Object {
-          "range": Array [
-            50,
-            51,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 3,
+          "endLine": 7,
+          "line": 7,
+          "message": "Mixed spaces and tabs.",
+          "messageId": "mixedSpacesAndTabs",
+          "nodeType": "Program",
+          "ruleId": "no-mixed-spaces-and-tabs",
+          "severity": 2,
         },
-        "line": 7,
-        "message": "Unexpected separator (;).",
-        "messageId": "unexpectedSemi",
-        "nodeType": "Punctuator",
-        "ruleId": "@typescript-eslint/member-delimiter-style",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 3,
-        "endLine": 16,
-        "fix": Object {
-          "range": Array [
-            75,
-            79,
-          ],
-          "text": "
+        {
+          "column": 11,
+          "endColumn": 11,
+          "endLine": 7,
+          "fix": {
+            "range": [
+              50,
+              51,
+            ],
+            "text": "",
+          },
+          "line": 7,
+          "message": "Unexpected separator (;).",
+          "messageId": "unexpectedSemi",
+          "nodeType": "Punctuator",
+          "ruleId": "@typescript-eslint/member-delimiter-style",
+          "severity": 2,
+        },
+        {
+          "column": 1,
+          "endColumn": 3,
+          "endLine": 16,
+          "fix": {
+            "range": [
+              75,
+              79,
+            ],
+            "text": "
 ",
+          },
+          "line": 12,
+          "message": "Block must not be padded by blank lines.",
+          "messageId": "neverPadBlock",
+          "nodeType": "ClassBody",
+          "ruleId": "padded-blocks",
+          "severity": 1,
         },
-        "line": 12,
-        "message": "Block must not be padded by blank lines.",
-        "messageId": "neverPadBlock",
-        "nodeType": "ClassBody",
-        "ruleId": "padded-blocks",
-        "severity": 1,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 2,
-        "endLine": 12,
-        "fix": Object {
-          "range": Array [
-            72,
-            74,
-          ],
-          "text": " ",
+        {
+          "column": 1,
+          "endColumn": 2,
+          "endLine": 12,
+          "fix": {
+            "range": [
+              72,
+              74,
+            ],
+            "text": " ",
+          },
+          "line": 12,
+          "message": "Opening curly brace does not appear on the same line as controlling statement.",
+          "messageId": "nextLineOpen",
+          "nodeType": "Punctuator",
+          "ruleId": "@typescript-eslint/brace-style",
+          "severity": 2,
         },
-        "line": 12,
-        "message": "Opening curly brace does not appear on the same line as controlling statement.",
-        "messageId": "nextLineOpen",
-        "nodeType": "Punctuator",
-        "ruleId": "@typescript-eslint/brace-style",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 1,
-        "endLine": 16,
-        "fix": Object {
-          "range": Array [
-            76,
-            78,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 1,
+          "endLine": 16,
+          "fix": {
+            "range": [
+              76,
+              78,
+            ],
+            "text": "",
+          },
+          "line": 14,
+          "message": "More than 1 blank line not allowed.",
+          "messageId": "consecutiveBlank",
+          "nodeType": "Program",
+          "ruleId": "no-multiple-empty-lines",
+          "severity": 2,
         },
-        "line": 14,
-        "message": "More than 1 blank line not allowed.",
-        "messageId": "consecutiveBlank",
-        "nodeType": "Program",
-        "ruleId": "no-multiple-empty-lines",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 3,
-        "endLine": 16,
-        "fix": Object {
-          "range": Array [
-            79,
-            81,
-          ],
-          "text": "	",
+        {
+          "column": 1,
+          "endColumn": 3,
+          "endLine": 16,
+          "fix": {
+            "range": [
+              79,
+              81,
+            ],
+            "text": "	",
+          },
+          "line": 16,
+          "message": "Expected indentation of 1 tab but found 2 spaces.",
+          "messageId": "wrongIndentation",
+          "nodeType": "Identifier",
+          "ruleId": "indent",
+          "severity": 2,
         },
-        "line": 16,
-        "message": "Expected indentation of 1 tab but found 2 spaces.",
-        "messageId": "wrongIndentation",
-        "nodeType": "Identifier",
-        "ruleId": "indent",
-        "severity": 2,
-      },
-      Object {
-        "column": 15,
-        "endColumn": 16,
-        "endLine": 16,
-        "fix": Object {
-          "range": Array [
-            87,
-            102,
-          ],
-          "text": "string
+        {
+          "column": 15,
+          "endColumn": 16,
+          "endLine": 16,
+          "fix": {
+            "range": [
+              87,
+              102,
+            ],
+            "text": "string
 
 
 
   id",
+          },
+          "line": 16,
+          "message": "Extra semicolon.",
+          "messageId": "extraSemi",
+          "nodeType": "PropertyDefinition",
+          "ruleId": "@typescript-eslint/semi",
+          "severity": 2,
         },
-        "line": 16,
-        "message": "Extra semicolon.",
-        "messageId": "extraSemi",
-        "nodeType": "PropertyDefinition",
-        "ruleId": "@typescript-eslint/semi",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 1,
-        "endLine": 20,
-        "fix": Object {
-          "range": Array [
-            95,
-            97,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 1,
+          "endLine": 20,
+          "fix": {
+            "range": [
+              95,
+              97,
+            ],
+            "text": "",
+          },
+          "line": 18,
+          "message": "More than 1 blank line not allowed.",
+          "messageId": "consecutiveBlank",
+          "nodeType": "Program",
+          "ruleId": "no-multiple-empty-lines",
+          "severity": 2,
         },
-        "line": 18,
-        "message": "More than 1 blank line not allowed.",
-        "messageId": "consecutiveBlank",
-        "nodeType": "Program",
-        "ruleId": "no-multiple-empty-lines",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 3,
-        "endLine": 20,
-        "fix": Object {
-          "range": Array [
-            98,
-            100,
-          ],
-          "text": "	",
+        {
+          "column": 1,
+          "endColumn": 3,
+          "endLine": 20,
+          "fix": {
+            "range": [
+              98,
+              100,
+            ],
+            "text": "	",
+          },
+          "line": 20,
+          "message": "Expected indentation of 1 tab but found 2 spaces.",
+          "messageId": "wrongIndentation",
+          "nodeType": "Identifier",
+          "ruleId": "indent",
+          "severity": 2,
         },
-        "line": 20,
-        "message": "Expected indentation of 1 tab but found 2 spaces.",
-        "messageId": "wrongIndentation",
-        "nodeType": "Identifier",
-        "ruleId": "indent",
-        "severity": 2,
-      },
-      Object {
-        "column": 13,
-        "endColumn": 14,
-        "endLine": 20,
-        "fix": Object {
-          "range": Array [
-            104,
-            126,
-          ],
-          "text": "number
+        {
+          "column": 13,
+          "endColumn": 14,
+          "endLine": 20,
+          "fix": {
+            "range": [
+              104,
+              126,
+            ],
+            "text": "number
 
   constructor",
+          },
+          "line": 20,
+          "message": "Extra semicolon.",
+          "messageId": "extraSemi",
+          "nodeType": "PropertyDefinition",
+          "ruleId": "@typescript-eslint/semi",
+          "severity": 2,
         },
-        "line": 20,
-        "message": "Extra semicolon.",
-        "messageId": "extraSemi",
-        "nodeType": "PropertyDefinition",
-        "ruleId": "@typescript-eslint/semi",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 3,
-        "endLine": 22,
-        "fix": Object {
-          "range": Array [
-            113,
-            115,
-          ],
-          "text": "	",
+        {
+          "column": 1,
+          "endColumn": 3,
+          "endLine": 22,
+          "fix": {
+            "range": [
+              113,
+              115,
+            ],
+            "text": "	",
+          },
+          "line": 22,
+          "message": "Expected indentation of 1 tab but found 2 spaces.",
+          "messageId": "wrongIndentation",
+          "nodeType": "Identifier",
+          "ruleId": "indent",
+          "severity": 2,
         },
-        "line": 22,
-        "message": "Expected indentation of 1 tab but found 2 spaces.",
-        "messageId": "wrongIndentation",
-        "nodeType": "Identifier",
-        "ruleId": "indent",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 3,
-        "endLine": 24,
-        "line": 24,
-        "message": "Mixed spaces and tabs.",
-        "messageId": "mixedSpacesAndTabs",
-        "nodeType": "Program",
-        "ruleId": "no-mixed-spaces-and-tabs",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 1,
-        "endLine": 27,
-        "fix": Object {
-          "range": Array [
-            157,
-            158,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 3,
+          "endLine": 24,
+          "line": 24,
+          "message": "Mixed spaces and tabs.",
+          "messageId": "mixedSpacesAndTabs",
+          "nodeType": "Program",
+          "ruleId": "no-mixed-spaces-and-tabs",
+          "severity": 2,
         },
-        "line": 26,
-        "message": "More than 1 blank line not allowed.",
-        "messageId": "consecutiveBlank",
-        "nodeType": "Program",
-        "ruleId": "no-multiple-empty-lines",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 15,
-        "endLine": 27,
-        "fix": Object {
-          "range": Array [
-            159,
-            173,
-          ],
-          "text": "	",
+        {
+          "column": 1,
+          "endColumn": 1,
+          "endLine": 27,
+          "fix": {
+            "range": [
+              157,
+              158,
+            ],
+            "text": "",
+          },
+          "line": 26,
+          "message": "More than 1 blank line not allowed.",
+          "messageId": "consecutiveBlank",
+          "nodeType": "Program",
+          "ruleId": "no-multiple-empty-lines",
+          "severity": 2,
         },
-        "line": 27,
-        "message": "Expected indentation of 1 tab but found 14 spaces.",
-        "messageId": "wrongIndentation",
-        "nodeType": "Identifier",
-        "ruleId": "indent",
-        "severity": 2,
-      },
-      Object {
-        "column": 27,
-        "endColumn": 5,
-        "endLine": 30,
-        "fix": Object {
-          "range": Array [
-            186,
-            189,
-          ],
-          "text": "
+        {
+          "column": 1,
+          "endColumn": 15,
+          "endLine": 27,
+          "fix": {
+            "range": [
+              159,
+              173,
+            ],
+            "text": "	",
+          },
+          "line": 27,
+          "message": "Expected indentation of 1 tab but found 14 spaces.",
+          "messageId": "wrongIndentation",
+          "nodeType": "Identifier",
+          "ruleId": "indent",
+          "severity": 2,
+        },
+        {
+          "column": 27,
+          "endColumn": 5,
+          "endLine": 30,
+          "fix": {
+            "range": [
+              186,
+              189,
+            ],
+            "text": "
 ",
+          },
+          "line": 27,
+          "message": "Block must not be padded by blank lines.",
+          "messageId": "neverPadBlock",
+          "nodeType": "BlockStatement",
+          "ruleId": "padded-blocks",
+          "severity": 1,
         },
-        "line": 27,
-        "message": "Block must not be padded by blank lines.",
-        "messageId": "neverPadBlock",
-        "nodeType": "BlockStatement",
-        "ruleId": "padded-blocks",
-        "severity": 1,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 1,
-        "endLine": 30,
-        "fix": Object {
-          "range": Array [
-            187,
-            188,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 1,
+          "endLine": 30,
+          "fix": {
+            "range": [
+              187,
+              188,
+            ],
+            "text": "",
+          },
+          "line": 29,
+          "message": "More than 1 blank line not allowed.",
+          "messageId": "consecutiveBlank",
+          "nodeType": "Program",
+          "ruleId": "no-multiple-empty-lines",
+          "severity": 2,
         },
-        "line": 29,
-        "message": "More than 1 blank line not allowed.",
-        "messageId": "consecutiveBlank",
-        "nodeType": "Program",
-        "ruleId": "no-multiple-empty-lines",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 5,
-        "endLine": 30,
-        "fix": Object {
-          "range": Array [
-            189,
-            193,
-          ],
-          "text": "		",
+        {
+          "column": 1,
+          "endColumn": 5,
+          "endLine": 30,
+          "fix": {
+            "range": [
+              189,
+              193,
+            ],
+            "text": "		",
+          },
+          "line": 30,
+          "message": "Expected indentation of 2 tabs but found 4 spaces.",
+          "messageId": "wrongIndentation",
+          "nodeType": "Keyword",
+          "ruleId": "indent",
+          "severity": 2,
         },
-        "line": 30,
-        "message": "Expected indentation of 2 tabs but found 4 spaces.",
-        "messageId": "wrongIndentation",
-        "nodeType": "Keyword",
-        "ruleId": "indent",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 3,
-        "endLine": 31,
-        "line": 31,
-        "message": "Mixed spaces and tabs.",
-        "messageId": "mixedSpacesAndTabs",
-        "nodeType": "Program",
-        "ruleId": "no-mixed-spaces-and-tabs",
-        "severity": 2,
-      },
-      Object {
-        "column": 6,
-        "endColumn": 7,
-        "endLine": 31,
-        "fix": Object {
-          "range": Array [
-            202,
-            217,
-          ],
-          "text": "	    =
+        {
+          "column": 1,
+          "endColumn": 3,
+          "endLine": 31,
+          "line": 31,
+          "message": "Mixed spaces and tabs.",
+          "messageId": "mixedSpacesAndTabs",
+          "nodeType": "Program",
+          "ruleId": "no-mixed-spaces-and-tabs",
+          "severity": 2,
+        },
+        {
+          "column": 6,
+          "endColumn": 7,
+          "endLine": 31,
+          "fix": {
+            "range": [
+              202,
+              217,
+            ],
+            "text": "	    =
 
 
 	    ",
+          },
+          "line": 31,
+          "message": "Bad line breaking before and after '='.",
+          "messageId": "badLinebreak",
+          "nodeType": "AssignmentExpression",
+          "ruleId": "operator-linebreak",
+          "severity": 2,
         },
-        "line": 31,
-        "message": "Bad line breaking before and after '='.",
-        "messageId": "badLinebreak",
-        "nodeType": "AssignmentExpression",
-        "ruleId": "operator-linebreak",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 1,
-        "endLine": 34,
-        "fix": Object {
-          "range": Array [
-            210,
-            211,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 1,
+          "endLine": 34,
+          "fix": {
+            "range": [
+              210,
+              211,
+            ],
+            "text": "",
+          },
+          "line": 33,
+          "message": "More than 1 blank line not allowed.",
+          "messageId": "consecutiveBlank",
+          "nodeType": "Program",
+          "ruleId": "no-multiple-empty-lines",
+          "severity": 2,
         },
-        "line": 33,
-        "message": "More than 1 blank line not allowed.",
-        "messageId": "consecutiveBlank",
-        "nodeType": "Program",
-        "ruleId": "no-multiple-empty-lines",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 3,
-        "endLine": 34,
-        "line": 34,
-        "message": "Mixed spaces and tabs.",
-        "messageId": "mixedSpacesAndTabs",
-        "nodeType": "Program",
-        "ruleId": "no-mixed-spaces-and-tabs",
-        "severity": 2,
-      },
-      Object {
-        "column": 10,
-        "endColumn": 11,
-        "endLine": 34,
-        "fix": Object {
-          "range": Array [
-            217,
-            241,
-          ],
-          "text": "name
+        {
+          "column": 1,
+          "endColumn": 3,
+          "endLine": 34,
+          "line": 34,
+          "message": "Mixed spaces and tabs.",
+          "messageId": "mixedSpacesAndTabs",
+          "nodeType": "Program",
+          "ruleId": "no-mixed-spaces-and-tabs",
+          "severity": 2,
+        },
+        {
+          "column": 10,
+          "endColumn": 11,
+          "endLine": 34,
+          "fix": {
+            "range": [
+              217,
+              241,
+            ],
+            "text": "name
 
 
             this",
+          },
+          "line": 34,
+          "message": "Extra semicolon.",
+          "messageId": "extraSemi",
+          "nodeType": "ExpressionStatement",
+          "ruleId": "@typescript-eslint/semi",
+          "severity": 2,
         },
-        "line": 34,
-        "message": "Extra semicolon.",
-        "messageId": "extraSemi",
-        "nodeType": "ExpressionStatement",
-        "ruleId": "@typescript-eslint/semi",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 1,
-        "endLine": 37,
-        "fix": Object {
-          "range": Array [
-            223,
-            224,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 1,
+          "endLine": 37,
+          "fix": {
+            "range": [
+              223,
+              224,
+            ],
+            "text": "",
+          },
+          "line": 36,
+          "message": "More than 1 blank line not allowed.",
+          "messageId": "consecutiveBlank",
+          "nodeType": "Program",
+          "ruleId": "no-multiple-empty-lines",
+          "severity": 2,
         },
-        "line": 36,
-        "message": "More than 1 blank line not allowed.",
-        "messageId": "consecutiveBlank",
-        "nodeType": "Program",
-        "ruleId": "no-multiple-empty-lines",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 13,
-        "endLine": 37,
-        "fix": Object {
-          "range": Array [
-            225,
-            237,
-          ],
-          "text": "		",
+        {
+          "column": 1,
+          "endColumn": 13,
+          "endLine": 37,
+          "fix": {
+            "range": [
+              225,
+              237,
+            ],
+            "text": "		",
+          },
+          "line": 37,
+          "message": "Expected indentation of 2 tabs but found 12 spaces.",
+          "messageId": "wrongIndentation",
+          "nodeType": "Keyword",
+          "ruleId": "indent",
+          "severity": 2,
         },
-        "line": 37,
-        "message": "Expected indentation of 2 tabs but found 12 spaces.",
-        "messageId": "wrongIndentation",
-        "nodeType": "Keyword",
-        "ruleId": "indent",
-        "severity": 2,
-      },
-      Object {
-        "column": 25,
-        "endColumn": 26,
-        "endLine": 37,
-        "fix": Object {
-          "range": Array [
-            247,
-            255,
-          ],
-          "text": "id
+        {
+          "column": 25,
+          "endColumn": 26,
+          "endLine": 37,
+          "fix": {
+            "range": [
+              247,
+              255,
+            ],
+            "text": "id
 
   }",
+          },
+          "line": 37,
+          "message": "Extra semicolon.",
+          "messageId": "extraSemi",
+          "nodeType": "ExpressionStatement",
+          "ruleId": "@typescript-eslint/semi",
+          "severity": 2,
         },
-        "line": 37,
-        "message": "Extra semicolon.",
-        "messageId": "extraSemi",
-        "nodeType": "ExpressionStatement",
-        "ruleId": "@typescript-eslint/semi",
-        "severity": 2,
-      },
-      Object {
-        "column": 26,
-        "endColumn": 3,
-        "endLine": 39,
-        "fix": Object {
-          "range": Array [
-            250,
-            252,
-          ],
-          "text": "
+        {
+          "column": 26,
+          "endColumn": 3,
+          "endLine": 39,
+          "fix": {
+            "range": [
+              250,
+              252,
+            ],
+            "text": "
 ",
+          },
+          "line": 37,
+          "message": "Block must not be padded by blank lines.",
+          "messageId": "neverPadBlock",
+          "nodeType": "BlockStatement",
+          "ruleId": "padded-blocks",
+          "severity": 1,
         },
-        "line": 37,
-        "message": "Block must not be padded by blank lines.",
-        "messageId": "neverPadBlock",
-        "nodeType": "BlockStatement",
-        "ruleId": "padded-blocks",
-        "severity": 1,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 3,
-        "endLine": 39,
-        "fix": Object {
-          "range": Array [
-            252,
-            254,
-          ],
-          "text": "	",
+        {
+          "column": 1,
+          "endColumn": 3,
+          "endLine": 39,
+          "fix": {
+            "range": [
+              252,
+              254,
+            ],
+            "text": "	",
+          },
+          "line": 39,
+          "message": "Expected indentation of 1 tab but found 2 spaces.",
+          "messageId": "wrongIndentation",
+          "nodeType": "Punctuator",
+          "ruleId": "indent",
+          "severity": 2,
         },
-        "line": 39,
-        "message": "Expected indentation of 1 tab but found 2 spaces.",
-        "messageId": "wrongIndentation",
-        "nodeType": "Punctuator",
-        "ruleId": "indent",
-        "severity": 2,
-      },
-      Object {
-        "column": 7,
-        "endColumn": 17,
-        "endLine": 42,
-        "line": 42,
-        "message": "'user' is assigned a value but never used.",
-        "messageId": "unusedVar",
-        "nodeType": "Identifier",
-        "ruleId": "@typescript-eslint/no-unused-vars",
-        "severity": 1,
-      },
-      Object {
-        "column": 19,
-        "endColumn": 33,
-        "endLine": 42,
-        "fix": Object {
-          "range": Array [
-            277,
-            291,
-          ],
-          "text": " ",
+        {
+          "column": 7,
+          "endColumn": 17,
+          "endLine": 42,
+          "line": 42,
+          "message": "'user' is assigned a value but never used.",
+          "messageId": "unusedVar",
+          "nodeType": "Identifier",
+          "ruleId": "@typescript-eslint/no-unused-vars",
+          "severity": 1,
         },
-        "line": 42,
-        "message": "Multiple spaces found before 'new'.",
-        "messageId": "multipleSpaces",
-        "nodeType": "Keyword",
-        "ruleId": "no-multi-spaces",
-        "severity": 2,
-      },
-      Object {
-        "column": 49,
-        "endColumn": 57,
-        "endLine": 42,
-        "fix": Object {
-          "range": Array [
-            307,
-            315,
-          ],
-          "text": "'Murphy'",
+        {
+          "column": 19,
+          "endColumn": 33,
+          "endLine": 42,
+          "fix": {
+            "range": [
+              277,
+              291,
+            ],
+            "text": " ",
+          },
+          "line": 42,
+          "message": "Multiple spaces found before 'new'.",
+          "messageId": "multipleSpaces",
+          "nodeType": "Keyword",
+          "ruleId": "no-multi-spaces",
+          "severity": 2,
         },
-        "line": 42,
-        "message": "Strings must use singlequote.",
-        "messageId": "wrongQuotes",
-        "nodeType": "Literal",
-        "ruleId": "@typescript-eslint/quotes",
-        "severity": 2,
-      },
-      Object {
-        "column": 61,
-        "endColumn": 62,
-        "endLine": 42,
-        "fix": Object {
-          "range": Array [
-            318,
-            320,
-          ],
-          "text": ")",
+        {
+          "column": 49,
+          "endColumn": 57,
+          "endLine": 42,
+          "fix": {
+            "range": [
+              307,
+              315,
+            ],
+            "text": "'Murphy'",
+          },
+          "line": 42,
+          "message": "Strings must use singlequote.",
+          "messageId": "wrongQuotes",
+          "nodeType": "Literal",
+          "ruleId": "@typescript-eslint/quotes",
+          "severity": 2,
         },
-        "line": 42,
-        "message": "Extra semicolon.",
-        "messageId": "extraSemi",
-        "nodeType": "VariableDeclaration",
-        "ruleId": "@typescript-eslint/semi",
-        "severity": 2,
-      },
-    ],
-    "source": "interface User
+        {
+          "column": 61,
+          "endColumn": 62,
+          "endLine": 42,
+          "fix": {
+            "range": [
+              318,
+              320,
+            ],
+            "text": ")",
+          },
+          "line": 42,
+          "message": "Extra semicolon.",
+          "messageId": "extraSemi",
+          "nodeType": "VariableDeclaration",
+          "ruleId": "@typescript-eslint/semi",
+          "severity": 2,
+        },
+      ],
+      "source": "interface User
 {
   name: string;
 
@@ -4022,13 +4025,14 @@ class UserAccount
   }
 }
 
-const user: User =              new UserAccount(\\"Murphy\\", 1);
+const user: User =              new UserAccount("Murphy", 1);
 ",
-    "suppressedMessages": Array [],
-    "usedDeprecatedRules": Array [],
-    "warningCount": 4,
-  },
-]
+      "suppressedMessages": [],
+      "usedDeprecatedRules": [],
+      "warningCount": 4,
+    },
+  ],
+}
 `;
 
 exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) should return the proper config 1`] = `
@@ -5097,302 +5101,303 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
 `;
 
 exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) should return the proper lint results 1`] = `
-Array [
-  Object {
-    "errorCount": 17,
-    "fatalErrorCount": 0,
-    "filePath": StringMatching /bad\\\\\\.\\(ts\\|js\\|json\\|yml\\)\\$/,
-    "fixableErrorCount": 13,
-    "fixableWarningCount": 0,
-    "messages": Array [
-      Object {
-        "column": 1,
-        "endColumn": 6,
-        "endLine": 2,
-        "fix": Object {
-          "range": Array [
-            8,
-            13,
-          ],
-          "text": "BAD",
+{
+  "lintResults": [
+    {
+      "errorCount": 17,
+      "fatalErrorCount": 0,
+      "filePath": StringMatching /bad\\\\\\.\\(ts\\|js\\|json\\|yml\\)\\$/,
+      "fixableErrorCount": 13,
+      "fixableWarningCount": 0,
+      "messages": [
+        {
+          "column": 1,
+          "endColumn": 6,
+          "endLine": 2,
+          "fix": {
+            "range": [
+              8,
+              13,
+            ],
+            "text": "BAD",
+          },
+          "line": 2,
+          "message": "Must use plain style scalar.",
+          "messageId": "required",
+          "nodeType": "YAMLScalar",
+          "ruleId": "yml/plain-scalar",
+          "severity": 2,
         },
-        "line": 2,
-        "message": "Must use plain style scalar.",
-        "messageId": "required",
-        "nodeType": "YAMLScalar",
-        "ruleId": "yml/plain-scalar",
-        "severity": 2,
-      },
-      Object {
-        "column": 5,
-        "endColumn": 10,
-        "endLine": 3,
-        "fix": Object {
-          "range": Array [
-            19,
-            24,
-          ],
-          "text": "foo",
+        {
+          "column": 5,
+          "endColumn": 10,
+          "endLine": 3,
+          "fix": {
+            "range": [
+              19,
+              24,
+            ],
+            "text": "foo",
+          },
+          "line": 3,
+          "message": "Must use plain style scalar.",
+          "messageId": "required",
+          "nodeType": "YAMLScalar",
+          "ruleId": "yml/plain-scalar",
+          "severity": 2,
         },
-        "line": 3,
-        "message": "Must use plain style scalar.",
-        "messageId": "required",
-        "nodeType": "YAMLScalar",
-        "ruleId": "yml/plain-scalar",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 1,
-        "endLine": 7,
-        "fix": Object {
-          "range": Array [
-            26,
-            28,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 1,
+          "endLine": 7,
+          "fix": {
+            "range": [
+              26,
+              28,
+            ],
+            "text": "",
+          },
+          "line": 5,
+          "message": "More than 1 blank line not allowed.",
+          "messageId": "consecutiveBlank",
+          "nodeType": null,
+          "ruleId": "yml/no-multiple-empty-lines",
+          "severity": 2,
         },
-        "line": 5,
-        "message": "More than 1 blank line not allowed.",
-        "messageId": "consecutiveBlank",
-        "nodeType": null,
-        "ruleId": "yml/no-multiple-empty-lines",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 1,
-        "endLine": 7,
-        "fix": Object {
-          "range": Array [
-            25,
-            27,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 1,
+          "endLine": 7,
+          "fix": {
+            "range": [
+              25,
+              27,
+            ],
+            "text": "",
+          },
+          "line": 5,
+          "message": "More than 1 blank line not allowed.",
+          "messageId": "consecutiveBlank",
+          "nodeType": "Program",
+          "ruleId": "no-multiple-empty-lines",
+          "severity": 2,
         },
-        "line": 5,
-        "message": "More than 1 blank line not allowed.",
-        "messageId": "consecutiveBlank",
-        "nodeType": "Program",
-        "ruleId": "no-multiple-empty-lines",
-        "severity": 2,
-      },
-      Object {
-        "column": 5,
-        "endColumn": 10,
-        "endLine": 7,
-        "fix": Object {
-          "range": Array [
-            32,
-            37,
-          ],
-          "text": "bar",
+        {
+          "column": 5,
+          "endColumn": 10,
+          "endLine": 7,
+          "fix": {
+            "range": [
+              32,
+              37,
+            ],
+            "text": "bar",
+          },
+          "line": 7,
+          "message": "Must use plain style scalar.",
+          "messageId": "required",
+          "nodeType": "YAMLScalar",
+          "ruleId": "yml/plain-scalar",
+          "severity": 2,
         },
-        "line": 7,
-        "message": "Must use plain style scalar.",
-        "messageId": "required",
-        "nodeType": "YAMLScalar",
-        "ruleId": "yml/plain-scalar",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 1,
-        "endLine": 10,
-        "fix": Object {
-          "range": Array [
-            39,
-            40,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 1,
+          "endLine": 10,
+          "fix": {
+            "range": [
+              39,
+              40,
+            ],
+            "text": "",
+          },
+          "line": 9,
+          "message": "More than 1 blank line not allowed.",
+          "messageId": "consecutiveBlank",
+          "nodeType": null,
+          "ruleId": "yml/no-multiple-empty-lines",
+          "severity": 2,
         },
-        "line": 9,
-        "message": "More than 1 blank line not allowed.",
-        "messageId": "consecutiveBlank",
-        "nodeType": null,
-        "ruleId": "yml/no-multiple-empty-lines",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 1,
-        "endLine": 10,
-        "fix": Object {
-          "range": Array [
-            38,
-            39,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 1,
+          "endLine": 10,
+          "fix": {
+            "range": [
+              38,
+              39,
+            ],
+            "text": "",
+          },
+          "line": 9,
+          "message": "More than 1 blank line not allowed.",
+          "messageId": "consecutiveBlank",
+          "nodeType": "Program",
+          "ruleId": "no-multiple-empty-lines",
+          "severity": 2,
         },
-        "line": 9,
-        "message": "More than 1 blank line not allowed.",
-        "messageId": "consecutiveBlank",
-        "nodeType": "Program",
-        "ruleId": "no-multiple-empty-lines",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 4,
-        "endLine": 12,
-        "line": 10,
-        "message": "Empty documents are forbidden.",
-        "messageId": "unexpectedEmpty",
-        "nodeType": "YAMLDocument",
-        "ruleId": "yml/no-empty-document",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 8,
-        "endLine": 11,
-        "fix": Object {
-          "range": Array [
-            44,
-            44,
-          ],
-          "text": "
+        {
+          "column": 1,
+          "endColumn": 4,
+          "endLine": 12,
+          "line": 10,
+          "message": "Empty documents are forbidden.",
+          "messageId": "unexpectedEmpty",
+          "nodeType": "YAMLDocument",
+          "ruleId": "yml/no-empty-document",
+          "severity": 2,
+        },
+        {
+          "column": 1,
+          "endColumn": 8,
+          "endLine": 11,
+          "fix": {
+            "range": [
+              44,
+              44,
+            ],
+            "text": "
 ",
+          },
+          "line": 11,
+          "message": "Expected line before comment.",
+          "messageId": "before",
+          "nodeType": "Block",
+          "ruleId": "lines-around-comment",
+          "severity": 2,
         },
-        "line": 11,
-        "message": "Expected line before comment.",
-        "messageId": "before",
-        "nodeType": "Block",
-        "ruleId": "lines-around-comment",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 1,
-        "endLine": 15,
-        "fix": Object {
-          "range": Array [
-            57,
-            58,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 1,
+          "endLine": 15,
+          "fix": {
+            "range": [
+              57,
+              58,
+            ],
+            "text": "",
+          },
+          "line": 14,
+          "message": "More than 1 blank line not allowed.",
+          "messageId": "consecutiveBlank",
+          "nodeType": null,
+          "ruleId": "yml/no-multiple-empty-lines",
+          "severity": 2,
         },
-        "line": 14,
-        "message": "More than 1 blank line not allowed.",
-        "messageId": "consecutiveBlank",
-        "nodeType": null,
-        "ruleId": "yml/no-multiple-empty-lines",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 1,
-        "endLine": 15,
-        "fix": Object {
-          "range": Array [
-            56,
-            57,
-          ],
-          "text": "",
+        {
+          "column": 1,
+          "endColumn": 1,
+          "endLine": 15,
+          "fix": {
+            "range": [
+              56,
+              57,
+            ],
+            "text": "",
+          },
+          "line": 14,
+          "message": "More than 1 blank line not allowed.",
+          "messageId": "consecutiveBlank",
+          "nodeType": "Program",
+          "ruleId": "no-multiple-empty-lines",
+          "severity": 2,
         },
-        "line": 14,
-        "message": "More than 1 blank line not allowed.",
-        "messageId": "consecutiveBlank",
-        "nodeType": "Program",
-        "ruleId": "no-multiple-empty-lines",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 8,
-        "endLine": 15,
-        "line": 15,
-        "message": "Empty mapping keys are forbidden.",
-        "messageId": "unexpectedEmpty",
-        "nodeType": "YAMLPair",
-        "ruleId": "yml/no-empty-key",
-        "severity": 2,
-      },
-      Object {
-        "column": 3,
-        "endColumn": 8,
-        "endLine": 15,
-        "fix": Object {
-          "range": Array [
-            60,
-            65,
-          ],
-          "text": "BAD",
+        {
+          "column": 1,
+          "endColumn": 8,
+          "endLine": 15,
+          "line": 15,
+          "message": "Empty mapping keys are forbidden.",
+          "messageId": "unexpectedEmpty",
+          "nodeType": "YAMLPair",
+          "ruleId": "yml/no-empty-key",
+          "severity": 2,
         },
-        "line": 15,
-        "message": "Must use plain style scalar.",
-        "messageId": "required",
-        "nodeType": "YAMLScalar",
-        "ruleId": "yml/plain-scalar",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 7,
-        "endLine": 16,
-        "line": 16,
-        "message": "Empty mapping values are forbidden.",
-        "messageId": "unexpectedEmpty",
-        "nodeType": "YAMLPair",
-        "ruleId": "yml/no-empty-mapping-value",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 6,
-        "endLine": 16,
-        "fix": Object {
-          "range": Array [
-            66,
-            71,
-          ],
-          "text": "BAD",
+        {
+          "column": 3,
+          "endColumn": 8,
+          "endLine": 15,
+          "fix": {
+            "range": [
+              60,
+              65,
+            ],
+            "text": "BAD",
+          },
+          "line": 15,
+          "message": "Must use plain style scalar.",
+          "messageId": "required",
+          "nodeType": "YAMLScalar",
+          "ruleId": "yml/plain-scalar",
+          "severity": 2,
         },
-        "line": 16,
-        "message": "Must use plain style scalar.",
-        "messageId": "required",
-        "nodeType": "YAMLScalar",
-        "ruleId": "yml/plain-scalar",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 4,
-        "endLine": 19,
-        "line": 17,
-        "message": "Empty documents are forbidden.",
-        "messageId": "unexpectedEmpty",
-        "nodeType": "YAMLDocument",
-        "ruleId": "yml/no-empty-document",
-        "severity": 2,
-      },
-      Object {
-        "column": 1,
-        "endColumn": 8,
-        "endLine": 18,
-        "fix": Object {
-          "range": Array [
-            77,
-            77,
-          ],
-          "text": "
+        {
+          "column": 1,
+          "endColumn": 7,
+          "endLine": 16,
+          "line": 16,
+          "message": "Empty mapping values are forbidden.",
+          "messageId": "unexpectedEmpty",
+          "nodeType": "YAMLPair",
+          "ruleId": "yml/no-empty-mapping-value",
+          "severity": 2,
+        },
+        {
+          "column": 1,
+          "endColumn": 6,
+          "endLine": 16,
+          "fix": {
+            "range": [
+              66,
+              71,
+            ],
+            "text": "BAD",
+          },
+          "line": 16,
+          "message": "Must use plain style scalar.",
+          "messageId": "required",
+          "nodeType": "YAMLScalar",
+          "ruleId": "yml/plain-scalar",
+          "severity": 2,
+        },
+        {
+          "column": 1,
+          "endColumn": 4,
+          "endLine": 19,
+          "line": 17,
+          "message": "Empty documents are forbidden.",
+          "messageId": "unexpectedEmpty",
+          "nodeType": "YAMLDocument",
+          "ruleId": "yml/no-empty-document",
+          "severity": 2,
+        },
+        {
+          "column": 1,
+          "endColumn": 8,
+          "endLine": 18,
+          "fix": {
+            "range": [
+              77,
+              77,
+            ],
+            "text": "
 ",
+          },
+          "line": 18,
+          "message": "Expected line before comment.",
+          "messageId": "before",
+          "nodeType": "Block",
+          "ruleId": "lines-around-comment",
+          "severity": 2,
         },
-        "line": 18,
-        "message": "Expected line before comment.",
-        "messageId": "before",
-        "nodeType": "Block",
-        "ruleId": "lines-around-comment",
-        "severity": 2,
-      },
-    ],
-    "source": "# ✗ BAD
-\\"BAD\\":
-  - \\"foo\\"
+      ],
+      "source": "# ✗ BAD
+"BAD":
+  - "foo"
 
 
 
-  - \\"bar\\"
+  - "bar"
 
 
 ---
@@ -5400,8 +5405,8 @@ Array [
 ...
 
 
-: \\"BAD\\"
-\\"BAD\\":
+: "BAD"
+"BAD":
 ---
 # ✗ BAD
 ...
@@ -5409,9 +5414,10 @@ foo: bar
 ...
 - bar
 ",
-    "suppressedMessages": Array [],
-    "usedDeprecatedRules": Array [],
-    "warningCount": 0,
-  },
-]
+      "suppressedMessages": [],
+      "usedDeprecatedRules": [],
+      "warningCount": 0,
+    },
+  ],
+}
 `;
