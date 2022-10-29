@@ -1,4 +1,3 @@
-/* eslint-disable object-curly-newline */
 import SemanticRelease, {PluginSpec} from 'semantic-release'
 
 export const settings: Partial<SemanticRelease.GlobalConfig> = {

@@ -1,4 +1,3 @@
-/* eslint-disable object-curly-newline */
 import SemanticRelease, {PluginSpec} from 'semantic-release'
 import * as common from './common'
 
