@@ -54,7 +54,29 @@ export = {
 		'no-var': 'error',
 		'no-whitespace-before-property': 'error',
 		'nonblock-statement-body-position': ['error', 'below'],
-		'object-curly-newline': ['error', {multiline: true} ],
+		'object-curly-newline': [
+			'error',
+			{
+				ObjectExpression: {
+					multiline: true,
+					consistent: true
+				},
+				ObjectPattern: {
+					multiline: true,
+					consistent: true
+				},
+				ImportDeclaration: {
+					multiline: true,
+					consistent: true,
+					minProperties: 10
+				},
+				ExportDeclaration: {
+					multiline: true,
+					consistent: true,
+					minProperties: 4
+				}
+			}
+		],
 		'object-shorthand': ['error', 'always', {avoidExplicitReturnArrows: true} ],
 		'operator-linebreak': 'error',
 		'padded-blocks': ['warn', 'never'],
