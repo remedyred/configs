@@ -5,5 +5,4 @@ export = {
 		sourceType: 'module'
 	},
 	extends: ['plugin:unicorn/recommended']
-
 }
