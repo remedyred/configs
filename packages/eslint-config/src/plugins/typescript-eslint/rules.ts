@@ -13,6 +13,7 @@ export = {
 				before: false
 			}
 		],
+		'@typescript-eslint/consistent-generic-constructors': 'warn',
 		'@typescript-eslint/func-call-spacing': 'error',
 		'@typescript-eslint/keyword-spacing': 'error',
 		'@typescript-eslint/lines-between-class-members': ['error', 'always', {exceptAfterSingleLine: true} ],
@@ -33,8 +34,12 @@ export = {
 		'@typescript-eslint/method-signature-style': ['warn', 'method'],
 		'@typescript-eslint/no-explicit-any': 'off',
 		'@typescript-eslint/no-extra-parens': 'off',
+		'@typescript-eslint/no-extraneous-class': 'warn',
+		'no-dupe-class-members': 'off',
+		'@typescript-eslint/no-dupe-class-members': 'warn',
 		'@typescript-eslint/object-curly-spacing': ['error', 'never'],
 		'@typescript-eslint/prefer-ts-expect-error': 'warn',
+		'@typescript-eslint/parameter-properties': 'warn',
 		'@typescript-eslint/quotes': [
 			'error',
 			'single',
