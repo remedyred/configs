@@ -312,6 +312,17 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
         "enforceForIfStatements": true,
       },
     ],
+    "max-len": [
+      "error",
+      {
+        "code": 180,
+        "comments": 140,
+        "ignoreRegExpLiterals": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "tabWidth": 4,
+      },
+    ],
     "no-array-constructor": [
       "off",
     ],
@@ -1069,17 +1080,28 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
 {
   "lintResults": [
     {
-      "errorCount": 6,
+      "errorCount": 7,
       "fatalErrorCount": 0,
       "filePath": StringMatching /bad\\\\\\.\\(ts\\|js\\|json\\|yml\\)\\$/,
       "fixableErrorCount": 6,
       "fixableWarningCount": 0,
       "messages": [
         {
+          "column": 1,
+          "endColumn": 224,
+          "endLine": 5,
+          "line": 5,
+          "message": "This line has a length of 413. Maximum allowed is 180.",
+          "messageId": "max",
+          "nodeType": "Program",
+          "ruleId": "max-len",
+          "severity": 2,
+        },
+        {
           "column": 10,
           "endColumn": 16,
-          "endLine": 4,
-          "line": 4,
+          "endLine": 5,
+          "line": 5,
           "message": "'sample' is defined but never used.",
           "messageId": "unusedVar",
           "nodeType": "Identifier",
@@ -1089,16 +1111,16 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
         {
           "column": 27,
           "endColumn": 28,
-          "endLine": 4,
+          "endLine": 5,
           "fix": {
             "range": [
-              96,
-              96,
+              111,
+              111,
             ],
             "text": "
 ",
           },
-          "line": 4,
+          "line": 5,
           "message": "Statement inside of curly braces should be on next line.",
           "messageId": "blockSameLine",
           "nodeType": "Punctuator",
@@ -1108,16 +1130,16 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
         {
           "column": 50,
           "endColumn": 51,
-          "endLine": 4,
+          "endLine": 5,
           "fix": {
             "range": [
-              119,
-              119,
+              134,
+              134,
             ],
             "text": "
 ",
           },
-          "line": 4,
+          "line": 5,
           "message": "Statement inside of curly braces should be on next line.",
           "messageId": "blockSameLine",
           "nodeType": "Punctuator",
@@ -1127,16 +1149,16 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
         {
           "column": 80,
           "endColumn": 81,
-          "endLine": 4,
+          "endLine": 5,
           "fix": {
             "range": [
-              148,
-              148,
+              163,
+              163,
             ],
             "text": "
 ",
           },
-          "line": 4,
+          "line": 5,
           "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
           "messageId": "singleLineClose",
           "nodeType": "Punctuator",
@@ -1146,8 +1168,8 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
         {
           "column": 134,
           "endColumn": 139,
-          "endLine": 4,
-          "line": 4,
+          "endLine": 5,
+          "line": 5,
           "message": "'array' is never reassigned. Use 'const' instead.",
           "messageId": "useConst",
           "nodeType": "Identifier",
@@ -1157,16 +1179,16 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
         {
           "column": 181,
           "endColumn": 182,
-          "endLine": 4,
+          "endLine": 5,
           "fix": {
             "range": [
-              250,
-              250,
+              265,
+              265,
             ],
             "text": "
 ",
           },
-          "line": 4,
+          "line": 5,
           "message": "Statement inside of curly braces should be on next line.",
           "messageId": "blockSameLine",
           "nodeType": "Punctuator",
@@ -1176,16 +1198,16 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
         {
           "column": 209,
           "endColumn": 210,
-          "endLine": 4,
+          "endLine": 5,
           "fix": {
             "range": [
-              277,
-              277,
+              292,
+              292,
             ],
             "text": "
 ",
           },
-          "line": 4,
+          "line": 5,
           "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
           "messageId": "singleLineClose",
           "nodeType": "Punctuator",
@@ -1195,16 +1217,16 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
         {
           "column": 223,
           "endColumn": 224,
-          "endLine": 4,
+          "endLine": 5,
           "fix": {
             "range": [
-              291,
-              291,
+              306,
+              306,
             ],
             "text": "
 ",
           },
-          "line": 4,
+          "line": 5,
           "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
           "messageId": "singleLineClose",
           "nodeType": "Punctuator",
@@ -1214,6 +1236,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
       ],
       "source": "// noinspection JSUnusedGlobalSymbols,JSAnnotator
 // @formatter:off
+// @ts-nocheck
 
 function sample(arr, req) {	arr = arr.sort(() => {		return 0.5 - Math.random()	});																				let i = 0,																					array = [];																				while (i < req) {		array.push(arr[i]);		++i	}	return array}
 ",
@@ -1535,6 +1558,17 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
       "always",
       {
         "enforceForIfStatements": true,
+      },
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 180,
+        "comments": 140,
+        "ignoreRegExpLiterals": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "tabWidth": 4,
       },
     ],
     "no-array-constructor": [
@@ -2620,6 +2654,17 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         "enforceForIfStatements": true,
       },
     ],
+    "max-len": [
+      "error",
+      {
+        "code": 180,
+        "comments": 140,
+        "ignoreRegExpLiterals": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "tabWidth": 4,
+      },
+    ],
     "no-array-constructor": [
       "off",
     ],
@@ -3392,15 +3437,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 2,
-          "endLine": 2,
+          "endLine": 3,
           "fix": {
             "range": [
-              14,
-              15,
+              29,
+              30,
             ],
             "text": " ",
           },
-          "line": 2,
+          "line": 3,
           "message": "Opening curly brace does not appear on the same line as controlling statement.",
           "messageId": "nextLineOpen",
           "nodeType": "Punctuator",
@@ -3410,15 +3455,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 16,
           "endColumn": 16,
-          "endLine": 3,
+          "endLine": 4,
           "fix": {
             "range": [
-              31,
-              32,
+              46,
+              47,
             ],
             "text": "",
           },
-          "line": 3,
+          "line": 4,
           "message": "Unexpected separator (;).",
           "messageId": "unexpectedSemi",
           "nodeType": "Punctuator",
@@ -3428,15 +3473,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 1,
-          "endLine": 6,
+          "endLine": 7,
           "fix": {
             "range": [
-              33,
-              34,
+              48,
+              49,
             ],
             "text": "",
           },
-          "line": 5,
+          "line": 6,
           "message": "More than 1 blank line not allowed.",
           "messageId": "consecutiveBlank",
           "nodeType": "Program",
@@ -3446,8 +3491,8 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 3,
-          "endLine": 7,
-          "line": 7,
+          "endLine": 8,
+          "line": 8,
           "message": "Mixed spaces and tabs.",
           "messageId": "mixedSpacesAndTabs",
           "nodeType": "Program",
@@ -3457,15 +3502,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 11,
           "endColumn": 11,
-          "endLine": 7,
+          "endLine": 8,
           "fix": {
             "range": [
-              50,
-              51,
+              65,
+              66,
             ],
             "text": "",
           },
-          "line": 7,
+          "line": 8,
           "message": "Unexpected separator (;).",
           "messageId": "unexpectedSemi",
           "nodeType": "Punctuator",
@@ -3475,16 +3520,16 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 3,
-          "endLine": 16,
+          "endLine": 17,
           "fix": {
             "range": [
-              75,
-              79,
+              90,
+              94,
             ],
             "text": "
 ",
           },
-          "line": 12,
+          "line": 13,
           "message": "Block must not be padded by blank lines.",
           "messageId": "neverPadBlock",
           "nodeType": "ClassBody",
@@ -3494,15 +3539,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 2,
-          "endLine": 12,
+          "endLine": 13,
           "fix": {
             "range": [
-              72,
-              74,
+              87,
+              89,
             ],
             "text": " ",
           },
-          "line": 12,
+          "line": 13,
           "message": "Opening curly brace does not appear on the same line as controlling statement.",
           "messageId": "nextLineOpen",
           "nodeType": "Punctuator",
@@ -3512,15 +3557,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 1,
-          "endLine": 16,
+          "endLine": 17,
           "fix": {
             "range": [
-              76,
-              78,
+              91,
+              93,
             ],
             "text": "",
           },
-          "line": 14,
+          "line": 15,
           "message": "More than 1 blank line not allowed.",
           "messageId": "consecutiveBlank",
           "nodeType": "Program",
@@ -3530,15 +3575,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 3,
-          "endLine": 16,
+          "endLine": 17,
           "fix": {
             "range": [
-              79,
-              81,
+              94,
+              96,
             ],
             "text": "	",
           },
-          "line": 16,
+          "line": 17,
           "message": "Expected indentation of 1 tab but found 2 spaces.",
           "messageId": "wrongIndentation",
           "nodeType": "Identifier",
@@ -3548,11 +3593,11 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 15,
           "endColumn": 16,
-          "endLine": 16,
+          "endLine": 17,
           "fix": {
             "range": [
-              87,
               102,
+              117,
             ],
             "text": "string
 
@@ -3560,7 +3605,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
 
   id",
           },
-          "line": 16,
+          "line": 17,
           "message": "Extra semicolon.",
           "messageId": "extraSemi",
           "nodeType": "PropertyDefinition",
@@ -3570,15 +3615,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 1,
-          "endLine": 20,
+          "endLine": 21,
           "fix": {
             "range": [
-              95,
-              97,
+              110,
+              112,
             ],
             "text": "",
           },
-          "line": 18,
+          "line": 19,
           "message": "More than 1 blank line not allowed.",
           "messageId": "consecutiveBlank",
           "nodeType": "Program",
@@ -3588,15 +3633,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 3,
-          "endLine": 20,
+          "endLine": 21,
           "fix": {
             "range": [
-              98,
-              100,
+              113,
+              115,
             ],
             "text": "	",
           },
-          "line": 20,
+          "line": 21,
           "message": "Expected indentation of 1 tab but found 2 spaces.",
           "messageId": "wrongIndentation",
           "nodeType": "Identifier",
@@ -3606,17 +3651,17 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 13,
           "endColumn": 14,
-          "endLine": 20,
+          "endLine": 21,
           "fix": {
             "range": [
-              104,
-              126,
+              119,
+              141,
             ],
             "text": "number
 
   constructor",
           },
-          "line": 20,
+          "line": 21,
           "message": "Extra semicolon.",
           "messageId": "extraSemi",
           "nodeType": "PropertyDefinition",
@@ -3626,15 +3671,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 3,
-          "endLine": 22,
+          "endLine": 23,
           "fix": {
             "range": [
-              113,
-              115,
+              128,
+              130,
             ],
             "text": "	",
           },
-          "line": 22,
+          "line": 23,
           "message": "Expected indentation of 1 tab but found 2 spaces.",
           "messageId": "wrongIndentation",
           "nodeType": "Identifier",
@@ -3644,8 +3689,8 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 3,
-          "endLine": 24,
-          "line": 24,
+          "endLine": 25,
+          "line": 25,
           "message": "Mixed spaces and tabs.",
           "messageId": "mixedSpacesAndTabs",
           "nodeType": "Program",
@@ -3655,15 +3700,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 1,
-          "endLine": 27,
+          "endLine": 28,
           "fix": {
             "range": [
-              157,
-              158,
+              172,
+              173,
             ],
             "text": "",
           },
-          "line": 26,
+          "line": 27,
           "message": "More than 1 blank line not allowed.",
           "messageId": "consecutiveBlank",
           "nodeType": "Program",
@@ -3673,15 +3718,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 15,
-          "endLine": 27,
+          "endLine": 28,
           "fix": {
             "range": [
-              159,
-              173,
+              174,
+              188,
             ],
             "text": "	",
           },
-          "line": 27,
+          "line": 28,
           "message": "Expected indentation of 1 tab but found 14 spaces.",
           "messageId": "wrongIndentation",
           "nodeType": "Identifier",
@@ -3691,16 +3736,16 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 27,
           "endColumn": 5,
-          "endLine": 30,
+          "endLine": 31,
           "fix": {
             "range": [
-              186,
-              189,
+              201,
+              204,
             ],
             "text": "
 ",
           },
-          "line": 27,
+          "line": 28,
           "message": "Block must not be padded by blank lines.",
           "messageId": "neverPadBlock",
           "nodeType": "BlockStatement",
@@ -3710,15 +3755,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 1,
-          "endLine": 30,
+          "endLine": 31,
           "fix": {
             "range": [
-              187,
-              188,
+              202,
+              203,
             ],
             "text": "",
           },
-          "line": 29,
+          "line": 30,
           "message": "More than 1 blank line not allowed.",
           "messageId": "consecutiveBlank",
           "nodeType": "Program",
@@ -3728,15 +3773,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 5,
-          "endLine": 30,
+          "endLine": 31,
           "fix": {
             "range": [
-              189,
-              193,
+              204,
+              208,
             ],
             "text": "		",
           },
-          "line": 30,
+          "line": 31,
           "message": "Expected indentation of 2 tabs but found 4 spaces.",
           "messageId": "wrongIndentation",
           "nodeType": "Keyword",
@@ -3746,8 +3791,8 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 3,
-          "endLine": 31,
-          "line": 31,
+          "endLine": 32,
+          "line": 32,
           "message": "Mixed spaces and tabs.",
           "messageId": "mixedSpacesAndTabs",
           "nodeType": "Program",
@@ -3757,18 +3802,18 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 6,
           "endColumn": 7,
-          "endLine": 31,
+          "endLine": 32,
           "fix": {
             "range": [
-              202,
               217,
+              232,
             ],
             "text": "	    =
 
 
 	    ",
           },
-          "line": 31,
+          "line": 32,
           "message": "Bad line breaking before and after '='.",
           "messageId": "badLinebreak",
           "nodeType": "AssignmentExpression",
@@ -3778,15 +3823,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 1,
-          "endLine": 34,
+          "endLine": 35,
           "fix": {
             "range": [
-              210,
-              211,
+              225,
+              226,
             ],
             "text": "",
           },
-          "line": 33,
+          "line": 34,
           "message": "More than 1 blank line not allowed.",
           "messageId": "consecutiveBlank",
           "nodeType": "Program",
@@ -3796,8 +3841,8 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 3,
-          "endLine": 34,
-          "line": 34,
+          "endLine": 35,
+          "line": 35,
           "message": "Mixed spaces and tabs.",
           "messageId": "mixedSpacesAndTabs",
           "nodeType": "Program",
@@ -3807,18 +3852,18 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 10,
           "endColumn": 11,
-          "endLine": 34,
+          "endLine": 35,
           "fix": {
             "range": [
-              217,
-              241,
+              232,
+              256,
             ],
             "text": "name
 
 
             this",
           },
-          "line": 34,
+          "line": 35,
           "message": "Extra semicolon.",
           "messageId": "extraSemi",
           "nodeType": "ExpressionStatement",
@@ -3828,15 +3873,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 1,
-          "endLine": 37,
+          "endLine": 38,
           "fix": {
             "range": [
-              223,
-              224,
+              238,
+              239,
             ],
             "text": "",
           },
-          "line": 36,
+          "line": 37,
           "message": "More than 1 blank line not allowed.",
           "messageId": "consecutiveBlank",
           "nodeType": "Program",
@@ -3846,15 +3891,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 13,
-          "endLine": 37,
+          "endLine": 38,
           "fix": {
             "range": [
-              225,
-              237,
+              240,
+              252,
             ],
             "text": "		",
           },
-          "line": 37,
+          "line": 38,
           "message": "Expected indentation of 2 tabs but found 12 spaces.",
           "messageId": "wrongIndentation",
           "nodeType": "Keyword",
@@ -3864,17 +3909,17 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 25,
           "endColumn": 26,
-          "endLine": 37,
+          "endLine": 38,
           "fix": {
             "range": [
-              247,
-              255,
+              262,
+              270,
             ],
             "text": "id
 
   }",
           },
-          "line": 37,
+          "line": 38,
           "message": "Extra semicolon.",
           "messageId": "extraSemi",
           "nodeType": "ExpressionStatement",
@@ -3884,16 +3929,16 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 26,
           "endColumn": 3,
-          "endLine": 39,
+          "endLine": 40,
           "fix": {
             "range": [
-              250,
-              252,
+              265,
+              267,
             ],
             "text": "
 ",
           },
-          "line": 37,
+          "line": 38,
           "message": "Block must not be padded by blank lines.",
           "messageId": "neverPadBlock",
           "nodeType": "BlockStatement",
@@ -3903,15 +3948,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 1,
           "endColumn": 3,
-          "endLine": 39,
+          "endLine": 40,
           "fix": {
             "range": [
-              252,
-              254,
+              267,
+              269,
             ],
             "text": "	",
           },
-          "line": 39,
+          "line": 40,
           "message": "Expected indentation of 1 tab but found 2 spaces.",
           "messageId": "wrongIndentation",
           "nodeType": "Punctuator",
@@ -3921,8 +3966,8 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 7,
           "endColumn": 17,
-          "endLine": 42,
-          "line": 42,
+          "endLine": 43,
+          "line": 43,
           "message": "'user' is assigned a value but never used.",
           "messageId": "unusedVar",
           "nodeType": "Identifier",
@@ -3932,15 +3977,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 19,
           "endColumn": 33,
-          "endLine": 42,
+          "endLine": 43,
           "fix": {
             "range": [
-              277,
-              291,
+              292,
+              306,
             ],
             "text": " ",
           },
-          "line": 42,
+          "line": 43,
           "message": "Multiple spaces found before 'new'.",
           "messageId": "multipleSpaces",
           "nodeType": "Keyword",
@@ -3950,15 +3995,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 49,
           "endColumn": 57,
-          "endLine": 42,
+          "endLine": 43,
           "fix": {
             "range": [
-              307,
-              315,
+              322,
+              330,
             ],
             "text": "'Murphy'",
           },
-          "line": 42,
+          "line": 43,
           "message": "Strings must use singlequote.",
           "messageId": "wrongQuotes",
           "nodeType": "Literal",
@@ -3968,15 +4013,15 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         {
           "column": 61,
           "endColumn": 62,
-          "endLine": 42,
+          "endLine": 43,
           "fix": {
             "range": [
-              318,
-              320,
+              333,
+              335,
             ],
             "text": ")",
           },
-          "line": 42,
+          "line": 43,
           "message": "Extra semicolon.",
           "messageId": "extraSemi",
           "nodeType": "VariableDeclaration",
@@ -3984,7 +4029,8 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
           "severity": 2,
         },
       ],
-      "source": "interface User
+      "source": "// @ts-nocheck
+interface User
 {
   name: string;
 
@@ -4345,6 +4391,17 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
       "always",
       {
         "enforceForIfStatements": true,
+      },
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 180,
+        "comments": 140,
+        "ignoreRegExpLiterals": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "tabWidth": 4,
       },
     ],
     "no-array-constructor": [

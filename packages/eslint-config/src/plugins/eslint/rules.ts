@@ -32,6 +32,15 @@ export = {
 				beforeBlockComment: true
 			}
 		],
+		'max-len': [
+			'error',
+			{
+				code: 180, tabWidth: 4,
+				comments: 140, ignoreTrailingComments: true,
+				ignoreUrls: true,
+				ignoreRegExpLiterals: true
+			}
+		],
 		'no-else-return': 'error',
 		'no-lonely-if': 'error',
 		'no-multi-spaces': 'error',
