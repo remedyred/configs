@@ -35,6 +35,8 @@ export = {
 		'@typescript-eslint/no-explicit-any': 'off',
 		'@typescript-eslint/no-extra-parens': 'off',
 		'@typescript-eslint/no-extraneous-class': 'warn',
+		'no-dupe-class-members': 'off',
+		'@typescript-eslint/no-dupe-class-members': 'warn',
 		'@typescript-eslint/object-curly-spacing': ['error', 'never'],
 		'@typescript-eslint/prefer-ts-expect-error': 'warn',
 		'@typescript-eslint/parameter-properties': 'warn',

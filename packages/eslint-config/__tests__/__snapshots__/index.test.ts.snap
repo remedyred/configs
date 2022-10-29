@@ -90,6 +90,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
     "@typescript-eslint/no-array-constructor": [
       "error",
     ],
+    "@typescript-eslint/no-dupe-class-members": [
+      "warn",
+    ],
     "@typescript-eslint/no-empty-function": [
       "error",
     ],
@@ -369,7 +372,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
       "error",
     ],
     "no-dupe-class-members": [
-      "error",
+      "off",
     ],
     "no-dupe-else-if": [
       "error",
@@ -1347,6 +1350,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
     "@typescript-eslint/no-array-constructor": [
       "error",
     ],
+    "@typescript-eslint/no-dupe-class-members": [
+      "warn",
+    ],
     "@typescript-eslint/no-empty-function": [
       "error",
     ],
@@ -1626,7 +1632,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
       "error",
     ],
     "no-dupe-class-members": [
-      "error",
+      "off",
     ],
     "no-dupe-else-if": [
       "error",
@@ -2449,6 +2455,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
     ],
     "@typescript-eslint/no-array-constructor": [
       "error",
+    ],
+    "@typescript-eslint/no-dupe-class-members": [
+      "warn",
     ],
     "@typescript-eslint/no-empty-function": [
       "error",
@@ -4198,6 +4207,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
     "@typescript-eslint/no-array-constructor": [
       "error",
     ],
+    "@typescript-eslint/no-dupe-class-members": [
+      "warn",
+    ],
     "@typescript-eslint/no-empty-function": [
       "error",
     ],
@@ -4477,7 +4489,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
       "error",
     ],
     "no-dupe-class-members": [
-      "error",
+      "off",
     ],
     "no-dupe-else-if": [
       "error",
