@@ -77,6 +77,7 @@ export = {
 				}
 			}
 		],
+		'@ada-support/object-newline/enforce': ['error', {items: 2} ],
 		'object-shorthand': ['error', 'always', {avoidExplicitReturnArrows: true} ],
 		'operator-linebreak': 'error',
 		'padded-blocks': ['warn', 'never'],
