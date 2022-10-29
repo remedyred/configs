@@ -53,6 +53,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
         "before": false,
       },
     ],
+    "@typescript-eslint/consistent-generic-constructors": [
+      "warn",
+    ],
     "@typescript-eslint/func-call-spacing": [
       "error",
     ],
@@ -1301,6 +1304,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
         "before": false,
       },
     ],
+    "@typescript-eslint/consistent-generic-constructors": [
+      "warn",
+    ],
     "@typescript-eslint/func-call-spacing": [
       "error",
     ],
@@ -2394,6 +2400,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
         "after": true,
         "before": false,
       },
+    ],
+    "@typescript-eslint/consistent-generic-constructors": [
+      "warn",
     ],
     "@typescript-eslint/func-call-spacing": [
       "error",
@@ -4133,6 +4142,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
         "after": true,
         "before": false,
       },
+    ],
+    "@typescript-eslint/consistent-generic-constructors": [
+      "warn",
     ],
     "@typescript-eslint/func-call-spacing": [
       "error",
