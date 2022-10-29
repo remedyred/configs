@@ -108,6 +108,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
     "@typescript-eslint/no-extra-semi": [
       "error",
     ],
+    "@typescript-eslint/no-extraneous-class": [
+      "warn",
+    ],
     "@typescript-eslint/no-inferrable-types": [
       "error",
     ],
@@ -141,6 +144,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
     "@typescript-eslint/object-curly-spacing": [
       "error",
       "never",
+    ],
+    "@typescript-eslint/parameter-properties": [
+      "warn",
     ],
     "@typescript-eslint/prefer-as-const": [
       "error",
@@ -1359,6 +1365,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
     "@typescript-eslint/no-extra-semi": [
       "error",
     ],
+    "@typescript-eslint/no-extraneous-class": [
+      "warn",
+    ],
     "@typescript-eslint/no-inferrable-types": [
       "error",
     ],
@@ -1392,6 +1401,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
     "@typescript-eslint/object-curly-spacing": [
       "error",
       "never",
+    ],
+    "@typescript-eslint/parameter-properties": [
+      "warn",
     ],
     "@typescript-eslint/prefer-as-const": [
       "error",
@@ -2456,6 +2468,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
     "@typescript-eslint/no-extra-semi": [
       "error",
     ],
+    "@typescript-eslint/no-extraneous-class": [
+      "warn",
+    ],
     "@typescript-eslint/no-inferrable-types": [
       "error",
     ],
@@ -2489,6 +2504,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
     "@typescript-eslint/object-curly-spacing": [
       "error",
       "never",
+    ],
+    "@typescript-eslint/parameter-properties": [
+      "warn",
     ],
     "@typescript-eslint/prefer-as-const": [
       "error",
@@ -4198,6 +4216,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
     "@typescript-eslint/no-extra-semi": [
       "error",
     ],
+    "@typescript-eslint/no-extraneous-class": [
+      "warn",
+    ],
     "@typescript-eslint/no-inferrable-types": [
       "error",
     ],
@@ -4231,6 +4252,9 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
     "@typescript-eslint/object-curly-spacing": [
       "error",
       "never",
+    ],
+    "@typescript-eslint/parameter-properties": [
+      "warn",
     ],
     "@typescript-eslint/prefer-as-const": [
       "error",
