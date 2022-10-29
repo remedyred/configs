@@ -16,6 +16,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
   "parserOptions": {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
+    "project": "tsconfig.json",
     "sourceType": "module",
   },
   "plugins": [
@@ -1069,146 +1070,20 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
 {
   "lintResults": [
     {
-      "errorCount": 6,
-      "fatalErrorCount": 0,
+      "errorCount": 1,
+      "fatalErrorCount": 1,
       "filePath": StringMatching /bad\\\\\\.\\(ts\\|js\\|json\\|yml\\)\\$/,
-      "fixableErrorCount": 6,
+      "fixableErrorCount": 0,
       "fixableWarningCount": 0,
       "messages": [
         {
-          "column": 10,
-          "endColumn": 16,
-          "endLine": 4,
-          "line": 4,
-          "message": "'sample' is defined but never used.",
-          "messageId": "unusedVar",
-          "nodeType": "Identifier",
-          "ruleId": "@typescript-eslint/no-unused-vars",
-          "severity": 1,
-        },
-        {
-          "column": 27,
-          "endColumn": 28,
-          "endLine": 4,
-          "fix": {
-            "range": [
-              96,
-              96,
-            ],
-            "text": "
-",
-          },
-          "line": 4,
-          "message": "Statement inside of curly braces should be on next line.",
-          "messageId": "blockSameLine",
-          "nodeType": "Punctuator",
-          "ruleId": "@typescript-eslint/brace-style",
-          "severity": 2,
-        },
-        {
-          "column": 50,
-          "endColumn": 51,
-          "endLine": 4,
-          "fix": {
-            "range": [
-              119,
-              119,
-            ],
-            "text": "
-",
-          },
-          "line": 4,
-          "message": "Statement inside of curly braces should be on next line.",
-          "messageId": "blockSameLine",
-          "nodeType": "Punctuator",
-          "ruleId": "@typescript-eslint/brace-style",
-          "severity": 2,
-        },
-        {
-          "column": 80,
-          "endColumn": 81,
-          "endLine": 4,
-          "fix": {
-            "range": [
-              148,
-              148,
-            ],
-            "text": "
-",
-          },
-          "line": 4,
-          "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
-          "messageId": "singleLineClose",
-          "nodeType": "Punctuator",
-          "ruleId": "@typescript-eslint/brace-style",
-          "severity": 2,
-        },
-        {
-          "column": 134,
-          "endColumn": 139,
-          "endLine": 4,
-          "line": 4,
-          "message": "'array' is never reassigned. Use 'const' instead.",
-          "messageId": "useConst",
-          "nodeType": "Identifier",
-          "ruleId": "prefer-const",
-          "severity": 1,
-        },
-        {
-          "column": 181,
-          "endColumn": 182,
-          "endLine": 4,
-          "fix": {
-            "range": [
-              250,
-              250,
-            ],
-            "text": "
-",
-          },
-          "line": 4,
-          "message": "Statement inside of curly braces should be on next line.",
-          "messageId": "blockSameLine",
-          "nodeType": "Punctuator",
-          "ruleId": "@typescript-eslint/brace-style",
-          "severity": 2,
-        },
-        {
-          "column": 209,
-          "endColumn": 210,
-          "endLine": 4,
-          "fix": {
-            "range": [
-              277,
-              277,
-            ],
-            "text": "
-",
-          },
-          "line": 4,
-          "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
-          "messageId": "singleLineClose",
-          "nodeType": "Punctuator",
-          "ruleId": "@typescript-eslint/brace-style",
-          "severity": 2,
-        },
-        {
-          "column": 223,
-          "endColumn": 224,
-          "endLine": 4,
-          "fix": {
-            "range": [
-              291,
-              291,
-            ],
-            "text": "
-",
-          },
-          "line": 4,
-          "message": "Closing curly brace should be on the same line as opening curly brace or on the line after the previous block.",
-          "messageId": "singleLineClose",
-          "nodeType": "Punctuator",
-          "ruleId": "@typescript-eslint/brace-style",
+          "column": undefined,
+          "fatal": true,
+          "line": undefined,
+          "message": "Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.
+The file does not match your project config: packages\\eslint-config\\__fixtures__\\bad.js.
+The file must be included in at least one of the projects provided.",
+          "ruleId": null,
           "severity": 2,
         },
       ],
@@ -1219,7 +1094,7 @@ function sample(arr, req) {	arr = arr.sort(() => {		return 0.5 - Math.random()	}
 ",
       "suppressedMessages": [],
       "usedDeprecatedRules": [],
-      "warningCount": 2,
+      "warningCount": 0,
     },
   ],
 }
@@ -1241,6 +1116,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
   "parserOptions": {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
+    "project": "tsconfig.json",
     "sourceType": "module",
   },
   "plugins": [
@@ -2324,6 +2200,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
   "parserOptions": {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
+    "project": "tsconfig.json",
     "sourceType": "module",
   },
   "plugins": [
@@ -4051,6 +3928,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
   "parserOptions": {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
+    "project": "tsconfig.json",
     "sourceType": "module",
   },
   "plugins": [
