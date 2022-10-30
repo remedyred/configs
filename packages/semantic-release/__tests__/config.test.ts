@@ -1,4 +1,4 @@
-import configTS from '../src/exports'
+import configTS from '../src'
 import configCJS from '../dist'
 
 describe.each([ ['ts', configTS], ['cjs', configCJS] ])('config %s', (label, config) => {
