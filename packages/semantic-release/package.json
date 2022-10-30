@@ -4,7 +4,8 @@
 	"description": "Snickbit semantic-release config",
 	"license": "MIT",
 	"exports": {
-		"./*": "./dist/*.js"
+		".": "./dist/index.js",
+		"./*": "./dist/exports/*.js"
 	},
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
@@ -20,7 +21,7 @@
 	},
 	"release": {
 		"extends": [
-			"./dist/index.js"
+			"@snickbit/semantic-release"
 		]
 	},
 	"jest": {
@@ -54,7 +55,8 @@
 	},
 	"tsup": {
 		"entry": [
-			"src/*.ts"
+			"src/*.ts",
+			"src/exports/*.ts"
 		],
 		"clean": true,
 		"dts": true,

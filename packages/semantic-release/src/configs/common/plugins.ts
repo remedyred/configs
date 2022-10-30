@@ -1,11 +1,6 @@
-/* eslint-disable object-curly-newline */
-import SemanticRelease, {PluginSpec} from 'semantic-release'
+import {PluginSpec} from 'semantic-release'
 
-export const settings: Partial<SemanticRelease.GlobalConfig> = {
-	branches: ['+([0-9])?(.{+([0-9]),x}).x', 'main', 'next']
-}
-
-export const plugins: ReadonlyArray<PluginSpec> = [
+const plugins: ReadonlyArray<PluginSpec> = [
 	[
 		'@semantic-release/changelog',
 		{
@@ -48,6 +43,4 @@ All notable changes to this project will be documented in this file. See
 	]
 ]
 
-const config: Partial<SemanticRelease.GlobalConfig> = {...settings, plugins}
-
-export default config
+export = plugins
