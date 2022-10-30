@@ -1,3 +1,3 @@
-import publish from './publish'
+import publish from './exports/publish'
 
-export default {...publish}
+export = publish
