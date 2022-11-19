@@ -172,7 +172,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
       "error",
       "never",
     ],
-    "@typescript-eslint/sort-type-union-intersection-members": [
+    "@typescript-eslint/sort-type-constituents": [
       "error",
     ],
     "@typescript-eslint/space-before-blocks": [
@@ -1432,7 +1432,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
       "error",
       "never",
     ],
-    "@typescript-eslint/sort-type-union-intersection-members": [
+    "@typescript-eslint/sort-type-constituents": [
       "error",
     ],
     "@typescript-eslint/space-before-blocks": [
@@ -2538,7 +2538,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
       "error",
       "never",
     ],
-    "@typescript-eslint/sort-type-union-intersection-members": [
+    "@typescript-eslint/sort-type-constituents": [
       "error",
     ],
     "@typescript-eslint/space-before-blocks": [
@@ -4289,7 +4289,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
       "error",
       "never",
     ],
-    "@typescript-eslint/sort-type-union-intersection-members": [
+    "@typescript-eslint/sort-type-constituents": [
       "error",
     ],
     "@typescript-eslint/space-before-blocks": [

@@ -49,7 +49,7 @@ export = {
 			}
 		],
 		'@typescript-eslint/semi': ['error', 'never'],
-		'@typescript-eslint/sort-type-union-intersection-members': 'error',
+		'@typescript-eslint/sort-type-constituents': 'error',
 		'@typescript-eslint/space-before-blocks': 'error',
 		'@typescript-eslint/space-before-function-paren': [
 			'error',
