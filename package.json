@@ -27,7 +27,7 @@
 	},
 	"devDependencies": {
 		"@snickbit/eslint-config": "*",
-		"@types/jest": "29.1.1",
+		"@types/jest": "29.2.5",
 		"eslint": "8.24.0",
 		"husky": "8.0.1",
 		"jest": "28.1.3",
