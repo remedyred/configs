@@ -3,6 +3,7 @@
 	"version": "1.6.1",
 	"description": "Snickbit semantic-release config",
 	"license": "MIT",
+	"type": "module",
 	"exports": {
 		".": "./dist/index.js",
 		"./*": "./dist/exports/*.js"
@@ -14,9 +15,9 @@
 	],
 	"scripts": {
 		"build": "tsup --minify",
-		"dev": "tsup",
-		"release": "semantic-release",
-		"watch": "pnpm run dev --watch"
+		"build:dev": "tsup",
+		"dev": "tsup --watch",
+		"release": "semantic-release"
 	},
 	"release": {
 		"extends": [
@@ -48,16 +49,5 @@
 	},
 	"engines": {
 		"node": ">= 14.17"
-	},
-	"tsup": {
-		"entry": [
-			"src/*.ts",
-			"src/exports/*.ts"
-		],
-		"clean": true,
-		"dts": true,
-		"format": [
-			"cjs"
-		]
 	}
 }
