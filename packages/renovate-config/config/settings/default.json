@@ -4,6 +4,6 @@
 		"./common"
 	],
 	"baseBranches": [
-		"dev"
+		"main"
 	]
 }
