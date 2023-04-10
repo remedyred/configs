@@ -22,8 +22,7 @@
 	"automergeStrategy": "squash",
 	"automergeType": "branch",
 	"baseBranches": [
-		"main",
-		"next"
+		"main"
 	],
 	"configMigration": true,
 	"dependencyDashboard": false,

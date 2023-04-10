@@ -3,6 +3,7 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
+		"build": "turbo run build",
 		"fix": "eslint \"**/*.{ts,json,yml,yaml}\" --cache --color --fix",
 		"lint": "eslint \"**/*.{ts,json,yml,yaml}\" --cache --color",
 		"prepare": "husky install",
