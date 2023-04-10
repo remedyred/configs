@@ -10,23 +10,4 @@ jobs:
     timeout-minutes: 5
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
-
-      - uses: pnpm/action-setup@v2.2.4
-        with:
-          version: 7
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 'lts/*'
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build, lint, and Test
-        run: pnpm turbo run build //#lint //#test validate
+      - uses: remedyred/check-action@v1.1.4
