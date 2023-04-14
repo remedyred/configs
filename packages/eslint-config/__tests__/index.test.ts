@@ -68,7 +68,12 @@ describe('Validate ESLint configs', () => {
 
 		it('should return the proper config', async () => {
 			const parsedConfig = await linter.getConfig(file)
-			const PARSERS = ['vue-eslint-parser@', 'espree@', 'yaml-eslint-parser@']
+			const PARSERS = [
+				'vue-eslint-parser@',
+				'espree@',
+				'jsonc-eslint-parser',
+				'yaml-eslint-parser@'
+			]
 			const PARSERS_MATCH = PARSERS.join('|')
 			const regexp = new RegExp(`(${PARSERS_MATCH})`)
 			expect(parsedConfig).toMatchSnapshot({parser: expect.stringMatching(regexp)})
