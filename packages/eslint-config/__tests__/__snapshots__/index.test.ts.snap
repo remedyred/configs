@@ -19,6 +19,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
     "sourceType": "module",
   },
   "plugins": [
+    "@ada-support/object-newline",
     "@typescript-eslint",
     "vue",
     "jsonc",
@@ -30,6 +31,12 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
   ],
   "reportUnusedDisableDirectives": undefined,
   "rules": {
+    "@ada-support/object-newline/enforce": [
+      "error",
+      {
+        "items": 2,
+      },
+    ],
     "@typescript-eslint/adjacent-overload-signatures": [
       "error",
     ],
@@ -637,7 +644,24 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
     "object-curly-newline": [
       "error",
       {
-        "multiline": true,
+        "ExportDeclaration": {
+          "consistent": true,
+          "minProperties": 4,
+          "multiline": true,
+        },
+        "ImportDeclaration": {
+          "consistent": true,
+          "minProperties": 10,
+          "multiline": true,
+        },
+        "ObjectExpression": {
+          "consistent": true,
+          "multiline": true,
+        },
+        "ObjectPattern": {
+          "consistent": true,
+          "multiline": true,
+        },
       },
     ],
     "object-shorthand": [
@@ -1364,6 +1388,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
     "sourceType": "module",
   },
   "plugins": [
+    "@ada-support/object-newline",
     "@typescript-eslint",
     "vue",
     "jsonc",
@@ -1375,6 +1400,12 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
   ],
   "reportUnusedDisableDirectives": undefined,
   "rules": {
+    "@ada-support/object-newline/enforce": [
+      "error",
+      {
+        "items": 2,
+      },
+    ],
     "@typescript-eslint/adjacent-overload-signatures": [
       "error",
     ],
@@ -1985,7 +2016,24 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
     "object-curly-newline": [
       "error",
       {
-        "multiline": true,
+        "ExportDeclaration": {
+          "consistent": true,
+          "minProperties": 4,
+          "multiline": true,
+        },
+        "ImportDeclaration": {
+          "consistent": true,
+          "minProperties": 10,
+          "multiline": true,
+        },
+        "ObjectExpression": {
+          "consistent": true,
+          "multiline": true,
+        },
+        "ObjectPattern": {
+          "consistent": true,
+          "multiline": true,
+        },
       },
     ],
     "object-shorthand": [
@@ -2561,6 +2609,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
     "sourceType": "module",
   },
   "plugins": [
+    "@ada-support/object-newline",
     "@typescript-eslint",
     "vue",
     "jsonc",
@@ -2572,6 +2621,12 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
   ],
   "reportUnusedDisableDirectives": undefined,
   "rules": {
+    "@ada-support/object-newline/enforce": [
+      "error",
+      {
+        "items": 2,
+      },
+    ],
     "@typescript-eslint/adjacent-overload-signatures": [
       "error",
     ],
@@ -3179,7 +3234,24 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
     "object-curly-newline": [
       "error",
       {
-        "multiline": true,
+        "ExportDeclaration": {
+          "consistent": true,
+          "minProperties": 4,
+          "multiline": true,
+        },
+        "ImportDeclaration": {
+          "consistent": true,
+          "minProperties": 10,
+          "multiline": true,
+        },
+        "ObjectExpression": {
+          "consistent": true,
+          "multiline": true,
+        },
+        "ObjectPattern": {
+          "consistent": true,
+          "multiline": true,
+        },
       },
     ],
     "object-shorthand": [
@@ -4397,6 +4469,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
     "sourceType": "module",
   },
   "plugins": [
+    "@ada-support/object-newline",
     "@typescript-eslint",
     "vue",
     "jsonc",
@@ -4408,6 +4481,12 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
   ],
   "reportUnusedDisableDirectives": undefined,
   "rules": {
+    "@ada-support/object-newline/enforce": [
+      "error",
+      {
+        "items": 2,
+      },
+    ],
     "@typescript-eslint/adjacent-overload-signatures": [
       "error",
     ],
@@ -5015,7 +5094,24 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
     "object-curly-newline": [
       "error",
       {
-        "multiline": true,
+        "ExportDeclaration": {
+          "consistent": true,
+          "minProperties": 4,
+          "multiline": true,
+        },
+        "ImportDeclaration": {
+          "consistent": true,
+          "minProperties": 10,
+          "multiline": true,
+        },
+        "ObjectExpression": {
+          "consistent": true,
+          "multiline": true,
+        },
+        "ObjectPattern": {
+          "consistent": true,
+          "multiline": true,
+        },
       },
     ],
     "object-shorthand": [
