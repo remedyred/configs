@@ -1,7 +1,7 @@
 /* eslint-disable object-curly-newline */
-import SemanticRelease from 'semantic-release'
+import {GlobalConfig} from 'semantic-release'
 
-const settings: Partial<SemanticRelease.GlobalConfig> = {
+const settings: Partial<GlobalConfig> = {
 	branches: ['+([0-9])?(.{+([0-9]),x}).x', 'main', 'next']
 }
 
