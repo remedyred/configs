@@ -1,7 +1,7 @@
-import SemanticRelease from 'semantic-release'
+import {GlobalConfig} from 'semantic-release'
 import settings from '../common/settings'
 import plugins from './plugins'
 
-const config: Partial<SemanticRelease.GlobalConfig> = {...settings, plugins}
+const config: Partial<GlobalConfig> = {...settings, plugins}
 
 export = config
