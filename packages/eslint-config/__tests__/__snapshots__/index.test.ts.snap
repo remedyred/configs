@@ -206,7 +206,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
     "array-bracket-newline": [
       "error",
       {
-        "minItems": 4,
+        "minItems": 3,
         "multiline": true,
       },
     ],
@@ -221,7 +221,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
     "array-element-newline": [
       "error",
       {
-        "minItems": 4,
+        "minItems": 3,
         "multiline": true,
       },
     ],
@@ -1575,7 +1575,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
     "array-bracket-newline": [
       "error",
       {
-        "minItems": 4,
+        "minItems": 3,
         "multiline": true,
       },
     ],
@@ -1590,7 +1590,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
     "array-element-newline": [
       "error",
       {
-        "minItems": 4,
+        "minItems": 3,
         "multiline": true,
       },
     ],
@@ -2606,6 +2606,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
   "parserOptions": {
     "ecmaVersion": 2020,
     "parser": "@typescript-eslint/parser",
+    "project": true,
     "sourceType": "module",
   },
   "plugins": [
@@ -2796,7 +2797,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
     "array-bracket-newline": [
       "error",
       {
-        "minItems": 4,
+        "minItems": 3,
         "multiline": true,
       },
     ],
@@ -2811,7 +2812,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
     "array-element-newline": [
       "error",
       {
-        "minItems": 4,
+        "minItems": 3,
         "multiline": true,
       },
     ],
@@ -4656,7 +4657,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
     "array-bracket-newline": [
       "error",
       {
-        "minItems": 4,
+        "minItems": 3,
         "multiline": true,
       },
     ],
@@ -4671,7 +4672,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
     "array-element-newline": [
       "error",
       {
-        "minItems": 4,
+        "minItems": 3,
         "multiline": true,
       },
     ],

@@ -10,7 +10,7 @@ if (!fileExists(CONFIG_PATH)) {
 }
 
 const MOCK_FILES_PATH = `${unixify(__dirname)}/../__fixtures__`
-const MOCK_FILES = fg.sync('**/*', {cwd: MOCK_FILES_PATH, ignore: ['.eslintrc.json']})
+const MOCK_FILES = fg.sync('**/*', {cwd: MOCK_FILES_PATH, ignore: ['.eslintrc.json', 'tsconfig.json']})
 
 export class MockLint {
 	eslint: ESLint
