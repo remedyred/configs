@@ -19,22 +19,22 @@
 		"testEnvironment": "node"
 	},
 	"dependencies": {
-		"@snickbit/node-cli": "3.0.24",
-		"@snickbit/node-utilities": "4.7.1",
-		"@snickbit/out": "2.0.48",
-		"@snickbit/utilities": "3.4.17",
+		"@snickbit/node-cli": "3.0.25",
+		"@snickbit/node-utilities": "4.7.2",
+		"@snickbit/out": "2.1.2",
+		"@snickbit/utilities": "3.9.2",
 		"chokidar": "3.5.3",
 		"debounce": "1.2.1",
 		"fast-glob": "3.2.12",
 		"unixify": "1.0.0"
 	},
 	"devDependencies": {
-		"@types/jest": "29.2.3",
-		"@types/node": "18.11.9",
-		"jest": "29.3.1",
-		"renovate": "34.28.0",
-		"ts-jest": "29.0.3",
+		"@types/jest": "29.5.1",
+		"@types/node": "20.1.2",
+		"jest": "29.5.0",
+		"renovate": "35.80.0",
+		"ts-jest": "29.1.0",
 		"ts-node": "10.9.1",
-		"typescript": "4.9.3"
+		"typescript": "5.0.4"
 	}
 }
