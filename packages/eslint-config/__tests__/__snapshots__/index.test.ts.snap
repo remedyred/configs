@@ -402,6 +402,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.js) should
       "error",
       {
         "afterBlockComment": false,
+        "afterHashbangComment": false,
         "afterLineComment": false,
         "allowBlockEnd": false,
         "allowBlockStart": true,
@@ -1771,6 +1772,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.json) shou
       "error",
       {
         "afterBlockComment": false,
+        "afterHashbangComment": false,
         "afterLineComment": false,
         "allowBlockEnd": false,
         "allowBlockStart": true,
@@ -2993,6 +2995,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.ts) should
       "error",
       {
         "afterBlockComment": false,
+        "afterHashbangComment": false,
         "afterLineComment": false,
         "allowBlockEnd": false,
         "allowBlockStart": true,
@@ -4853,6 +4856,7 @@ exports[`Validate ESLint configs .add(Validate ESLint configs for bad.yml) shoul
       "error",
       {
         "afterBlockComment": false,
+        "afterHashbangComment": false,
         "afterLineComment": false,
         "allowBlockEnd": false,
         "allowBlockStart": true,
