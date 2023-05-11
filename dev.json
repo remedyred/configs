@@ -49,7 +49,7 @@
 				"@snickbit",
 				"@remedyred"
 			],
-			"stabilityDays": 1
+			"minimumReleaseAge": "1 day"
 		},
 		{
 			"$schema": "https://docs.renovatebot.com/renovate-schema.json",
