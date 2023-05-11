@@ -1,6 +1,6 @@
 import {$out, Config, RenovateConfig, SubConfig} from '../common'
 import {ParsedArgs} from '@snickbit/node-cli'
-import {isArray, isEmpty, objectExcept, objectPull, objectSort} from '@snickbit/utilities'
+import {isArray, isEmpty, objectCopy, objectExcept, objectPull, objectSort} from '@snickbit/utilities'
 import {getFileJson, saveFileJson} from '@snickbit/node-utilities'
 import {validateConfig} from 'renovate/dist/config/validation'
 import {mergeChildConfig} from 'renovate/dist/config/utils'
@@ -147,10 +147,11 @@ export async function buildFromDefinitions(definitions: RenovateConfig[], config
 		return undefined
 	}
 
-	return {
+	// copy the object so it's a clean json object
+	return objectCopy({
 		$schema: 'https://docs.renovatebot.com/renovate-schema.json',
 		...results
-	}
+	})
 }
 
 export async function validate(results: any) {
