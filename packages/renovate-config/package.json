@@ -4,10 +4,10 @@
 	"private": true,
 	"scripts": {
 		"build": "pnpm run dev && pnpm run validate",
-		"dev": "ts-node ./src/index.ts build",
+		"dev": "tsx ./src/index.ts build",
 		"release": "semantic-release",
 		"validate": "renovate-config-validator ../../default.json ../../dev.json ../../dev-next.json ../../next-release.json",
-		"watch": "ts-node ./src/index.ts watch"
+		"watch": "tsx ./src/index.ts watch"
 	},
 	"release": {
 		"extends": [
@@ -34,7 +34,7 @@
 		"jest": "29.5.0",
 		"renovate": "35.80.0",
 		"ts-jest": "29.1.0",
-		"ts-node": "10.9.1",
+		"tsx": "3.12.7",
 		"typescript": "5.0.4"
 	}
 }
