@@ -10,6 +10,6 @@ jobs:
     timeout-minutes: 5
     runs-on: ubuntu-latest
     steps:
-      - uses: remedyred/check-action@v1.2.4
+      - uses: remedyred/check-action@v1.2.6
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
