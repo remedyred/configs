@@ -30,7 +30,8 @@ All notable changes to this project will be documented in this file. See
 				{type: 'perf', release: 'patch'},
 				{scope: 'breaking', release: 'major'},
 				{scope: 'no-release', release: false}
-			]
+			],
+			parserOpts: {noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES']}
 		}
 	],
 	['@semantic-release/release-notes-generator', {preset: 'conventionalcommits'} ],
