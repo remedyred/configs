@@ -19,10 +19,10 @@
 		"testEnvironment": "node"
 	},
 	"dependencies": {
-		"@snickbit/node-cli": "3.0.25",
-		"@snickbit/node-utilities": "4.7.2",
-		"@snickbit/out": "2.1.2",
-		"@snickbit/utilities": "3.9.2",
+		"@snickbit/node-cli": "3.0.27",
+		"@snickbit/node-utilities": "4.7.10",
+		"@snickbit/out": "2.2.0",
+		"@snickbit/utilities": "3.11.4",
 		"chokidar": "3.5.3",
 		"debounce": "1.2.1",
 		"fast-glob": "3.2.12",

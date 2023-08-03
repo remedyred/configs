@@ -43,7 +43,7 @@
 		"vue-eslint-parser": "9.2.1"
 	},
 	"devDependencies": {
-		"@snickbit/node-utilities": "4.7.2",
+		"@snickbit/node-utilities": "4.7.10",
 		"@types/jest": "29.5.1",
 		"@types/node": "20.1.2",
 		"eslint": "8.40.0",

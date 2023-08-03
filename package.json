@@ -3,12 +3,14 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"build": "turbo run build",
-		"fix": "eslint \"**/*.{ts,json,yml,yaml}\" --cache --color --fix",
+		"build": "pnpm -r run build",
+		"ci:lint": "pnpm run lint",
+		"ci:validate": "pnpm run validate",
 		"lint": "eslint \"**/*.{ts,json,yml,yaml}\" --cache --color",
+		"lint:fix": "pnpm run lint --fix",
 		"prepare": "husky install",
-		"prerelease": "turbo run build fix test validate",
-		"release": "turbo run release",
+		"prerelease": "pnpm run lint:fix && pnpm run build && pnpm run test && pnpm run validate",
+		"release": "pnpm run prerelease && pnpm run release:ci",
 		"release:ci": "multi-semantic-release",
 		"test": "jest",
 		"validate": "renovate-config-validator default.json dev.json dev-next.json next-release.json renovate.json"
@@ -34,7 +36,6 @@
 		"renovate": "35.80.0",
 		"semantic-release": "19.0.5",
 		"ts-jest": "29.1.0",
-		"turbo": "1.9.3",
 		"typescript": "5.0.4"
 	},
 	"engines": {

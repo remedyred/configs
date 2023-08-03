@@ -21,10 +21,10 @@ jobs:
       contents: write
     steps:
       - name: Build, Test, and Lint
-        uses: remedyred/check-action@v1.2.6
+        uses: remedyred/check-action@v1.2.7
         with:
           NO_BAIL: true
           AUTO_COMMIT: true
 
       - name: Release
-        run: pnpm turbo run release:ci
+        run: pnpm run release:ci
