@@ -38,7 +38,11 @@ All notable changes to this project will be documented in this file. See
 	[
 		'@semantic-release/git',
 		{
-			assets: ['package.json', 'docs', 'README.md'],
+			assets: [
+				'package.json',
+				'docs',
+				'README.md'
+			],
 			message: 'chore(release): release <%= nextRelease.gitTag.replace(/(.*?)-v(\\d+[.]\\d+[.]\\d+)/, "$1 v$2") %> [skip ci]\n\n<%= nextRelease.notes %>'
 		}
 	]

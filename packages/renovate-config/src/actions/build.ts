@@ -131,7 +131,11 @@ export async function buildFromDefinitions(definitions: RenovateConfig[], config
 		}
 	}
 
-	combinedFiles = objectSort(objectExcept(combinedFiles, ['extends', '$schema', 'file']))
+	combinedFiles = objectSort(objectExcept(combinedFiles, [
+		'extends',
+		'$schema',
+		'file'
+	]))
 
 	let results: Partial<RenovateConfig> = {}
 
