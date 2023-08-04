@@ -24,13 +24,13 @@ describe.each([ ['ts', configTS], ['cjs', configCJS] ])('config %s', (label, con
 				})
 			} else {
 				it('string plugins should be a string containing "semantic"', () => {
-					expect(plugin).toEqual(expect.stringContaining('semantic'))
+					expect(plugin).toEqual(expect.stringMatching(/semantic|semrel/))
 				})
 			}
 		})
 	})
 
-	it('should have a plugin where the first element is "@semantic-release/npm" and the second element is {tarballDir: "pack"}', () => {
-		expect(config.plugins).toContainEqual(['@semantic-release/npm', {tarballDir: 'pack'} ])
+	it('should have a plugin where the first element is "@semrel-extra/npm" and the second element is {tarballDir: "pack"}', () => {
+		expect(config.plugins).toContainEqual(['@semrel-extra/npm', {tarballDir: 'pack'} ])
 	})
 })
