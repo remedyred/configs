@@ -1,7 +1,11 @@
 export = {
 	rules: {
 		'array-bracket-newline': ['error', {multiline: true, minItems: 3} ],
-		'array-bracket-spacing': ['error', 'never', {arraysInArrays: true, objectsInArrays: true} ],
+		'array-bracket-spacing': [
+			'error',
+			'never',
+			{arraysInArrays: true, objectsInArrays: true}
+		],
 		'array-element-newline': ['error', {multiline: true, minItems: 3} ],
 		'arrow-parens': ['error', 'as-needed'],
 		'arrow-spacing': 'error',
@@ -78,7 +82,11 @@ export = {
 			}
 		],
 		'@ada-support/object-newline/enforce': ['error', {items: 2} ],
-		'object-shorthand': ['error', 'always', {avoidExplicitReturnArrows: true} ],
+		'object-shorthand': [
+			'error',
+			'always',
+			{avoidExplicitReturnArrows: true}
+		],
 		'operator-linebreak': 'error',
 		'padded-blocks': ['warn', 'never'],
 		'prefer-arrow-callback': 'error',
@@ -91,11 +99,19 @@ export = {
 		'semi-style': 'error',
 		'space-in-parens': 'error',
 		'space-unary-ops': 'error',
-		'spaced-comment': ['error', 'always', {markers: ['/']} ],
+		'spaced-comment': [
+			'error',
+			'always',
+			{markers: ['/']}
+		],
 		'switch-colon-spacing': 'error',
 		'template-curly-spacing': 'error',
 		'template-tag-spacing': 'error',
 		'yield-star-spacing': 'error',
-		'logical-assignment-operators': ['error', 'always', {enforceForIfStatements: true} ]
+		'logical-assignment-operators': [
+			'error',
+			'always',
+			{enforceForIfStatements: true}
+		]
 	}
 }
