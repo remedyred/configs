@@ -21,7 +21,7 @@ jobs:
       contents: write
     steps:
       - name: Build, Test, and Lint
-        uses: remedyred/check-action@v1.2.7
+        uses: remedyred/check-action@v1.2.8
         with:
           NO_BAIL: true
           AUTO_COMMIT: true
