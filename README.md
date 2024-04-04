@@ -1,4 +1,4 @@
-# @snickbit/configs
+# @remedyred/configs
 
 A monorepo of my shareable configs
 
