@@ -11,7 +11,11 @@ export = {
 		'arrow-spacing': 'error',
 		'comma-style': ['error', 'last'],
 		'computed-property-spacing': 'error',
-		curly: ['error', 'all'],
+		curly: [
+			'error',
+			'multi',
+			'consistent'
+		],
 		'dot-location': ['error', 'property'],
 		'eol-last': 'error',
 		eqeqeq: 'error',
@@ -57,7 +61,7 @@ export = {
 		'no-useless-return': 'error',
 		'no-var': 'error',
 		'no-whitespace-before-property': 'error',
-		'nonblock-statement-body-position': ['error', 'below'],
+		'nonblock-statement-body-position': ['error', 'beside'],
 		'object-curly-newline': [
 			'error',
 			{
