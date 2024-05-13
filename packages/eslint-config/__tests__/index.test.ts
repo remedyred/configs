@@ -11,6 +11,55 @@ if (!fileExists(CONFIG_PATH)) {
 
 const MOCK_FILES_PATH = `${unixify(__dirname)}/../__fixtures__`
 const MOCK_FILES = fg.sync('**/*', {cwd: MOCK_FILES_PATH, ignore: ['.eslintrc.json', 'tsconfig.json']})
+const FIXTURE_FILE_TYPES = [
+	'ts',
+	'js',
+	'json',
+	'yml'
+]
+const regexp = new RegExp(`bad\\.(${FIXTURE_FILE_TYPES.join('|')})$`)
+const DEPRECATED_RULES = {
+	'vue/component-tags-order': ['block-order'],
+	'array-bracket-newline': [],
+	'array-bracket-spacing': [],
+	'array-element-newline': [],
+	'arrow-parens': [],
+	'arrow-spacing': [],
+	'comma-style': [],
+	'computed-property-spacing': [],
+	'dot-location': [],
+	'eol-last': [],
+	'function-call-argument-newline': [],
+	'function-paren-newline': [],
+	'generator-star-spacing': [],
+	'implicit-arrow-linebreak': [],
+	indent: [],
+	'key-spacing': [],
+	'linebreak-style': [],
+	'lines-around-comment': [],
+	'max-len': [],
+	'no-multi-spaces': [],
+	'no-multiple-empty-lines': [],
+	'no-trailing-spaces': [],
+	'no-whitespace-before-property': [],
+	'nonblock-statement-body-position': [],
+	'object-curly-newline': [],
+	'operator-linebreak': [],
+	'padded-blocks': [],
+	'quote-props': [],
+	'rest-spread-spacing': [],
+	'semi-spacing': [],
+	'semi-style': [],
+	'space-in-parens': [],
+	'space-unary-ops': [],
+	'spaced-comment': [],
+	'switch-colon-spacing': [],
+	'template-curly-spacing': [],
+	'template-tag-spacing': [],
+	'yield-star-spacing': [],
+	'@typescript-eslint/object-curly-spacing': [],
+	'no-mixed-spaces-and-tabs': []
+}
 
 export class MockLint {
 	eslint: ESLint
@@ -62,6 +111,13 @@ describe('Validate ESLint configs', () => {
 	describe.each(MOCK_FILES)('.add(Validate ESLint configs for %s)', file => {
 		const linter = new MockLint(CONFIG_PATH)
 
+		const DEPRECATED_RULES_ARRAY = Object.entries(DEPRECATED_RULES)
+			.filter((([rule]) => file !== 'bad.yml' || rule !== 'spaced-comment'))
+			.map(([ruleId, replacedBy]) => ({
+				ruleId,
+				replacedBy
+			}))
+
 		it('should pass ESLint', async () => {
 			expect(linter).toBeInstanceOf(MockLint)
 		})
@@ -79,16 +135,23 @@ describe('Validate ESLint configs', () => {
 			expect(parsedConfig).toMatchSnapshot({parser: expect.stringMatching(regexp)})
 		})
 
-		it('should return the proper lint results', async () => {
-			const lintResults = await linter.lintFile(file)
-			const FIXTURE_FILE_TYPES = [
-				'ts',
-				'js',
-				'json',
-				'yml'
-			]
-			const regexp = new RegExp(`bad\\.(${FIXTURE_FILE_TYPES.join('|')})$`)
-			expect({lintResults}).toMatchSnapshot({lintResults: [ {filePath: expect.stringMatching(regexp), usedDeprecatedRules: []} ]})
+		describe('lint results', () => {
+			let lintResults: ESLint.LintResult[]
+			let filePath: string, usedDeprecatedRules: ESLint.DeprecatedRuleUse[]
+
+			beforeEach(async () => {
+				lintResults = await linter.lintFile(file);
+				({filePath, usedDeprecatedRules} = lintResults.at(0))
+			})
+
+			it('should return the proper filepath', async () => {
+				console.log({usedDeprecatedRules})
+				expect(filePath).toMatch(regexp)
+			})
+
+			it('should check each deprecated rule', () => {
+				expect(usedDeprecatedRules).toStrictEqual(DEPRECATED_RULES_ARRAY)
+			})
 		})
 	})
 })
