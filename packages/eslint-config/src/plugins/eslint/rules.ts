@@ -13,7 +13,7 @@ export = {
 		'computed-property-spacing': 'error',
 		curly: [
 			'error',
-			'multi',
+			'multi-line',
 			'consistent'
 		],
 		'dot-location': ['error', 'property'],
