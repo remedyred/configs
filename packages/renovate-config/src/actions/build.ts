@@ -1,7 +1,7 @@
 import {$out, Config, RenovateConfig, SubConfig} from '../common'
 import {ParsedArgs} from '@snickbit/node-cli'
 import {isArray, isEmpty, objectCopy, objectExcept, objectPull, objectSort} from '@snickbit/utilities'
-import {getFileJson, saveFileJson} from '@snickbit/node-utilities'
+import {getFileJSON, saveFileJSON} from '@snickbit/node-utilities'
 import {validateConfig} from 'renovate/dist/config/validation'
 import {mergeChildConfig} from 'renovate/dist/config/utils'
 import unixify from 'unixify'
@@ -26,12 +26,12 @@ async function generateFromDefinitionFile(source: string, config: Config): Promi
 		if (!output.endsWith('.json')) {
 			output += '.json'
 		}
-		saveFileJson(output, renovateConfig)
+		saveFileJSON(output, renovateConfig)
 	}
 }
 
 export async function buildFromDefinitionFile(source: string, cwd?: string): Promise<RenovateConfig> {
-	const definition = getFileJson(source)
+	const definition = getFileJSON(source)
 	if (!definition) {
 		throw new Error(`Definition file not found: ${source}`)
 	}
@@ -91,7 +91,7 @@ export async function buildFromDefinitions(definitions: RenovateConfig[], config
 				if (files.length) {
 					definitions.push(...files.map(file => {
 						return {
-							...getFileJson(file),
+							...getFileJSON(file),
 							file: unixify(file)
 						}
 					}))

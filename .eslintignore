@@ -3,7 +3,6 @@
 node_modules/
 
 dist/
-
-packages/eslint-config/__fixtures__
+__fixtures__/
 
 pnpm-*.yaml
