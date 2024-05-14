@@ -41,7 +41,7 @@ exports[`build.ts buildFromDefinitionFile should reliably return a valid config 
       "Change": "All locks refreshed",
     },
     "rebaseWhen": "behind-base-branch",
-    "recreateClosed": true,
+    "recreateWhen": "always",
     "schedule": [
       "before 5am on monday",
     ],
