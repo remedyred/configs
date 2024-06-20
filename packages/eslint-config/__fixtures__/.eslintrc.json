@@ -1,6 +1,0 @@
-{
-	"root": true,
-	"extends": [
-		"@snickbit/eslint-config/all"
-	]
-}

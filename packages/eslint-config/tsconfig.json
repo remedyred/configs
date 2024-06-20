@@ -1,7 +1,36 @@
 {
-	"extends": "../../tsconfig.json",
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"compilerOptions": {
+		"target": "es2022",
+		"lib": [
+			"es2022"
+		],
+		"module": "es2022",
+		"moduleResolution": "node",
+		"strict": true,
+		"outDir": "./dist",
+		"declaration": true,
+		"baseUrl": ".",
+		"declarationMap": true,
+		"downlevelIteration": true,
+		"esModuleInterop": true,
+		"allowImportingTsExtensions": true,
+		"forceConsistentCasingInFileNames": true,
+		"newLine": "lf",
+		"noImplicitAny": false,
+		"noImplicitThis": false,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"paths": {
+			"@/*": [
+				"./src/*"
+			]
+		}
+	},
 	"include": [
-		"src/**/*.ts",
-		"__tests__/**/*.ts"
+		"./src/**/*.ts",
+		"tsup.config.ts",
+		"package.json"
 	]
 }

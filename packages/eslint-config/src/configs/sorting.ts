@@ -1,7 +1,6 @@
-export = {
-	extends: [
-		'./base',
-		'../plugins/beautiful-sort',
-		'../plugins/sort-class-members'
-	]
-}
+import plugins from "@/plugins";
+
+export default [
+		plugins.eslint,
+		plugins.sorting
+]

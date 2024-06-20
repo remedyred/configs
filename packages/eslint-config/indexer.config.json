@@ -1,0 +1,26 @@
+{
+	"indexes": [
+		{
+			"source": "src/plugins/**/*",
+			"output": "src/plugins/index.ts",
+			"type": "slug",
+			"default": {
+				"source": [
+					"src/plugins/*.ts"
+				],
+				"type": "default"
+			}
+		},
+		{
+			"source": "src/configs/**/*",
+			"output": "src/configs/index.ts",
+			"type": "default",
+			"default": {
+				"source": [
+					"src/configs/*.ts"
+				],
+				"type": "default"
+			}
+		}
+	]
+}

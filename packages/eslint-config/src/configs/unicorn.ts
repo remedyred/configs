@@ -1,1 +1,6 @@
-export = {extends: ['./base', '../plugins/unicorn']}
+import plugins from "@/plugins";
+
+export default [
+		plugins.eslint,
+		plugins.unicorn
+]
