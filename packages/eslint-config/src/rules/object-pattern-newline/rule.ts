@@ -17,6 +17,7 @@ type MessageIds = 'mustSplitMany' | 'mustSplitLong' | 'limitLineCount';
 
 type ObjectPattern = TSESTree.ObjectPattern;
 type RuleContext = Readonly<TSESLint.RuleContext<MessageIds, Options>>
+type RestOrProperty = TSESTree.Property | TSESTree.RestElement;
 
 interface RuleConfig {
 	defaultItems: number;
@@ -99,12 +100,13 @@ function fixer(
 	};
 }
 
-function isPropertyTypesValid(properties: any) {
+function isPropertyTypesValid(properties: RestOrProperty[]) {
 	for (const p of properties) {
 		if (!VALID_ITEM_TYPES.has(p.type)) {
-			throw new Error(`Unknown property type: ${p.type}`);
+			return false
 		}
 	}
+	return true;
 }
 
 // Extracted function to handle the logic for ignore comments
@@ -175,11 +177,9 @@ function handleObjectPattern(context: RuleContext, node: ObjectPattern) {
 	const {properties} = node;
 	const {maxItems, maxLineLength} = config;
 
-	if (!properties.length) {
+	if(!isPropertyTypesValid(properties)) {
 		return;
 	}
-
-	isPropertyTypesValid(properties);
 
 	const startLine = node.loc.start.line;
 	const endLine = node.loc.end.line;
@@ -205,7 +205,7 @@ function handleObjectPattern(context: RuleContext, node: ObjectPattern) {
 	}
 }
 
-// Type: RuleModule<"uppercase", ...>
+// Type: RuleModule<"uppercase", >
 export const rule = RuleCreator.withoutDocs<Options, MessageIds>({
 	create(context) {
 		let maxItems = 0;
